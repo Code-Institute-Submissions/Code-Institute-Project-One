@@ -77,6 +77,10 @@ body {
 
 /*******         Footer         *******/
 
+.container {
+    display: flex;
+    
+}
 
 .footer-container-b {
     height: 8vh;
