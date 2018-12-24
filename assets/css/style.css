@@ -8,8 +8,9 @@ body {
     background: rgba(0, 0, 0, 0.0);
 }
 
-.footer-container {
-    background: #002b43;
+.footer-container-b {
+    /* background: #002b43; */
+    background: #fafafa;
 }
 
 /*******         Header         *******/
@@ -36,7 +37,7 @@ body {
 /*******         Home container         *******/
 
 .home-container {
-    height: 95vh;
+    height: 100vh;
     padding: 0;
     background: url(../images/hexagonsbg2.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -51,7 +52,7 @@ body {
 }
 
 .home-content-wrapper {
-    height: 85vh;
+    height: 77vh;
     padding: 15% 25% 0 25%;
 }
 
@@ -75,26 +76,18 @@ body {
 }
 
 /*******         Footer         *******/
- 
-.footer-container {
-    color: #fafafa;
-    /* position: absolute;
-    right: 0;
-    left: 0; */
+
+
+.footer-container-b {
+    height: 8vh;
 }
 
-.footer-container p {
-    height: 100%;
+.footer-container-b p {
+    color: #000;
     margin: 0;
 }
 
-.company-info {
-    height: 5vh;
-    text-align: right;
-}
-
-.social {
-    height: 5vh;
+.footer-social {
     text-align: center;
     padding: 0;
 }
@@ -103,9 +96,14 @@ body {
     margin: 0;
 }
 
-.footer-contact {
-    height: 5vh;
-    /* text-align: right; */
+.footer-text {
+    /* height: 8vh; */
+    text-align: center;
 }
 
-/* * { border: 1px solid red; } */ /* For debugging */
+#footer-contact-align {
+    transform: translateY(1em);
+}
+
+/* For debugging */
+/* * { border: 1px solid red; }  */
