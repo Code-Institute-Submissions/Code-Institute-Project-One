@@ -1,7 +1,7 @@
 /*******        Background Colors         *******/
 
 .nav-style {
-    background: #757575;
+    background: rgba(0, 0, 0, 0.0);
 }
 
 .footer-container {
@@ -15,7 +15,24 @@
     position: absolute;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    /* background-color: #00125B; */
+    background-repeat: no-repeat;
+    background-size: contain; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+}
+
+.company-name {
+    color: #fff;
+    font-size: 20px;
 }
 
 /*******         Home container         *******/
@@ -29,6 +46,29 @@
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+}
+
+.home-content-spacer {
+    height: 10vh;
+}
+
+.home-content-wrapper {
+    height: 85vh;
+    padding: 15% 25% 0 25%;
+}
+
+.welcome-message {
+    text-align: center;
+}
+
+.welcome-message h1 {
+    color: #fff;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*******         Footer         *******/
