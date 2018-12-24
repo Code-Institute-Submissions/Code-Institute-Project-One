@@ -1,0 +1,64 @@
+/*******        Background Colors         *******/
+
+.nav-style {
+    background: #757575;
+}
+
+.footer-container {
+    background: #414658;
+}
+
+/*******         Header         *******/
+
+.nav-style {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*******         Home container         *******/
+
+.home-container {
+    height: 95vh;
+    padding: 0;
+    background: url(../images/hexagonsbg2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+/*******         Footer         *******/
+ 
+.footer-container {
+    color: #fafafa;
+}
+
+.footer-container p {
+    height: 100%;
+    margin: 0;
+}
+
+.company-info {
+    height: 5vh;
+}
+
+.social {
+    height: 5vh;
+    text-align: center;
+    padding: 0;
+}
+
+.social-links {
+    margin: 0;
+}
+
+.footer-contact {
+    height: 5vh;
+    text-align: right;
+}
+
+/* * { border: 1px solid red; } */ /* For debugging */
