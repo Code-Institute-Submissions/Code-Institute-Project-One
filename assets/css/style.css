@@ -1,27 +1,14 @@
-/*******        Background Colors         *******/
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500,700|Space+Mono:400,700');
 
+/* 
 body {
     background: #000;
-}
+} */
 
-.nav-style {
-    background: rgba(0, 0, 0, 0.0);
-}
 
-.footer-container-b {
-    /* background: #002b43; */
-    background: #fafafa;
-}
 
-/*******         Header         *******/
 
-.nav-style {
-    text-align: right;
-    position: absolute;
-    right: 0;
-    left: 0;
-    z-index: 10;
-}
+/*******         Header       *******/
 
 .logo {
     margin: 0;
@@ -34,9 +21,27 @@ body {
     -o-background-size: contain;
 }
 
-/*******         Home container         *******/
+.nav-bg--transparent {
+    background: rgba(0, 0, 0, 0.0);
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
 
-.home-container {
+.nav-text--style {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+
+/*******         Home container         *******/
+/* Layout */
+
+.home-container--wrapper {
     height: 100vh;
     padding: 0;
     background: url(../images/hexagonsbg2.jpg) no-repeat center center;
@@ -47,66 +52,111 @@ body {
     position: relative;
 }
 
-.home-content-spacer {
+.home-content--spacer {
     height: 10vh;
 }
 
-.home-content-wrapper {
-    height: 77vh;
-    padding: 15% 25% 0 25%;
+.home-content--wrapper {
+    height: 74vh;
+    padding: 10% 25% 0 25%;
 }
 
-.welcome-message {
+/* Styling */
+
+.home-text--style {
     text-align: center;
 }
 
-.welcome-message h1 {
+.home-text--style h1 {
     color: #fff;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
 }
 
-.button-center {
+.home-text--style h3 {
+    color: #fff;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.home-text--style h6 {
+    color: #bebebe;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.button--center {
     display: flex;
     justify-content: center;
-    align-items: center;
+   /*  align-items: center; */    /* not doing anything atm */
 }
 
-.button-signup {
+.button-signup--style {
     color: #fff;
     background: #0157a3;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 /*******         Footer         *******/
+/* Layout */
 
-.container {
-    display: flex;
-    
+.footer-container-b {
+    /* background: #002b43; */
+    background: #c7c7c7;
 }
 
 .footer-container-b {
     height: 8vh;
 }
 
+/* Styling */
+
 .footer-container-b p {
     color: #000;
     margin: 0;
 }
 
-.footer-social {
+.footer-social--wrapper {
     text-align: center;
     padding: 0;
 }
 
-.social-links {
+.footer-social--links {
     margin: 0;
 }
 
-.footer-text {
+.footer-social--style {
+    color: rgba(255,255,255, 0.8);
+    font-size: 2.5rem;
+}
+
+.footer-text--style {
     /* height: 8vh; */
     text-align: center;
 }
 
-#footer-contact-align {
-    transform: translateY(1em);
+.footer-text--style h6 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.footer-text--style p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+#footer-contact--align {
+    transform: translateY(1rem);
 }
 
 /* For debugging */
