@@ -1,11 +1,15 @@
 /*******        Background Colors         *******/
 
+body {
+    background: #000;
+}
+
 .nav-style {
     background: rgba(0, 0, 0, 0.0);
 }
 
 .footer-container {
-    background: #414658;
+    background: #002b43;
 }
 
 /*******         Header         *******/
@@ -22,17 +26,11 @@
     margin: 0;
     padding: 0;
     height: 10vh;
-    /* background-color: #00125B; */
     background-repeat: no-repeat;
     background-size: contain; 
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
-}
-
-.company-name {
-    color: #fff;
-    font-size: 20px;
 }
 
 /*******         Home container         *******/
@@ -71,10 +69,18 @@
     align-items: center;
 }
 
+.button-signup {
+    color: #fff;
+    background: #0157a3;
+}
+
 /*******         Footer         *******/
  
 .footer-container {
     color: #fafafa;
+    /* position: absolute;
+    right: 0;
+    left: 0; */
 }
 
 .footer-container p {
@@ -84,6 +90,7 @@
 
 .company-info {
     height: 5vh;
+    text-align: right;
 }
 
 .social {
@@ -98,7 +105,7 @@
 
 .footer-contact {
     height: 5vh;
-    text-align: right;
+    /* text-align: right; */
 }
 
 /* * { border: 1px solid red; } */ /* For debugging */
