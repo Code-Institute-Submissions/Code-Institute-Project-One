@@ -28,21 +28,52 @@ body {
 }
 
 .nav-bg--transparent {
-    background: rgba(0, 0, 0, 0.0);
+    background: #000;
     position: absolute;
     right: 0;
     left: 0;
     z-index: 10;
 }
+ @media (min-width: 768px) {
+    .nav-bg--transparent {
+        background: rgba(0, 0, 0, 0.0);
+    }
+ }
+
+ /* Mobile menu bottom border */
+ @media (max-width: 767px) {
+     #MobileNavToggler {
+        border-bottom: 1px solid rgba(255,255,255,.5);
+     }
+ }
+
+ .nav-button--style {
+     border: none;
+ }
 
 .nav-text--style {
     font-family: "rubik", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: uppercase;
     text-align: right;
 }
 
+@media (min-width: 768px) {
+    .nav-text--style {
+    font-size: 1rem;
+    }
+}
+
+/* Remove blue outline from burger menu when clicked */
+/* https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked */
+button {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* 
+url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' 
+stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
 
 /*******         Home container         *******/
 /* Layout */
