@@ -13,12 +13,18 @@ body {
 .logo {
     margin: 0;
     padding: 0;
-    height: 10vh;
+    height: 8vh;
     background-repeat: no-repeat;
     background-size: contain; 
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        height: 10vh;
+    }
 }
 
 .nav-bg--transparent {
@@ -42,7 +48,7 @@ body {
 /* Layout */
 
 .home-container--wrapper {
-    height: 100vh;
+    height: 130vh;
     padding: 0;
     background: url(../images/hexagonsbg2.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -52,26 +58,55 @@ body {
     position: relative;
 }
 
+@media (min-width: 768px) {
+    .home-container--wrapper {
+        height: 100vh;
+        /* padding: 0;
+        background: url(../images/hexagonsbg2.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative; */
+    }
+}
+
+
 .home-content--spacer {
     height: 10vh;
 }
 
 .home-content--wrapper {
     height: 74vh;
-    padding: 10% 25% 0 25%;
+    padding: 20% 15% 0;
 }
+
+@media (min-width: 992px) {
+    .home-content--wrapper {
+        padding: 10% 25% 0 25%;
+    }
+}
+
 
 /* Styling */
 
+/* Mobile */
+
 .home-text--style {
     text-align: center;
+}
+
+.button--center {
+    display: flex;
+    justify-content: center;
+   /*  align-items: center; */    /* not doing anything atm */
 }
 
 .home-text--style h1 {
     color: #fff;
     font-family: "Orbitron", sans-serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -79,7 +114,16 @@ body {
     color: #fff;
     font-family: "Orbitron", sans-serif;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.button-signup--style {
+    color: #fff;
+    background: #0157a3;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -90,23 +134,55 @@ body {
     font-size: 0.7rem;
 }
 
-.button--center {
-    display: flex;
-    justify-content: center;
-   /*  align-items: center; */    /* not doing anything atm */
+/* Tablet */
+
+@media (min-width: 768px) {
+    .home-text--style h1 {
+        color: rgb(245, 0, 0);
+        font-family: "Orbitron", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }   
 }
 
-.button-signup--style {
+@media (min-width: 768px) {
+    .home-text--style h3 {
+        color: rgb(245, 0, 0);
+        font-family: "Orbitron", sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }   
+}
+
+/* Desktop */
+
+
+
+
+
+/* .button-signup--style {
     color: #fff;
     background: #0157a3;
     font-family: 'Rubik', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
-}
+} */
 
 /*******         Footer         *******/
 /* Layout */
+
+.footer-show--md {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .footer-show--md {
+        display: block;
+    }
+}
 
 .footer-container-b {
     /* background: #002b43; */
