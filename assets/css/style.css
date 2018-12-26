@@ -8,7 +8,7 @@ body {
 
 
 
-/*******         Header       *******/
+/*******         Nav/Header       *******/
 
 .logo {
     margin: 0;
@@ -50,6 +50,13 @@ body {
  .nav-button--style {
      border: none;
  }
+ 
+ /* Remove blue outline from burger menu when clicked. Decided to use it on all buttons because I didn't like it on the signup one either */
+ /* https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked */
+ button {
+     outline: none !important;
+     box-shadow: none !important;
+   }
 
 .nav-text--style {
     font-family: "rubik", sans-serif;
@@ -57,6 +64,7 @@ body {
     font-size: .8rem;
     text-transform: uppercase;
     text-align: right;
+    line-height: 1.1;
 }
 
 @media (min-width: 768px) {
@@ -65,12 +73,6 @@ body {
     }
 }
 
-/* Remove blue outline from burger menu when clicked */
-/* https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked */
-button {
-  outline: none !important;
-  box-shadow: none !important;
-}
 /* 
 url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' 
 stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
@@ -79,7 +81,7 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
 /* Layout */
 
 .home-container--wrapper {
-    height: 130vh;
+    height: 100vh;
     padding: 0;
     background: url(../images/hexagonsbg2.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -89,18 +91,18 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
     position: relative;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .home-container--wrapper {
         height: 100vh;
-        /* padding: 0;
+        padding: 0;
         background: url(../images/hexagonsbg2.jpg) no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        position: relative; */
+        position: relative;
     }
-}
+} */
 
 
 .home-content--spacer {
@@ -108,8 +110,8 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
 }
 
 .home-content--wrapper {
-    height: 74vh;
-    padding: 20% 15% 0;
+    height: 69vh;
+    padding: 23% 15% 0;
 }
 
 @media (min-width: 992px) {
@@ -151,7 +153,7 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
 
 .button-signup--style {
     color: #fff;
-    background: #0157a3;
+    background: #a5460b;
     font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -169,7 +171,7 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
 
 @media (min-width: 768px) {
     .home-text--style h1 {
-        color: rgb(245, 0, 0);
+        /* color: rgb(245, 0, 0); */
         font-family: "Orbitron", sans-serif;
         font-weight: 700;
         font-size: 3rem;
@@ -179,7 +181,7 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
 
 @media (min-width: 768px) {
     .home-text--style h3 {
-        color: rgb(245, 0, 0);
+        /* color: rgb(245, 0, 0); */
         font-family: "Orbitron", sans-serif;
         font-weight: 700;
         font-size: 2rem;
@@ -211,13 +213,28 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
 
 @media (min-width: 768px) {
     .footer-show--md {
-        display: block;
+        display: flex;
     }
+}
+
+.footer-mobile--wrapper {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .footer-mobile--wrapper {
+        display: flex;
+    }    
+}
+
+.footer-mobile--wrapper {
+    background: #fff;
+    /* background: linear-gradient(to right, rgba(79,126,156,1) 55%,rgba(165,70,11,1) 93%,rgba(163,109,78,1) 100%);  */
 }
 
 .footer-container-b {
     /* background: #002b43; */
-    background: #c7c7c7;
+    background: #4f7e9c;
 }
 
 .footer-container-b {
@@ -241,8 +258,20 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
 }
 
 .footer-social--style {
-    color: rgba(255,255,255, 0.8);
+    color: rgba(255,255,255, 1);
     font-size: 2.5rem;
+}
+
+.footer-text--mobile {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #000;
+}
+
+.footer-text--mobile p {
+    margin: 0;
 }
 
 .footer-text--style {
