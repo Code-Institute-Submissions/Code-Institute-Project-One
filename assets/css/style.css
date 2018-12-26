@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500,700|Space+Mono:400,700');
 
-/* 
-body {
-    background: #000;
-} */
-
-
-
-
-/*******         HEADER       *******/
+    /*******         HEADER       *******/
 
 .logo {
     margin: 0;
@@ -21,19 +13,27 @@ body {
     -o-background-size: contain;
 }
 
-/* @media (min-width: 768px) {
-    .logo {
-        height: 10vh;
-    }
-} */
-
-/*** MOBILE NAV  ***/
+            /*** MOBILE NAV  ***/
+                /* Layout */
 
 .nav-mobile--wrapper {
     background: #000;
-    /* z-index: 9; */
-    min-height: 7vh;
+    min-height: 6vh;
+    display: flex;
 }
+
+.nav-header-desktop--hide {
+    display: none;
+}
+
+/* Cover white border on mobile nav when it's opening */
+.nav-mobile--blackbox {
+    min-height: 5.9vh;
+    background: #000;
+    z-index: 9;
+}
+
+                /* Styling */
 
 .nav-mobile--style {
    font-family: "rubik", sans-serif;
@@ -42,22 +42,16 @@ body {
    text-transform: uppercase;
    text-align: center;
    line-height: 1.1;
-   margin-bottom: 2.5rem;
+   margin-bottom: 6vh;
    border-top: 1px solid rgba(255,255,255,.5);
    border-bottom: 1px solid rgba(255,255,255,.5);
 }
 
-.nav-header-mobile--hide {
-    display: none;
+.nav-mobile--style li a {
+    padding: 0.75rem 0;
 }
 
-@media (min-width: 992px) {
-    .nav-header-mobile--hide {
-        display: flex;
-    }
-}
-
-.mobile-nav--icon {
+.nav-mobile--icon {
     color: #fff;
     z-index: 10;
     margin-left: 45%;
@@ -68,91 +62,39 @@ body {
     padding: 0;
 }
 
-.mobile-nav--icon span {
+.nav-mobile--icon span {
     font-size: 2rem;
 }
 
-#MobileNavToggler {
+#NavMobileToggler {
     background: #000;
     z-index: 8;
 }
 
-/* .nav-mobile--home {
-    text-align: center;
-}
-
-.nav-mobile--home i {
-    color: #ffffff;
-    font-size: 2em;
-}
-
-.nav-mobile--home span {
-    font-size: 0.35em;
-    display: block;
-    font-family: "rubik", sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-} */
-
-/* Mobile menu bottom border */
-/* @media (max-width: 767px) {
-    #MobileNavToggler {
-       border-top: 1px solid rgba(255,255,255,.5);
-       border-bottom: 1px solid rgba(255,255,255,.5);
-    }
-} */
-
-.nav-button--style {
-    border: none;
-}
-
-/* Remove blue outline from burger menu when clicked. Decided to use it on all buttons because I didn't like it on the signup one either */
+/* Remove outline from burger menu when clicked. Decided to use it on all buttons because I didn't like it on the signup one either */
 /* https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked */
 button {
     outline: none !important;
     box-shadow: none !important;
   }
 
-.nav-text--style {
-   font-family: "rubik", sans-serif;
-   font-weight: 400;
-   font-size: .8rem;
-   text-transform: uppercase;
-   text-align: right;
-   line-height: 1.1;
-}
+            /*** DESKTOP NAV  ***/
 
-@media (min-width: 768px) {
-   .nav-text--style {
-   font-size: 1rem;
-   }
-}
-
-.nav-bg--transparent {
+.nav-desktop--style {
     background: #000;
-    position: absolute;
-    right: 0;
-    left: 0;
-    z-index: 10;
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.1;
 }
 
-/* @media (min-width: 768px) {
-    .nav-bg--transparent {
-        background: rgba(0, 0, 0, 0.0);
-    }
-} */
-
- 
-
-/* 
-url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' 
-stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
-
-/*******         Home container         *******/
-/* Layout */
+/*******         HOME CONTAINER         *******/
+                /* Layout */
 
 .home-container--wrapper {
-    height: 100vh;
+    height: 82vh;
     padding: 0;
     background: url(../images/hexagonsbg2.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -162,48 +104,15 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
     position: relative;
 }
 
-@media (min-width: 768px) {
-    .home-container--wrapper {
-        height: 100vh;
-        padding: 0;
-        background: url(../images/hexagonsbg2.jpg) no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        position: relative;
-    }
-}
-
-
-.home-content--spacer {
-    height: 10vh;
-}
-
 .home-content--wrapper {
-    height: 80vh;
-    padding: 23% 15% 0;
+    height: 72vh;
+    padding: 27% 15% 0;
 }
 
-@media (min-width: 992px) {
-    .home-content--wrapper {
-        padding: 10% 25% 0 25%;
-    }
-}
-
-
-/* Styling */
-
-/* Mobile */
+                /* Styling */
 
 .home-text--style {
     text-align: center;
-}
-
-.button--center {
-    display: flex;
-    justify-content: center;
-   /*  align-items: center; */    /* not doing anything atm */
 }
 
 .home-text--style h1 {
@@ -222,6 +131,19 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
     text-transform: uppercase;
 }
 
+.home-text--style h6 {
+    color: #bebebe;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.button--center {
+    display: flex;
+    justify-content: center;
+   /*  align-items: center; */    /* not doing anything atm */
+}
+
 .button-signup--style {
     color: #fff;
     background: #a5460b;
@@ -231,14 +153,134 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
     text-transform: uppercase;
 }
 
-.home-text--style h6 {
-    color: #bebebe;
+.social-links--wrapper {
+    text-align: center;
+}
+
+.social-links--style {
+    color: rgba(255,255,255, 1);
+    font-size: 3rem;
+}
+
+/*******         FOOTER         *******/
+                /* Layout */
+            /* Mobile */
+
+
+.footer-mobile--wrapper {
+    background: #fff;
+    display: flex;
+}
+
+.footer-mobile--spacer {
+    height: 5.9vh;
+    display: flex;
+}
+
+            /* Desktop */
+
+.footer-container-b {
+    /* background: #002b43; */
+    background: #4f7e9c;
+}
+
+.footer-container-b {
+    height: 8vh;
+}
+
+.footer-show--md {
+    display: none;
+}
+
+                /* Styling */
+            /* Mobile */
+
+.footer-text--mobile {
+    text-align: center;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 0.7rem;
+    color: #000;
 }
 
-/* Tablet */
+.footer-text--mobile p {
+    margin: 0;
+}
+
+            /* Desktop */
+
+.footer-container-b p {
+    color: #000;
+    margin: 0;
+}
+
+.footer-text--desktop {
+    /* height: 8vh; */
+    text-align: center;
+}
+
+.footer-text--desktop h6 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.footer-text--desktop p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+#footer-contact--align {
+    transform: translateY(1rem);
+}
+
+    /*******         MEDIA QUERIES       *******/
+            /* NAVIGATION */
+
+    /* hide mobile nav on desktop */
+@media (min-width: 992px) {
+    .nav-mobile--wrapper {
+        display: none;
+    }
+}
+
+    /* hide desktop nav on mobile */
+@media (min-width: 992px) {
+    .nav-header-desktop--hide {
+        display: flex;
+    }
+}
+
+@media only screen and (min-height: 668px) {
+    .social-links--wrapper {
+        margin-top: 1rem;
+    }
+}
+            /* HOME PAGE */
+                /* Layout */
+
+@media (min-width: 992px) {
+    .home-container--wrapper {
+        height: 90vh;
+        padding: 0;
+        background: url(../images/hexagonsbg2.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-content--wrapper {
+        padding: 10% 25% 0 25%;
+    }
+}
+                /* Styling */
+
+            /* Tablet */
 
 @media (min-width: 768px) {
     .home-text--style h1 {
@@ -260,114 +302,24 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
     }   
 }
 
-/* Desktop */
+            /* Desktop */
 
 
+                /* FOOTER */
+            /* Layout */
 
-
-
-/* .button-signup--style {
-    color: #fff;
-    background: #0157a3;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-} */
-
-/*******         Footer         *******/
-/* Layout */
-
-.footer-show--md {
-    display: none;
+/* Hide mobile footer on tablet/desktop */
+@media (min-width: 768px) {
+    .footer-mobile--wrapper, .footer-mobile--spacer {
+        display: none;
+    }    
 }
 
+/* Show tablet/desktop footer */
 @media (min-width: 768px) {
     .footer-show--md {
         display: flex;
     }
-}
-
-.mobile-footer--spacer {
-    height: 6vh;
-}
-
-.footer-mobile--wrapper {
-    display: none;
-}
-
-@media (max-width: 767px) {
-    .footer-mobile--wrapper {
-        display: flex;
-    }    
-}
-
-.footer-mobile--wrapper {
-    background: #fff;
-    /* background: linear-gradient(to right, rgba(79,126,156,1) 55%,rgba(165,70,11,1) 93%,rgba(163,109,78,1) 100%);  */
-}
-
-.footer-container-b {
-    /* background: #002b43; */
-    background: #4f7e9c;
-}
-
-.footer-container-b {
-    height: 8vh;
-}
-
-/* Styling */
-
-.footer-container-b p {
-    color: #000;
-    margin: 0;
-}
-
-.footer-social--wrapper {
-    text-align: center;
-    padding: 0;
-}
-
-.footer-social--links {
-    margin: 0;
-}
-
-.footer-social--style {
-    color: rgba(255,255,255, 1);
-    font-size: 2.5rem;
-}
-
-.footer-text--mobile {
-    text-align: center;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 0.7rem;
-    color: #000;
-}
-
-.footer-text--mobile p {
-    margin: 0;
-}
-
-.footer-text--style {
-    /* height: 8vh; */
-    text-align: center;
-}
-
-.footer-text--style h6 {
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
-    font-size: 0.9rem;
-}
-
-.footer-text--style p {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-}
-
-#footer-contact--align {
-    transform: translateY(1rem);
 }
 
 /* For debugging */

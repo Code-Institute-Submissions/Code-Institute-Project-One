@@ -113,3 +113,12 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 * Sans-serif fonts, consistent family across the site
 * Limited set of colors to create a consistent theme
 * Large background image on home page with phrase and CTA
+
+
+--------------------------
+
+<!-- To do -->
+
+
+<!-- extra stuff -->
+- add tapering borders to mobile nav

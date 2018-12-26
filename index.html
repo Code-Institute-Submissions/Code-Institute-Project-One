@@ -12,14 +12,12 @@
   <body>
     <!-- Mobile Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark nav-mobile--wrapper fixed-bottom p-0">
-      <button class="navbar-toggler mobile-nav--icon fixed-bottom" type="button" data-toggle="collapse" data-target="#MobileNavToggler" aria-controls="MobileNavToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="col-12 nav-mobile--blackbox fixed-bottom"></div>
+      <button class="navbar-toggler nav-mobile--icon fixed-bottom" type="button" data-toggle="collapse" data-target="#NavMobileToggler" aria-controls="NavMobileToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-bars">
-          <!-- <i class="fa fa-navicon"></i> navbar-toggler-icon  <i class="fas fa-ellipsis-v"></i>-->
         </span>
       </button>
-      <!-- navbar-toggler-icon -->
-
-      <div class="collapse navbar-collapse flex-row-reverse" id="MobileNavToggler">
+      <div class="collapse navbar-collapse flex-row-reverse" id="NavMobileToggler">
         <ul class="navbar-nav nav-mobile--style">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
@@ -36,33 +34,16 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Sign Up</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li> -->
         </ul>
       </div>
-      
     </nav>
-      
-    
-    
     <!-- Desktop Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark nav-text--style nav-bg--transparent p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-desktop--style nav-bg--transparent p-0">
       <a class="navbar-brand logo" href="#">
         <img src="assets/images/logo5.png" class="logo" alt="Logo">
       </a>
-      <button class="navbar-toggler mt-2 mr-2 nav-header-mobile--hide" type="button" data-toggle="collapse" data-target="#MobileNavToggler" aria-controls="MobileNavToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-ellipsis-v">
-          <!-- <i class="fa fa-navicon"></i> navbar-toggler-icon  <i class="fas fa-ellipsis-v"></i>-->
-        </span>
-      </button>
-      <!-- navbar-toggler-icon -->
-
-      <div class="collapse navbar-collapse flex-row-reverse pr-2" id="MobileNavToggler">
-        <ul class="navbar-nav nav-text--style">
+      <div class="navbar-collapse flex-row-reverse nav-header-desktop--hide pr-2" id="NavMobileToggler">
+        <ul class="navbar-nav nav-desktop--style">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
           </li>
@@ -83,9 +64,6 @@
     </nav>
     <!-- Home page main content -->
     <section class="container-fluid home-container--wrapper">
-      <div class="row home-content--spacer m-0">
-          <div class="col-12"></div>
-      </div>
       <div class="container-fluid home-content--wrapper">
         <div class="row home-text--style mb-4">
           <div class="col-12">
@@ -108,50 +86,46 @@
           </div>
         </div>
       </div>
-      <!-- Footer -->
-      <!-- <footer class="container-fluid pl-2 pr-2">
-        <div class="row footer-container-a p-1 mr-5 ml-5">
-            <div class="col-12 footer-social--wrapper mb-2">
-                <ul class="list-inline footer-social--links">
-                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-facebook-square footer-social--style"></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-twitter-square footer-social--style"></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-youtube-square footer-social--style"></i></a></li>
-                </ul>
-            </div>
-        </div> -->
-        <!-- Mobile footer -->
-        <div class="row footer-mobile--wrapper mr-1 ml-1">
-          <div class="col-6 footer-text--mobile p-1">
-            <p></p>
-            <p>Privacy Policy</p>
-            <p>Copyright 2018</p>
+      <div class="col-12 social-links--wrapper">
+          <ul class="list-inline m-0">
+              <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-facebook-square social-links--style"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-twitter-square social-links--style"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-youtube-square social-links--style"></i></a></li>
+          </ul>
+      </div>
+      <!-- Tablet/Desktop footer -->
+      <div class="row footer-container-b pt-3 mr-5 ml-5 footer-show--md">
+          <div class="col-4 footer-text--desktop">
+              <p>Privacy Policy</p>
+              <p>Copyright 2018</p>
           </div>
-          <div class="col-6 footer-text--mobile p-1">
-            <p>Zenith Technologies</p>
-            <p>123 Polar Vei</p>
-            <p>Svalbard, Norway</p>
+          <div class="col-4 footer-text--desktop pl-4">
+              <h6 class="mb-0">Zenith Technologies</h6>
+              <p>123 Polar Vei</p>
+              <p>Svalbard, Norway</p>
           </div>
-        </div>
-        <div class="row mobile-footer--spacer m-0">
-            <div class="col-12"></div>
-        </div>
-        <!-- Tablet/Desktop footer -->
-        <!-- <div class="row footer-container-b pt-3 mr-5 ml-5 footer-show--md">
-            <div class="col-4 footer-text--style">
-                <p>Privacy Policy</p>
-                <p>Copyright 2018</p>
-            </div>
-            <div class="col-4 footer-text--style pl-4">
-                <h6 class="mb-0">Zenith Technologies</h6>
-                <p>123 Polar Vei</p>
-                <p>Svalbard, Norway</p>
-            </div>
-            <div class="col-4 footer-text--style">
-                <p id="footer-contact--align">Contact Us</p>
-            </div> -->
-        </div>
-      </footer>
+          <div class="col-4 footer-text--desktop">
+              <p id="footer-contact--align">Contact Us</p>
+          </div>
+      </div>
     </section>
+    <!-- Mobile footer -->
+    <footer>
+      <div class="row footer-mobile--wrapper mr-1 ml-1">
+        <div class="col-6 footer-text--mobile p-1">
+          <p><br></p>
+          <p>Privacy Policy</p>
+          <p>Copyright 2018</p>
+        </div>
+        <div class="col-6 footer-text--mobile p-1">
+          <p>Zenith Technologies</p>
+          <p>123 Polar Vei</p>
+          <p>Svalbard, Norway</p>
+        </div>
+      </div>
+      <div class="row footer-mobile--spacer m-0"></div>
+    </footer>
+    
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
