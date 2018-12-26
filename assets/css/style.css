@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500,700|Space+Mono:400,700');
 
+body {
+    background: #000;
+}
+
     /*******         HEADER       *******/
 
 .logo {
@@ -22,7 +26,7 @@
     display: flex;
 }
 
-.nav-header-desktop--hide {
+.nav-desktop--hide {
     display: none;
 }
 
@@ -88,6 +92,13 @@ button {
     text-transform: uppercase;
     text-align: right;
     line-height: 1.1;
+}
+
+.navbar {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
 }
 
 /*******         HOME CONTAINER         *******/
@@ -179,12 +190,12 @@ button {
 
             /* Desktop */
 
-.footer-container-b {
+.desktop-footer--wrapper {
     /* background: #002b43; */
     background: #4f7e9c;
 }
 
-.footer-container-b {
+.desktop-footer--wrapper {
     height: 8vh;
 }
 
@@ -209,7 +220,7 @@ button {
 
             /* Desktop */
 
-.footer-container-b p {
+.desktop-footer--wrapper p {
     color: #000;
     margin: 0;
 }
@@ -239,15 +250,15 @@ button {
             /* NAVIGATION */
 
     /* hide mobile nav on desktop */
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .nav-mobile--wrapper {
         display: none;
     }
 }
 
     /* hide desktop nav on mobile */
-@media (min-width: 992px) {
-    .nav-header-desktop--hide {
+@media only screen and (min-width: 992px) {
+    .nav-desktop--hide {
         display: flex;
     }
 }
@@ -260,7 +271,7 @@ button {
             /* HOME PAGE */
                 /* Layout */
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 768px) and (min-height: 420px) {
     .home-container--wrapper {
         height: 90vh;
         padding: 0;
@@ -273,18 +284,25 @@ button {
     }
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 768px) {
     .home-content--wrapper {
-        padding: 10% 25% 0 25%;
+        padding: 20% 15% 0;
+        height: 69vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .social-links--wrapper {
+        margin-top: 0;
+        margin-bottom: 1rem;
     }
 }
                 /* Styling */
 
             /* Tablet */
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .home-text--style h1 {
-        /* color: rgb(245, 0, 0); */
         font-family: "Orbitron", sans-serif;
         font-weight: 700;
         font-size: 3rem;
@@ -292,9 +310,8 @@ button {
     }   
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .home-text--style h3 {
-        /* color: rgb(245, 0, 0); */
         font-family: "Orbitron", sans-serif;
         font-weight: 700;
         font-size: 2rem;
@@ -309,16 +326,37 @@ button {
             /* Layout */
 
 /* Hide mobile footer on tablet/desktop */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer-mobile--wrapper, .footer-mobile--spacer {
         display: none;
     }    
 }
 
 /* Show tablet/desktop footer */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer-show--md {
         display: flex;
+    }
+}
+
+                /* iPad Pro specific */
+        /* https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106 */
+            /* Portrait */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+    .social-links--wrapper {
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+}
+
+            /* Landscape */
+            /* This doesn't work on dev tools, however I read that iPad doesn't change device height and width measurements when in landscape mode.
+            This is why device width and height stays the same, but viewport changes.  */
+            /* (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and  */
+@media only screen and (min-width: 1366px) and (max-width: 1366px) {
+    .social-links--wrapper {
+        margin-top: 0;
+        margin-bottom: 10rem;
     }
 }
 
