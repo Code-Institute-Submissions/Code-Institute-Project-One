@@ -10,12 +10,51 @@
   <title>Document</title>
 </head>
   <body>
-    <!-- Navigation -->
+    <!-- Mobile Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-mobile--wrapper fixed-bottom p-0">
+      <button class="navbar-toggler mobile-nav--icon fixed-bottom" type="button" data-toggle="collapse" data-target="#MobileNavToggler" aria-controls="MobileNavToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars">
+          <!-- <i class="fa fa-navicon"></i> navbar-toggler-icon  <i class="fas fa-ellipsis-v"></i>-->
+        </span>
+      </button>
+      <!-- navbar-toggler-icon -->
+
+      <div class="collapse navbar-collapse flex-row-reverse" id="MobileNavToggler">
+        <ul class="navbar-nav nav-mobile--style">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li> -->
+        </ul>
+      </div>
+      
+    </nav>
+      
+    
+    
+    <!-- Desktop Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark nav-text--style nav-bg--transparent p-0">
       <a class="navbar-brand logo" href="#">
         <img src="assets/images/logo5.png" class="logo" alt="Logo">
       </a>
-      <button class="navbar-toggler mt-2 mr-2 nav-button--style" type="button" data-toggle="collapse" data-target="#MobileNavToggler" aria-controls="MobileNavToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler mt-2 mr-2 nav-header-mobile--hide" type="button" data-toggle="collapse" data-target="#MobileNavToggler" aria-controls="MobileNavToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-ellipsis-v">
           <!-- <i class="fa fa-navicon"></i> navbar-toggler-icon  <i class="fas fa-ellipsis-v"></i>-->
         </span>
@@ -70,7 +109,7 @@
         </div>
       </div>
       <!-- Footer -->
-      <footer class="container-fluid pl-2 pr-2">
+      <!-- <footer class="container-fluid pl-2 pr-2">
         <div class="row footer-container-a p-1 mr-5 ml-5">
             <div class="col-12 footer-social--wrapper mb-2">
                 <ul class="list-inline footer-social--links">
@@ -79,11 +118,11 @@
                     <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-youtube-square footer-social--style"></i></a></li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <!-- Mobile footer -->
         <div class="row footer-mobile--wrapper mr-1 ml-1">
           <div class="col-6 footer-text--mobile p-1">
-            <p>Contact Us</p>
+            <p></p>
             <p>Privacy Policy</p>
             <p>Copyright 2018</p>
           </div>
@@ -93,8 +132,11 @@
             <p>Svalbard, Norway</p>
           </div>
         </div>
+        <div class="row mobile-footer--spacer m-0">
+            <div class="col-12"></div>
+        </div>
         <!-- Tablet/Desktop footer -->
-        <div class="row footer-container-b pt-3 mr-5 ml-5 footer-show--md">
+        <!-- <div class="row footer-container-b pt-3 mr-5 ml-5 footer-show--md">
             <div class="col-4 footer-text--style">
                 <p>Privacy Policy</p>
                 <p>Copyright 2018</p>
@@ -106,7 +148,7 @@
             </div>
             <div class="col-4 footer-text--style">
                 <p id="footer-contact--align">Contact Us</p>
-            </div>
+            </div> -->
         </div>
       </footer>
     </section>

@@ -8,12 +8,12 @@ body {
 
 
 
-/*******         Nav/Header       *******/
+/*******         HEADER       *******/
 
 .logo {
     margin: 0;
     padding: 0;
-    height: 8vh;
+    height: 10vh;
     background-repeat: no-repeat;
     background-size: contain; 
     -webkit-background-size: contain;
@@ -21,10 +21,111 @@ body {
     -o-background-size: contain;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .logo {
         height: 10vh;
     }
+} */
+
+/*** MOBILE NAV  ***/
+
+.nav-mobile--wrapper {
+    background: #000;
+    /* z-index: 9; */
+    min-height: 7vh;
+}
+
+.nav-mobile--style {
+   font-family: "rubik", sans-serif;
+   font-weight: 400;
+   font-size: .8rem;
+   text-transform: uppercase;
+   text-align: center;
+   line-height: 1.1;
+   margin-bottom: 2.5rem;
+   border-top: 1px solid rgba(255,255,255,.5);
+   border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+.nav-header-mobile--hide {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .nav-header-mobile--hide {
+        display: flex;
+    }
+}
+
+.mobile-nav--icon {
+    color: #fff;
+    z-index: 10;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-bottom: 1%;
+    width: 10%;
+    border: 0;
+    padding: 0;
+}
+
+.mobile-nav--icon span {
+    font-size: 2rem;
+}
+
+#MobileNavToggler {
+    background: #000;
+    z-index: 8;
+}
+
+/* .nav-mobile--home {
+    text-align: center;
+}
+
+.nav-mobile--home i {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.nav-mobile--home span {
+    font-size: 0.35em;
+    display: block;
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+} */
+
+/* Mobile menu bottom border */
+/* @media (max-width: 767px) {
+    #MobileNavToggler {
+       border-top: 1px solid rgba(255,255,255,.5);
+       border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+} */
+
+.nav-button--style {
+    border: none;
+}
+
+/* Remove blue outline from burger menu when clicked. Decided to use it on all buttons because I didn't like it on the signup one either */
+/* https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked */
+button {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+.nav-text--style {
+   font-family: "rubik", sans-serif;
+   font-weight: 400;
+   font-size: .8rem;
+   text-transform: uppercase;
+   text-align: right;
+   line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+   .nav-text--style {
+   font-size: 1rem;
+   }
 }
 
 .nav-bg--transparent {
@@ -34,44 +135,14 @@ body {
     left: 0;
     z-index: 10;
 }
- @media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
     .nav-bg--transparent {
         background: rgba(0, 0, 0, 0.0);
     }
- }
+} */
 
- /* Mobile menu bottom border */
- @media (max-width: 767px) {
-     #MobileNavToggler {
-        border-bottom: 1px solid rgba(255,255,255,.5);
-     }
- }
-
- .nav-button--style {
-     border: none;
- }
  
- /* Remove blue outline from burger menu when clicked. Decided to use it on all buttons because I didn't like it on the signup one either */
- /* https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked */
- button {
-     outline: none !important;
-     box-shadow: none !important;
-   }
-
-.nav-text--style {
-    font-family: "rubik", sans-serif;
-    font-weight: 400;
-    font-size: .8rem;
-    text-transform: uppercase;
-    text-align: right;
-    line-height: 1.1;
-}
-
-@media (min-width: 768px) {
-    .nav-text--style {
-    font-size: 1rem;
-    }
-}
 
 /* 
 url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' 
@@ -91,7 +162,7 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
     position: relative;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
     .home-container--wrapper {
         height: 100vh;
         padding: 0;
@@ -102,7 +173,7 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
         background-size: cover;
         position: relative;
     }
-} */
+}
 
 
 .home-content--spacer {
@@ -110,7 +181,7 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
 }
 
 .home-content--wrapper {
-    height: 69vh;
+    height: 80vh;
     padding: 23% 15% 0;
 }
 
@@ -215,6 +286,10 @@ stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E); */
     .footer-show--md {
         display: flex;
     }
+}
+
+.mobile-footer--spacer {
+    height: 6vh;
 }
 
 .footer-mobile--wrapper {
