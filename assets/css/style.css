@@ -453,6 +453,22 @@ button {
     }
 }
 
+@media only screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+    .social-links--wrapper {
+    margin: 0;
+    }
+    .footer-desktop--wrapper {
+    padding-top: 0.2rem;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .footer-desktop--wrapper {
+        margin: 0 17.5vw;
+    }
+}
+
+
                 /* iPad Pro specific */
         /* https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106 */
             /* Portrait */
