@@ -122,3 +122,4 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 
 <!-- extra stuff -->
 - add tapering borders to mobile nav
+- map link to address

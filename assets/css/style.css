@@ -132,6 +132,7 @@ button {
     font-weight: 700;
     font-size: 1rem;
     text-transform: uppercase;
+    margin-bottom: 1.5rem;
 }
 
 .home-text--style h3 {
@@ -152,13 +153,15 @@ button {
 .button--center {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
    /*  align-items: center; */    /* not doing anything atm */
 }
 
 .button-signup--style {
     color: #fff;
     background: #a5460b;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -192,7 +195,8 @@ button {
 
 .desktop-footer--wrapper {
     /* background: #002b43; */
-    background: #4f7e9c;
+    /* background: #4f7e9c; */
+    background: #fff;
 }
 
 .desktop-footer--wrapper {
@@ -247,6 +251,67 @@ button {
 }
 
     /*******         MEDIA QUERIES       *******/
+
+    /*** Landscape for mobile ***/
+
+    @media only screen and (orientation: landscape) {
+        .logo {
+            height: 15vh;
+        }
+        .home-container--wrapper {
+            height: 77vh;
+        }
+        .home-content--wrapper {
+            height: 53vh;
+            padding: 7% 15% 0;
+        }
+        .nav-mobile--icon {
+            margin-bottom: 0.1rem;
+        }
+        .nav-mobile--wrapper {
+            min-height: 10vh;
+        }
+        .nav-mobile--blackbox {
+            min-height: 9.9vh;
+        }
+        .nav-mobile--style {
+            margin-bottom: 10vh;
+        }
+        .home-text--style h1 {
+            font-size: 1.35rem;
+            margin: 0 0 0.25rem 0;
+        }
+        .home-text--style h3 {
+            font-size: 1.15rem;
+        }
+        .button--center {
+            margin: 0.5rem 0;
+        }
+        .social-links--wrapper {
+            margin-bottom: 0.5rem;
+        }
+        .footer-mobile--spacer {
+            height: 9.9vh;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (orientation: landscape) {
+        .footer-mobile--wrapper, .footer-mobile--spacer {
+            display: flex;
+        }   
+        .footer-show--md {
+            display: none;
+        }
+        .nav-mobile--icon {
+            margin-bottom: 0.25rem;
+        }
+        .home-text--style h1 {
+            font-size: 1.8rem;
+        }
+        .home-text--style h3 {
+            font-size: 1.5rem;
+        }
+    }
             /* NAVIGATION */
 
     /* hide mobile nav on desktop */
@@ -262,10 +327,20 @@ button {
         display: flex;
     }
 }
-
+            /* positioning for phones with lots of height eg; pixel 2 */
 @media only screen and (min-height: 668px) {
     .social-links--wrapper {
         margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .nav-mobile--icon {
+        margin-bottom: 2.5%;
+    }
+}
+
+@media only screen and (min-width: 768px) and and (min-height: 420px) {
+    .nav-mobile--icon {
+        margin-bottom: 2%;
     }
 }
             /* HOME PAGE */
@@ -274,66 +349,48 @@ button {
 @media only screen and (min-width: 768px) and (min-height: 420px) {
     .home-container--wrapper {
         height: 90vh;
-        padding: 0;
-        background: url(../images/hexagonsbg2.jpg) no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        position: relative;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .logo {
+        height: 10vh;
+    }
     .home-content--wrapper {
-        padding: 20% 15% 0;
+        padding: 16% 8% 0;
         height: 69vh;
     }
-}
-
-@media only screen and (min-width: 768px) {
+    .home-text--style h1 {
+        font-size: 3.5rem;
+    }
+    .home-text--style h3 {
+        font-weight: 700;
+        font-size: 2.5rem;
+    } 
+    .home-text--style h6 {
+        font-size: 1rem;
+    }
+    .button-signup--style {
+        font-size: 2rem;
+    }
     .social-links--wrapper {
         margin-top: 0;
         margin-bottom: 1rem;
     }
 }
-                /* Styling */
-
-            /* Tablet */
-
-@media only screen and (min-width: 768px) {
-    .home-text--style h1 {
-        font-family: "Orbitron", sans-serif;
-        font-weight: 700;
-        font-size: 3rem;
-        text-transform: uppercase;
-    }   
-}
-
-@media only screen and (min-width: 768px) {
-    .home-text--style h3 {
-        font-family: "Orbitron", sans-serif;
-        font-weight: 700;
-        font-size: 2rem;
-        text-transform: uppercase;
-    }   
-}
-
-            /* Desktop */
-
 
                 /* FOOTER */
             /* Layout */
 
 /* Hide mobile footer on tablet/desktop */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 420px) {
     .footer-mobile--wrapper, .footer-mobile--spacer {
         display: none;
     }    
 }
 
 /* Show tablet/desktop footer */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 420px) {
     .footer-show--md {
         display: flex;
     }
@@ -342,23 +399,24 @@ button {
                 /* iPad Pro specific */
         /* https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106 */
             /* Portrait */
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+/* @media only screen and (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px) {
     .social-links--wrapper {
         margin-top: 0;
         margin-bottom: 5rem;
     }
-}
+} */
 
             /* Landscape */
             /* This doesn't work on dev tools, however I read that iPad doesn't change device height and width measurements when in landscape mode.
             This is why device width and height stays the same, but viewport changes.  */
             /* (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and  */
-@media only screen and (min-width: 1366px) and (max-width: 1366px) {
+/* @media only screen and (min-width: 1366px) and (max-width: 1366px) {
     .social-links--wrapper {
         margin-top: 0;
         margin-bottom: 10rem;
     }
-}
+} */
+
 
 /* For debugging */
 /* * { border: 1px solid red; }  */
