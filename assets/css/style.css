@@ -20,30 +20,17 @@
                     /* Landscape for mobile */
                     /* >768 width */
                     /* >992 width */
-                    /*  */
-
-        
       
-
-        /* Media Queries */
-        /* Landscape */
-        /* Navigation */
-        /* Home Page */
-        /* Footer media */
-
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500,700|Space+Mono:400,700');
 
 body {
     background: #000;
 }
 
-/* I tried everything I could find to remove a white hairline from between the header and main content, which is what the code below is. It only shows on iPad on dev tools, but nothing I could find works. So I ended up setting the body background to black to fix it. I really have no idea what is causing it. */
-/* .navbar {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: none !important;
-    outline: none !important;
-} */
+/* remove bootstrap default margins */
+p {
+    margin: 0;
+}
 
     /*******         1 LAYOUT       *******/
                 /* Header */
@@ -138,6 +125,35 @@ body {
     padding: 27% 15% 0;
 }
 
+                /* Products Content */
+
+.product-container--wrapper {
+    background: beige;
+    padding: 0;
+}
+
+.product-content--wrapper {
+    padding: 5% 10% 0;
+}
+
+.product-card--layout {
+    padding: 0;
+}
+
+.product-card--layout .card-header {
+    margin-bottom: 0.25rem;
+}
+
+.product-card--img {
+    float: left;
+    padding-bottom: 0.25rem;
+}
+
+.product-list {
+    padding-left: 1.25rem;
+    margin: 0 0 0.25rem 0;
+}
+
     /*******         2 STYLING       *******/
 
                 /* Mobile Styling */
@@ -192,10 +208,6 @@ button {
     font-weight: 400;
     font-size: 0.7rem;
     color: #000;
-}
-
-.footer-text--mobile p {
-    margin: 0;
 }
 
                     /* Home */
@@ -253,11 +265,41 @@ button {
     font-size: 3rem;
 }
 
-                /* Desktop Styling */
+                    /* Products */
 
-.footer-desktop--wrapper p {
+.product-card--style {
+    background: #000;
+    color: #fff;
+}
+
+.product-card--style h5, h6, p {
+    font-family: "Rubik", sans-serif;
+}
+
+.product-card--style h5 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.product-card--style h6 {
+    font-size: 0.85rem;
+    text-align: center;
+    font-weight: 400;
     margin: 0;
 }
+
+.product-card--style p {
+    font-size: 0.8rem;
+}
+
+.product-card--link {
+    padding-left: 2rem;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+                /* Desktop Styling */
 
 .footer-text--desktop {
     text-align: center;
