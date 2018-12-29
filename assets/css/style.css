@@ -1,12 +1,54 @@
+        /***** CONTENTS (searchable terms)  *****/
+                /*** 1 Layout ***/
+                    /* Header */
+                    /* Mobile Navigation */
+                    /* Desktop Navigation */
+                    /* Mobile Footer */
+                    /* Desktop Footer */
+                    /* Home/index Content */
+
+                /*** 2 Styling  ***/
+                    /* Mobile Styling  */
+                        /*  Nav
+                            Footer
+                            Home
+                            page... */
+                    /* Desktop Styling */
+                        /*  xx */
+
+                /*** 3 Media Queries  ***/
+                    /* Landscape for mobile */
+                    /* >768 width */
+                    /* >992 width */
+                    /*  */
+
+        
+      
+
+        /* Media Queries */
+        /* Landscape */
+        /* Navigation */
+        /* Home Page */
+        /* Footer media */
+
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500,700|Space+Mono:400,700');
 
 body {
     background: #000;
 }
 
-    /*******         HEADER       *******/
+/* I tried everything I could find to remove a white hairline from between the header and main content, which is what the code below is. It only shows on iPad on dev tools, but nothing I could find works. So I ended up setting the body background to black to fix it. I really have no idea what is causing it. */
+/* .navbar {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+} */
 
-.logo {
+    /*******         1 LAYOUT       *******/
+                /* Header */
+
+.logo { 
     margin: 0;
     padding: 0;
     height: 10vh;
@@ -17,8 +59,8 @@ body {
     -o-background-size: contain;
 }
 
-            /*** MOBILE NAV  ***/
-                /* Layout */
+                /* Mobile Navigation  */
+              
 
 .nav-mobile--wrapper {
     background: #000;
@@ -37,24 +79,69 @@ body {
     z-index: 9;
 }
 
-                /* Styling */
+                /* Desktop Navigation */
 
-.nav-mobile--style {
-   font-family: "rubik", sans-serif;
-   font-weight: 400;
-   font-size: .8rem;
-   text-transform: uppercase;
-   text-align: center;
-   line-height: 1.1;
-   margin-bottom: 6vh;
-   border-top: 1px solid rgba(255,255,255,.5);
-   border-bottom: 1px solid rgba(255,255,255,.5);
+.nav-desktop--style {
+    background: #000;
 }
 
-.nav-mobile--style li a {
-    padding: 0.75rem 0;
+.nav-desktop--style ul {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
+                /* Mobile Footer */
+                
+.footer-mobile--wrapper {
+    background: #fff;
+    display: flex;
+}
+
+.footer-mobile--spacer {
+    height: 5.9vh;
+    display: flex;
+}                
+                
+                /* Desktop Footer */
+
+.footer-desktop--wrapper {
+    /* background: #002b43; */
+    /* background: #4f7e9c; */
+    background: #fff;
+    height: 8vh;
+    padding-top: 0.75rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer-show--md {
+    display: none;
+}
+
+                /* Home/index Content */
+
+.home-container--wrapper {
+    height: 95vh;
+    padding: 0;
+    background: url(../images/hexagonsbg2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.home-content--wrapper {
+    height: 72vh;
+    padding: 27% 15% 0;
+}
+
+    /*******         2 STYLING       *******/
+
+                /* Mobile Styling */
+                    /* Nav */
 .nav-mobile--icon {
     color: #fff;
     z-index: 10;
@@ -70,6 +157,22 @@ body {
     font-size: 2rem;
 }
 
+.nav-mobile--style {
+   font-family: "rubik", sans-serif;
+   font-weight: 400;
+   font-size: .8rem;
+   text-transform: uppercase;
+   text-align: center;
+   line-height: 1.1;
+   margin-bottom: 6vh;
+   border-top: 1px solid rgba(255,255,255,.5);
+   border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+.nav-mobile--style a {
+    padding: 0.75rem 0;
+}
+
 #NavMobileToggler {
     background: #000;
     z-index: 8;
@@ -80,47 +183,22 @@ body {
 button {
     outline: none !important;
     box-shadow: none !important;
-  }
+}
+                    /* Footer */
 
-            /*** DESKTOP NAV  ***/
-
-.nav-desktop--style {
-    background: #000;
-    font-family: "rubik", sans-serif;
+.footer-text--mobile {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-align: right;
-    line-height: 1.1;
+    font-size: 0.7rem;
+    color: #000;
 }
 
-.navbar {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: none !important;
-    outline: none !important;
+.footer-text--mobile p {
+    margin: 0;
 }
 
-/*******         HOME CONTAINER         *******/
-                /* Layout */
-
-.home-container--wrapper {
-    height: 82vh;
-    padding: 0;
-    background: url(../images/hexagonsbg2.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-}
-
-.home-content--wrapper {
-    height: 72vh;
-    padding: 27% 15% 0;
-}
-
-                /* Styling */
+                    /* Home */
 
 .home-text--style {
     text-align: center;
@@ -155,7 +233,6 @@ button {
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-   /*  align-items: center; */    /* not doing anything atm */
 }
 
 .button-signup--style {
@@ -176,57 +253,10 @@ button {
     font-size: 3rem;
 }
 
-/*******         FOOTER         *******/
-                /* Layout */
-            /* Mobile */
-
-
-.footer-mobile--wrapper {
-    background: #fff;
-    display: flex;
-}
-
-.footer-mobile--spacer {
-    height: 5.9vh;
-    display: flex;
-}
-
-            /* Desktop */
-
-.footer-desktop--wrapper {
-    /* background: #002b43; */
-    /* background: #4f7e9c; */
-    background: #fff;
-    height: 8vh;
-    padding-top: 0.75rem;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.footer-show--md {
-    display: none;
-}
-
-                /* Styling */
-            /* Mobile */
-
-.footer-text--mobile {
-    text-align: center;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 0.7rem;
-    color: #000;
-}
-
-.footer-text--mobile p {
-    margin: 0;
-}
-
-            /* Desktop */
+                /* Desktop Styling */
 
 .footer-desktop--wrapper p {
     margin: 0;
-    
 }
 
 .footer-text--desktop {
@@ -248,84 +278,70 @@ button {
     transform: translateY(1rem);
 }
 
-    /*******         MEDIA QUERIES       *******/
+    /*******         3 MEDIA QUERIES        *******/
 
-    /*** Landscape for mobile ***/
+             /*** Landscape for mobile ***/
 
-    @media only screen and (orientation: landscape) {
-        .logo {
-            height: 15vh;
-        }
-        .home-container--wrapper {
-            height: 77vh;
-        }
-        .home-content--wrapper {
-            height: 53vh;
-            padding: 7% 15% 0;
-        }
-        .nav-mobile--icon {
-            margin-bottom: 0.1rem;
-        }
-        .nav-mobile--wrapper {
-            min-height: 10vh;
-        }
-        .nav-mobile--blackbox {
-            min-height: 9.9vh;
-        }
-        .nav-mobile--style {
-            margin-bottom: 10vh;
-        }
-        .home-text--style h1 {
-            font-size: 1.35rem;
-            margin: 0 0 0.25rem 0;
-        }
-        .home-text--style h3 {
-            font-size: 1.15rem;
-        }
-        .button--center {
-            margin: 0.5rem 0;
-        }
-        .social-links--wrapper {
-            margin-bottom: 0.5rem;
-        }
-        .footer-mobile--spacer {
-            height: 9.9vh;
-        }
+@media only screen and (orientation: landscape) {
+    .logo {
+        height: 15vh;
     }
-
-    @media only screen and (min-width: 768px) and (orientation: landscape) {
-        .footer-mobile--wrapper, .footer-mobile--spacer {
-            display: flex;
-        }   
-        .footer-show--md {
-            display: none;
-        }
-        .nav-mobile--icon {
-            margin-bottom: 0.25rem;
-        }
-        .home-text--style h1 {
-            font-size: 1.8rem;
-        }
-        .home-text--style h3 {
-            font-size: 1.5rem;
-        }
+    .home-container--wrapper {
+        height: 77vh;
     }
-            /* NAVIGATION */
-
-    /* hide mobile nav on desktop */
-@media only screen and (min-width: 992px) {
+    .home-content--wrapper {
+        height: 53vh;
+        padding: 7% 15% 0;
+    }
+    .nav-mobile--icon {
+        margin-bottom: 0.1rem;
+    }
     .nav-mobile--wrapper {
+        min-height: 10vh;
+    }
+    .nav-mobile--blackbox {
+        min-height: 9.9vh;
+    }
+    .nav-mobile--style {
+        margin-bottom: 10vh;
+    }
+    .home-text--style h1 {
+        font-size: 1.35rem;
+        margin: 0 0 0.25rem 0;
+    }
+    .home-text--style h3 {
+        font-size: 1.15rem;
+    }
+    .button--center {
+        margin: 0.5rem 0;
+    }
+    .social-links--wrapper {
+        margin-bottom: 0.5rem;
+    }
+    .footer-mobile--spacer {
+        height: 9.9vh;
+    }
+}
+/* To target long phones in landscape */
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .footer-mobile--wrapper, .footer-mobile--spacer {
+        display: flex;
+    }   
+    .footer-show--md {
         display: none;
     }
-}
-
-    /* hide desktop nav on mobile */
-@media only screen and (min-width: 992px) {
-    .nav-desktop--hide {
-        display: flex;
+    .nav-mobile--icon {
+        margin-bottom: 0.25rem;
+    }
+    .home-text--style h1 {
+        font-size: 1.8rem;
+    }
+    .home-text--style h3 {
+        font-size: 1.5rem;
     }
 }
-            /* positioning for phones with lots of height eg; pixel 2 */
+
+/* positioning for long phones eg; pixel 2 */
 @media only screen and (min-height: 668px) {
     .social-links--wrapper {
         margin-top: 1rem;
@@ -336,17 +352,28 @@ button {
     }
 }
 
-@media only screen and (min-width: 768px) and and (min-height: 420px) {
-    .nav-mobile--icon {
-        margin-bottom: 2%;
+             /*** >768 width ***/
+
+/* Hide mobile footer */
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .footer-mobile--wrapper, .footer-mobile--spacer {
+        display: none;
+    }    
+}
+
+/* Show tablet/desktop footer */
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .footer-show--md {
+        display: flex;
     }
 }
-            /* HOME PAGE */
-                /* Layout */
 
 @media only screen and (min-width: 768px) and (min-height: 420px) {
     .logo {
         height: 10vh;
+    }
+    .nav-mobile--icon {
+        margin-bottom: 2%;
     }
     .home-container--wrapper {
         height: 90vh;
@@ -370,6 +397,46 @@ button {
     .social-links--wrapper {
         margin-top: 0;
         margin-bottom: 1rem;
+    }
+    .footer-text--spacer {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    .footer-text--desktop a {
+        font-size: 1rem;
+    }
+    .footer-text--link a:link, a:visited, a:active {
+        text-decoration: none;
+        color: #5f5f5f;
+    }
+    .footer-text--link a:hover {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+    .footer-text--copyright {
+        font-size: 0.8rem;
+        color: #5f5f5f;
+    }
+    .footer-desktop--wrapper {
+        margin: 0 12.5vw;
+        padding-top: 0.5rem;
+    }
+}
+
+             /*** >992 width ***/
+
+/* hide mobile nav on desktop */
+@media only screen and (min-width: 992px) {
+    .nav-mobile--wrapper {
+        display: none;
+    }
+}
+
+    /* hide desktop nav on mobile */
+@media only screen and (min-width: 992px) {
+    .nav-desktop--hide {
+        display: flex;
     }
 }
 
@@ -404,55 +471,7 @@ button {
     }
 }
 
-                /* FOOTER */
-            /* Layout */
-
-/* Hide mobile footer on tablet/desktop */
-@media only screen and (min-width: 768px) and (min-height: 420px) {
-    .footer-mobile--wrapper, .footer-mobile--spacer {
-        display: none;
-    }    
-}
-
-/* Show tablet/desktop footer */
-@media only screen and (min-width: 768px) and (min-height: 420px) {
-    .footer-show--md {
-        display: flex;
-    }
-}
-
-@media only screen and (min-width: 768px) and (min-height: 420px) {
-    .footer-text--spacer {
-        display: block;
-        margin-bottom: 0.5rem;
-    }
-    .footer-text--desktop a {
-        font-size: 1rem;
-    }
-    .footer-text--link a:link, a:visited, a:active {
-        text-decoration: none;
-        color: #5f5f5f;
-    }
-    .footer-text--link a:hover {
-        text-decoration: none;
-        color: #000;
-        font-weight: 500;
-    }
-    .footer-text--copyright {
-        font-size: 0.8rem;
-        color: #5f5f5f;
-    }
-}
-
-
-
-@media only screen and (min-width: 992px) {
-    .footer-desktop--wrapper {
-        margin: 0 12.5vw;
-        padding-top: 0.5rem;
-    }
-}
-
+/* iPad landscape */
 @media only screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
     .social-links--wrapper {
     margin: 0;
@@ -462,34 +481,12 @@ button {
     }
 }
 
+/* extra large desktops */
 @media only screen and (min-width: 1500px) {
     .footer-desktop--wrapper {
         margin: 0 17.5vw;
     }
 }
-
-
-                /* iPad Pro specific */
-        /* https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106 */
-            /* Portrait */
-/* @media only screen and (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px) {
-    .social-links--wrapper {
-        margin-top: 0;
-        margin-bottom: 5rem;
-    }
-} */
-
-            /* Landscape */
-            /* This doesn't work on dev tools, however I read that iPad doesn't change device height and width measurements when in landscape mode.
-            This is why device width and height stays the same, but viewport changes.  */
-            /* (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and  */
-/* @media only screen and (min-width: 1366px) and (max-width: 1366px) {
-    .social-links--wrapper {
-        margin-top: 0;
-        margin-bottom: 10rem;
-    }
-} */
-
 
 /* For debugging */
 /* * { border: 1px solid red; }  */

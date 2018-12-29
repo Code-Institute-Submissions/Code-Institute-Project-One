@@ -119,7 +119,15 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 
 <!-- To do -->
 
+- reorganise css
+    classes > element targetting (instead of new classes)
+    new sheet for seperate pages - main, 
+    look into compiler
+    *create common style classes like 'skin' - https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/
+    reusable classes of common styles
+    
 
 <!-- extra stuff -->
 - add tapering borders to mobile nav
 - map link to address
+- products dropdown menu
