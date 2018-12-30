@@ -125,6 +125,8 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
     look into compiler
     *create common style classes like 'skin' - https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/
     reusable classes of common styles
+
+Decide on background for other pages and then figure out footer layout
     
 
 <!-- extra stuff -->

@@ -128,13 +128,25 @@ p {
                 /* Products Content */
 
 .product-container--wrapper {
-    background: beige;
+    background: #5e5e5e;
     padding: 0;
 }
 
 .product-content--wrapper {
     padding: 5% 10% 0;
 }
+
+.product-content--wrapper .card-deck {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.card-deck > .card {
+    flex-wrap: wrap;
+    flex: initial; 
+    }
 
 .product-card--layout {
     padding: 0;
@@ -150,8 +162,12 @@ p {
 }
 
 .product-list {
-    padding-left: 1.25rem;
+    padding-left: 1.5rem;
     margin: 0 0 0.25rem 0;
+}
+
+.product-card--link {
+    display: inline-block;
 }
 
     /*******         2 STYLING       *******/
@@ -322,7 +338,19 @@ button {
 
     /*******         3 MEDIA QUERIES        *******/
 
+/* positioning for long phones eg; pixel 2 */
+@media only screen and (min-height: 668px) {
+    .social-links--wrapper {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .nav-mobile--icon {
+        margin-bottom: 2.5%;
+    }
+}
+
              /*** Landscape for mobile ***/
+                /* Home */
 
 @media only screen and (orientation: landscape) {
     .logo {
@@ -383,18 +411,35 @@ button {
     }
 }
 
-/* positioning for long phones eg; pixel 2 */
-@media only screen and (min-height: 668px) {
-    .social-links--wrapper {
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
+                /* Products */
+
+@media only screen and (orientation: landscape) {
+    .product-content--wrapper {
+        padding-top: 3%;
     }
-    .nav-mobile--icon {
-        margin-bottom: 2.5%;
+    .product-content--wrapper .card-deck {
+        max-width: 65vw;
+    }
+    .product-card--img {
+        max-height: 60vh;
     }
 }
 
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .product-content--wrapper {
+        padding: 3% 5% 0;
+    }
+    .product-content--wrapper .card-deck {
+        max-width: 90vw;
+    }
+    .card-deck > .card {
+        width: 40%;
+    }
+
+}
+
              /*** >768 width ***/
+            /* Home */
 
 /* Hide mobile footer */
 @media only screen and (min-width: 768px) and (min-height: 420px) {
@@ -410,6 +455,7 @@ button {
     }
 }
 
+/* min-height to exclude long phones in landscape eg; pixel 2 */
 @media only screen and (min-width: 768px) and (min-height: 420px) {
     .logo {
         height: 10vh;
@@ -466,7 +512,26 @@ button {
     }
 }
 
+            /* Products */
+
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .product-content--wrapper {
+        padding: 5% 5% 0;
+    }
+    .product-content--wrapper .card-deck {
+        max-width: 90vw;
+    }
+    .card-deck > .card {
+        width: auto;
+        max-width: 45%;
+    }
+    #footerSpacer > .footer-mobile--spacer {
+        display: flex;
+    }
+}
+
              /*** >992 width ***/
+             /* Home */
 
 /* hide mobile nav on desktop */
 @media only screen and (min-width: 992px) {
@@ -513,6 +578,30 @@ button {
     }
 }
 
+            /* Products */
+
+@media only screen and (min-width: 992px) {
+    .product-container--wrapper {
+        height: 90vh;
+    }
+    .product-content--wrapper {
+        padding: 4% 2% 0;
+        height: 80.2vh;
+    }
+    .product-content--wrapper .card-deck {
+        max-width: 95vw;
+    }
+    .card-deck > .card {
+        max-width: 30%;
+    }
+    .product-card--img {
+        max-height: 250px;
+    }
+    #footerSpacer > .footer-mobile--spacer {
+        display: none;
+    }
+}
+
 /* iPad landscape */
 @media only screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
     .social-links--wrapper {
@@ -523,8 +612,22 @@ button {
     }
 }
 
+/* iPad pro specific -- Portrait */
+/* https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106 */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+    .product-content--wrapper .card-deck {
+        max-width: 65vh;
+    }
+    .card-deck > .card {
+        max-width: 40%;
+    }
+}
+
 /* extra large desktops */
 @media only screen and (min-width: 1500px) {
+    .card-deck > .card {
+        max-width: 25%;
+    }
     .footer-desktop--wrapper {
         margin: 0 17.5vw;
     }
