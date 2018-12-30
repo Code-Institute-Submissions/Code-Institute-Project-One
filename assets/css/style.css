@@ -210,6 +210,52 @@ p {
     flex: initial;
 }
 
+                /* Contact */
+
+.contact-container--wrapper {
+    background: #5e5e5e;
+    padding: 0;
+}
+
+.contact-content--wrapper {
+    height: 74vh;
+}
+
+.contact-form--middle {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contactText {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+                
+.contact--form {
+    justify-content: center;
+}
+
+.contact--form form {
+    width: 90%;
+}
+
+.contact-form--input {
+    margin-bottom: 0.25rem;
+}
+
+.contact--form .btn {
+    display: flex;
+    flex: inherit;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.75rem;
+}
+
     /*******         2 STYLING       *******/
 
                 /* Mobile Styling */
@@ -404,6 +450,9 @@ button {
     .nav-mobile--icon {
         margin-bottom: 2.5%;
     }
+    .contact-content--wrapper {
+        height: 67vh;
+    }
 }
 
              /*** Landscape for mobile ***/
@@ -503,6 +552,23 @@ button {
     }
     #ourServiceCard {
         width: 60%;
+    }
+}
+
+                /* Contact */
+
+@media only screen and (orientation: landscape) {
+    .contact-content--wrapper {
+        height: auto;
+    }
+    .contact-form--middle {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .contact-content--wrapper {
+        height: auto;
     }
 }
 
@@ -607,6 +673,15 @@ button {
     }
 }
 
+            /* Content */
+
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .contact-content--wrapper {
+        height: 69vh;
+        padding: 0 10% 0;
+    }
+}
+
              /*** >992 width ***/
              /* Home */
 
@@ -689,6 +764,21 @@ button {
     }
 }
 
+            /* Contact */
+
+@media only screen and (min-width: 992px) {
+    .contact-container--wrapper {
+        height: 90vh;
+    }
+    .contact-content--wrapper {
+        padding: 0 18% 0;
+        height: 73.5vh;
+    }
+    .contact-form--middle {
+        height: 75vh;
+    }
+}
+
 /* iPad landscape */
 @media only screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
     .social-links--wrapper {
@@ -717,6 +807,12 @@ button {
     }
     .footer-desktop--wrapper {
         margin: 0 17.5vw;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .contact-content--wrapper {
+        padding: 0 24% 0;
     }
 }
 
