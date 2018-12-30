@@ -42,8 +42,7 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 **home/index**
 
 * nav bar
-* bg image, header/welcome message type thing ** * (inspired by whiskey drop module)
-* countdown timer time to launch (?)
+* bg image, header/welcome message type thing (inspired by whiskey drop module)
 * footer 
 
 **products**
@@ -52,11 +51,17 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 * implants listed
 * footer
 
-**information**
+**about us**
 
 * nav bar
+* company information
 * information about what cybernetic implants are.
-* detailed specifics on available implants    
+* footer
+
+**product information**
+
+* nav bar
+* detailed product info/technical specs
 * footer
 
 **contact**
@@ -64,6 +69,9 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 * nav bar
 * short sentence. contact form
 * footer
+
+#### Other
+Maybe a seperate page for sign up on mobile, or maybe a modal window.
 
 ### Functional Requirements
 
@@ -76,6 +84,7 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 
 * Home page with sign up button and welcome message
 * List of available implants with detailed information
+* Information about the company, what we do and what we are offering
 * Contact information
 
 
@@ -98,8 +107,8 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 
 ### Navigation Design
 
-* Navigation bar at top, burger navigation for mobile
-* Use icons to aid where necessary
+* Mobile navigation at bottom with burger icon
+* Navigation bar at top for desktop
 * Navigation arranged in order of importance to business objectives
 
 ### Interface design
@@ -111,8 +120,10 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 ### Surface
 
 * Sans-serif fonts, consistent family across the site
-* Limited set of colors to create a consistent theme
+* Limited set of colors to create a consistent theme. Contrasting colors to emphasize things such as sign up button.
 * Large background image on home page with phrase and CTA
+* Consistent background/foreground them across site. Not sure if same image on every page or similar color but different.
+
 
 
 --------------------------
@@ -126,10 +137,14 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
     *create common style classes like 'skin' - https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/
     reusable classes of common styles
 
-Decide on background for other pages and then figure out footer layout
+- Decide on background for other pages and then figure out footer layout
+- Remove scrolling on mobile home page
+- Make sure all fonts are styled correctly
+- Figure out how I want about page content aligned on desktop (once I've written the actual content)
+
     
 
 <!-- extra stuff -->
 - add tapering borders to mobile nav
 - map link to address
-- products dropdown menu
+- products dropdown menu for desktop

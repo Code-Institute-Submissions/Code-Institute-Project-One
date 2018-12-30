@@ -14,21 +14,22 @@
     <nav class="navbar navbar-expand-lg navbar-dark nav-mobile--wrapper fixed-bottom p-0">
       <div class="col-12 nav-mobile--blackbox fixed-bottom"></div>
       <button class="navbar-toggler nav-mobile--icon fixed-bottom" type="button" data-toggle="collapse" data-target="#NavMobileToggler" aria-controls="NavMobileToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-bars"></span>
+        <span class="fa fa-bars">
+        </span>
       </button>
       <div class="collapse navbar-collapse flex-row-reverse" id="NavMobileToggler">
         <ul class="navbar-nav nav-mobile--style">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products<span class="sr-only">(current)</span></a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="information.html">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.html">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sign Up</a>
@@ -37,23 +38,23 @@
       </div>
     </nav>
     <!-- Desktop Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark nav-desktop--style p-0">
-      <a class="navbar-brand p-0 m-0" href="#">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-desktop--style nav-bg--transparent p-0">
+      <a class="navbar-brand logo" href="#">
         <img src="assets/images/logo5.png" class="logo" alt="Logo">
       </a>
       <div class="navbar-collapse flex-row-reverse nav-desktop--hide pr-2" id="NavMobileToggler">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav nav-desktop--style">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products<span class="sr-only">(current)</span></a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="information.html">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.html">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sign Up</a>
@@ -61,51 +62,24 @@
         </ul>
       </div>
     </nav>
-    <!-- Home page main content -->
-    <section class="container-fluid home-container--wrapper">
-      <div class="container-fluid home-content--wrapper">
-        <div class="row home-text--style">
-          <div class="col-12">
-            <h1>cybernetic enhancements</h1>    
+    <!-- About main content -->
+    <section class="container-fluid about-container--wrapper">
+      <div class="container-fluid about-content--wrapper">
+        <div class="card-deck about-deck">
+          <div class="card card-company--style mb-3">
+            <div class="card-header text-center">Zenith Technologies</div>
+            <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ab rerum labore facere perspiciatis quae repellendus, placeat quasi impedit neque atque sequi! Harum, in ipsa incidunt magnam aliquid sequi pariatur! At, ab rerum labore facere perspiciatis quae repellendus, placeat quasi </div>
           </div>
-        </div>
-        <div class="row home-text--style">
-          <div class="col-12">
-            <h3>augment yourself</h3>    
+          <div class="card card-company--style mb-3">
+            <div class="card-header text-center">Cybernetic Implants</div>
+            <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ab rerum labore facere perspiciatis quae repellendus, placeat quasi impedit neque atque sequi! Harum, in ipsa incidunt magnam aliquid sequi pariatur! At, ab rerum labore facere perspiciatis quae repellendus, placeat quasi </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 button--center">
-            <button type="button" class="btn button-signup--style">sign up now!</button> 
-          </div>
-        </div>
-        <div class="row home-text--style">
-          <div class="col-12">
-            <h6>Available from 01.07.19</h6>    
+          <div class="card card-company--style mb-3" id="ourServiceCard">
+            <div class="card-header text-center">Our Service</div>
+            <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ab rerum labore facere perspiciatis quae repellendus, placeat quasi impedit neque atque sequi! Harum, in ipsa incidunt magnam aliquid sequi pariatur! At, ab rerum labore facere perspiciatis quae repellendus, placeat quasi </div>
           </div>
         </div>
       </div>
-      <div class="col-12 social-links--wrapper">
-          <ul class="list-inline m-0">
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-facebook-square social-links--style"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-twitter-square social-links--style"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-youtube-square social-links--style"></i></a></li>
-          </ul>
-      </div>
-      <!-- Mobile footer -->
-      <div class="row footer-mobile--wrapper mr-1 ml-1">
-        <div class="col-6 footer-text--mobile p-1">
-          <p>Privacy Policy</p>
-          <p><br></p>
-          <p>Copyright 2019</p>
-        </div>
-        <div class="col-6 footer-text--mobile p-1">
-          <p>Zenith Technologies</p>
-          <p>123 Polar Vei</p>
-          <p>Svalbard, Norway</p>
-        </div>
-      </div>
-      <div class="row footer-mobile--spacer m-0"></div>
       <!-- Tablet/Desktop footer -->
       <div class="row footer-desktop--wrapper footer-show--md">
           <div class="col-4 footer-text--desktop footer-text--link">
@@ -124,6 +98,21 @@
               <span class="footer-text--spacer"><a href="#">555-123-4567</a></span>
           </div>
       </div>
+      <div class="row footer-ipad--spacer m-0"></div>
+      <!-- Mobile footer -->
+        <div class="row footer-mobile--wrapper mr-1 ml-1">
+          <div class="col-6 footer-text--mobile p-1">
+            <p>Privacy Policy</p>
+            <p><br></p>
+            <p>Copyright 2018</p>
+          </div>
+          <div class="col-6 footer-text--mobile p-1">
+            <p>Zenith Technologies</p>
+            <p>123 Polar Vei</p>
+            <p>Svalbard, Norway</p>
+          </div>
+        </div>
+        <div class="row footer-mobile--spacer m-0"></div>
     </section>
     
     <!-- Scripts -->
