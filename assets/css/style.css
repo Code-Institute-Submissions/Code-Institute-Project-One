@@ -3,6 +3,7 @@
                     /* Header */
                     /* Mobile Navigation */
                     /* Desktop Navigation */
+                    /* Sign Up Modal */
                     /* Mobile Footer */
                     /* Desktop Footer */
                     /* Home/index Content */
@@ -77,6 +78,34 @@ p {
     font-weight: 400;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+                /* Sign Up Modal */
+
+.modal-signup .modal-header {
+    padding: 0.25rem 1rem;
+}
+
+.modal-signup .modal-body {
+    padding: 0.5rem 1rem;
+}
+
+.modal-signup .btn {
+    float: right;
+}
+
+.modal-signup select {
+    margin-top: 0.25rem;
+}
+
+.modal-signup .modal-footer {
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.modal-signup small {
+    margin: 0;
+    display: inline-block;
 }
 
                 /* Mobile Footer */

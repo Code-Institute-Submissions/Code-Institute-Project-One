@@ -142,7 +142,7 @@ Maybe a seperate page for sign up on mobile, or maybe a modal window.
 - Make sure all fonts are styled correctly
 - Figure out how I want about page content aligned on desktop (once I've written the actual content)
 - Set Rubik global font family at top of css - remove all from classes, leave orbitron in classes
-- Contact form middle?
+- Double check footer positioning is same on all pages and sizes
 
 
 - align all indents (figure out prettier or some addon)
@@ -153,3 +153,4 @@ Maybe a seperate page for sign up on mobile, or maybe a modal window.
 - add tapering borders to mobile nav
 - map link to address
 - products dropdown menu for desktop
+- b2b enquiries contact us
