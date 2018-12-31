@@ -12,7 +12,7 @@ Sell cybernetic implants. Inform people about the cutting edge technology.
 **What do we want? **
 
 An operational website. Ease of use, it should be intuitive and easy to navigate. Priority on getting sign ups.
-    
+
 **What does a user want when visiting a website for cybernetic implants?**
 
 * sign up immediately
@@ -43,7 +43,7 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 
 * nav bar
 * bg image, header/welcome message type thing (inspired by whiskey drop module)
-* footer 
+* footer
 
 **products**
 
@@ -132,7 +132,7 @@ Maybe a seperate page for sign up on mobile, or maybe a modal window.
 
 - reorganise css
     classes > element targetting (instead of new classes)
-    new sheet for seperate pages - main, 
+    new sheet for seperate pages - main,
     look into compiler
     *create common style classes like 'skin' - https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/
     reusable classes of common styles
@@ -143,11 +143,12 @@ Maybe a seperate page for sign up on mobile, or maybe a modal window.
 - Figure out how I want about page content aligned on desktop (once I've written the actual content)
 - Set Rubik global font family at top of css - remove all from classes, leave orbitron in classes
 - Double check footer positioning is same on all pages and sizes
+- Split accordion into 2 so can have 2 columns for large pages, still display 1 column on mobile
 
 
 - align all indents (figure out prettier or some addon)
 
-    
+
 
 <!-- extra stuff -->
 - add tapering borders to mobile nav
