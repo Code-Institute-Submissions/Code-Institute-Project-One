@@ -104,7 +104,14 @@ p {
 
 .modal-signup small {
     margin: 0;
+    /* padding: 0 1.5rem; */
     display: inline-block;
+    font-style: italic;
+}
+
+.signup-modal--submit {
+    color: #fafafa;
+    background: #003d53;
 }
 
                 /* Mobile Footer */
@@ -161,8 +168,13 @@ p {
                 /* Products Content */
 
 .product-container--wrapper {
-    background: #5e5e5e;
+    background: url(../images/hexagonsbg2.jpg) no-repeat center center;
     padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
 .product-content--wrapper {
@@ -177,10 +189,8 @@ p {
 }
 
 .product-deck > .card {
-    border: 1px solid #000;
-}
-
-.product-deck > .card {
+    border: 1px solid rgba(165, 70, 11, 0.75);
+    border-radius: 0;
     flex-wrap: wrap;
     flex: initial;
 }
@@ -191,12 +201,16 @@ p {
 
 .product-deck .card-header {
     margin: 0;
-    padding: 0.25rem 0 0.5rem;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid rgba(165, 70, 11, 1);
+    border-radius: 0;
 }
 
 .product-card--layout .card-img {
     float: left;
     padding-bottom: 0.25rem;
+    padding-left: 0.1rem;
+    border-radius: 0;
 }
 
 .product-list {
@@ -205,57 +219,37 @@ p {
 }
 
 .product-card--layout button {
-    padding: 0;
-    display: flex;
-    margin: auto;
-}
-
-                /* Product info */
-
-.productinfo-container--wrapper {
-    background: #5e5e5e;
-    padding: 0;
-    min-height: 90vh;
-}
-
-.productinfo-content--wrapper {
-    padding: 5% 10% 0;
-    min-height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.product-accordion .card-header {
-    padding: 0;
-}
-
-.product-accordion button {
-    padding: 1rem;
-    width: 100%;
+    padding: 0.25rem;
 }
 
                 /* About */
 
 .about-container--wrapper {
-    background: #5e5e5e;
+    background: url(../images/hexagonsbg2.jpg) no-repeat center center;
     padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
 .about-content--wrapper {
     padding: 5% 10% 0;
 }
 
-.card-company--style {
-    background: #004353;
-    border: #000 1px solid;
+.about-card--style {
+    background: #003d53;
+    border: 1px solid rgba(165, 70, 11, 0.75);
+    border-radius: 0;
 }
 
-.card-company--style > .card-header {
+.about-card--style > .card-header {
     padding: 0.25rem 0 0 0;
+    border-bottom: 1px solid rgba(165, 70, 11, 1);
 }
 
-.card-company--style > .card-body {
+.about-card--style > .card-body {
     padding: 0.5rem;
 }
 
@@ -275,14 +269,20 @@ p {
 .contact-container--wrapper {
     background: #5e5e5e;
     padding: 0;
+    background: url(../images/hexagonsbg2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
 .contact-content--wrapper {
-    height: 74vh;
+    height: 82vh;
 }
 
 .contact-form--middle {
-    height: 75vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -290,9 +290,8 @@ p {
 
 #contactText {
     text-align: center;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin: 0 0 0.5rem 0;
 }
                 
 .contact--form {
@@ -430,11 +429,15 @@ button {
                     /* Products */
 
 .product-deck {
-    color: #fff;
+    color: #fafafa;
+}
+
+.product-deck .card-header {
+    background: #003d53;
 }
 
 .product-deck .card-body {
-    background: #000;
+    background: #000000;
 }
 
 .product-deck h5, h6, li, a {
@@ -451,38 +454,48 @@ button {
     font-size: 0.85rem;
     text-align: center;
     font-weight: 400;
+    margin-top: 0.25rem;
 }
 
 .product-card--layout button {
-    background: #398888;
+    color: #fafafa;
+    background: #003d53;
 }
-
-                /* Product info */
-
-/* .product-accordion .card-header {
-    background: #000;
-}
-
-.product-accordion button {
-    color: #fff;
-} */
 
                 /* About */
 
-.card-company--style {
+.about-card--style {
     font-family: "Rubik", sans-serif;
-    color: #fff;
+    color: #fafafa;
 }
 
-.card-company--style > .card-header {
+.about-card--style > .card-header {
     font-size: 1.25rem;
     font-weight: 500;
 }
 
-.card-company--style > .card-body {
+.about-card--style > .card-body {
     font-size: 0.9rem;
     font-weight: 400;
 }
+
+                /* Contact */
+
+#contactText {
+    color: #fafafa;
+}
+
+.contact--form small {
+    color: #fafafa;
+    font-style: italic;
+    padding: 0 1.5rem;
+}
+
+.contact--form button {
+    color: #fafafa;
+    background: #003d53;
+}
+
 
                 /* Desktop Styling */
 
@@ -745,19 +758,11 @@ button {
     }
 }
 
-            /* Product info */
-
-@media only screen and (min-width: 768px) and (min-height: 420px) {
-    .productinfo-content--wrapper {
-        padding: 5% 18% 0;
-    }
-}
-
             /* About */
 
 @media only screen and (min-width: 768px) and (min-height: 420px) {
     .about-content--wrapper {
-        padding: 5% 18% 0;
+        padding: 11% 18% 0;
         height: 75vh;
     }
 }
