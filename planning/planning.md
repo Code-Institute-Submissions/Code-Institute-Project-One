@@ -3,13 +3,13 @@
 ## Strategy
 **What am I creating?**
 
-A website to allow people to sign up for cybernetic implants when they become available
+A website to allow people to sign up for a cybernetic implant service.
 
 **What do we do?**
 
-Sell cybernetic implants. Inform people about the cutting edge technology.
+Sell and install cybernetic implants. Inform people about the cutting edge technology.
 
-**What do we want? **
+**What do we want?**
 
 An operational website. Ease of use, it should be intuitive and easy to navigate. Priority on getting sign ups.
 
@@ -17,13 +17,13 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 
 * sign up immediately
 * browse/view the available products easily
-* find out more information about the products
+* find out detailed information and technical specifications about the products
 * option to contact us with further questions
 
 #### User stories
 
 * As a customer, I would like to be able to sign up easily so that I can save time browsing
-* As a customer, I would like to be able to view all available products so that I can save time browsing
+* As a customer, I would like to be able to view all available products in a concise format so that I can save time browsing
 * As a customer, I would like detailed information about the products so that I can make an informed decision
 * As a customer, I would like to be able to contact someone with any questions I have about the product so that I have all the information I require
 
@@ -35,7 +35,8 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 * home/index
 * sign-up (maybe modal window)
 * products
-* information
+* product info
+* about us
 * contact
 
 
@@ -51,6 +52,12 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 * implants listed
 * footer
 
+**product information**
+
+* nav bar
+* detailed product info/technical specs
+* footer
+
 **about us**
 
 * nav bar
@@ -58,20 +65,11 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 * information about what cybernetic implants are.
 * footer
 
-**product information**
-
-* nav bar
-* detailed product info/technical specs
-* footer
-
 **contact**
 
 * nav bar
 * short sentence. contact form
 * footer
-
-#### Other
-Maybe a seperate page for sign up on mobile, or maybe a modal window.
 
 ### Functional Requirements
 
@@ -83,7 +81,7 @@ Maybe a seperate page for sign up on mobile, or maybe a modal window.
 ### Content Requirements
 
 * Home page with sign up button and welcome message
-* List of available implants with detailed information
+* List of available implants with detailed information on a separate page
 * Information about the company, what we do and what we are offering
 * Contact information
 
@@ -92,9 +90,9 @@ Maybe a seperate page for sign up on mobile, or maybe a modal window.
 
 ### Interaction Design
 
-* Following convention on navigation
+* Following convention on navigation - mobile on bottom, desktop on top
 * Logo links to home
-* Additional contact and social links at the bottom
+* Additional contact on footer and social links at the bottom
 * Home page information gets the user interested and has a call to action
 * Similar colour theme and content layout on all pages
 
@@ -119,10 +117,11 @@ Maybe a seperate page for sign up on mobile, or maybe a modal window.
 
 ### Surface
 
-* Sans-serif fonts, consistent family across the site
+* Sans-serif fonts, consistent families across the site
 * Limited set of colors to create a consistent theme. Contrasting colors to emphasize things such as sign up button.
+* Dark/black theme with white text and bright colors to attract attention to content
 * Large background image on home page with phrase and CTA
-* Consistent background/foreground them across site. Not sure if same image on every page or similar color but different.
+* Consistent background/foreground theme across site. Not sure if same image on every page or similar color but different.
 
 
 

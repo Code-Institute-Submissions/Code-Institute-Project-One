@@ -117,7 +117,7 @@ p {
 .footer-mobile--spacer {
     height: 5.9vh;
     display: flex;
-}     
+}
 
 .footer-ipad--spacer {
     height: 5.9vh;
@@ -204,10 +204,10 @@ p {
     margin: 0 0 0.25rem 0;
 }
 
-.product-card--layout a {
-    display: inline-block;
-    padding-left: 2rem;
-    font-size: 0.9rem;
+.product-card--layout button {
+    padding: 0;
+    display: flex;
+    margin: auto;
 }
 
                 /* Product info */
@@ -453,15 +453,19 @@ button {
     font-weight: 400;
 }
 
+.product-card--layout button {
+    background: #398888;
+}
+
                 /* Product info */
 
-.product-accordion .card-header {
+/* .product-accordion .card-header {
     background: #000;
 }
 
 .product-accordion button {
     color: #fff;
-}
+} */
 
                 /* About */
 
