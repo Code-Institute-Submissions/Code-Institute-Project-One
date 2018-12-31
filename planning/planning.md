@@ -137,10 +137,8 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
     reusable classes of common styles
 
 - Decide on background for other pages and then figure out footer layout
-- Remove scrolling on mobile home page
 - Make sure all fonts are styled correctly
 - Figure out how I want about page content aligned on desktop (once I've written the actual content)
-- Set Rubik global font family at top of css - remove all from classes, leave orbitron in classes
 - Double check footer positioning is same on all pages and sizes
 - change all hex to 6 digit, change white text to off white hex or rgba for nav links
 - don't forget modal styling
@@ -152,3 +150,8 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 - map link to address
 - products dropdown menu for desktop
 - b2b enquiries contact us
+
+
+footer-text--mobile > footer-mobile--text
+remove font weights that aren't in use
+ensure footer content, links, etc same on all pages

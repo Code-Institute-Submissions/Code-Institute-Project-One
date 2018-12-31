@@ -1,0 +1,953 @@
+/* I have decided to organise my css by the following system.
+
+    - Where possible, following the DOM structure
+    - Exception to above rule: footer following navigation
+    - Mobile preceeding desktop
+    - In order of pages on navigation - home, products, about, contact
+    - Within the declarations, layout/structure properties preceeding styling properties
+    - Modals after page content
+    - Media queries at the bottom, ordered from smallest to largest except special cases, which are at the very bottom
+
+    - CSS classes are named by following my understanding of BEM as best as I could. I also read a lot on various other systems but a lot of it uses sass and is outside the scope of my knowledge at this stage
+*/
+
+                    /* ==================
+                    Contents (searchable)
+                    ===================*/
+                /*  >>IMPORTS AND GLOBAL STYLES  */
+                /*  >>HEADER/NAVIGATION
+                        >Mobile Nav
+                        >Desktop Nav */
+                /*  >>FOOTER
+                        >Mobile Footer
+                        >Desktop Footer */
+                /*  >>HOME PAGE  */
+                /*  >>PRODUCTS PAGE  */
+                /*  >>ABOUT PAGE */
+                /*  >>CONTACT PAGE */
+                /*  >>MODALS
+                        >Sign Up Modal */
+                /*  >>MEDIA QUERIES
+                        >Mobile Landscape
+                        >768+ width
+                        >992+ width
+                        >1500+ width
+                        >Special Queries */
+
+
+/* ========================
+>>IMPORTS AND GLOBAL STYLES
+======================== */
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500,700');
+
+body {
+    background: #000000;
+}
+
+/* remove bootstrap default margins */
+p {
+    margin: 0;
+}
+
+/* Remove outline from button when clicked. Used on all buttons because I didn't like the effect */
+/* https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked */
+button {
+    outline: none !important;
+                                box-shadow: none !important;
+                            }
+
+/* ================================================
+
+>>HEADER/NAVIGATION
+===================
+
+================================================= */
+
+.logo {
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+}
+
+/* ========
+>Mobile Nav
+======== */
+
+.nav-mobile--wrapper {
+    background: #000;
+    min-height: 6vh;
+    display: flex;
+}
+
+.nav-desktop--hide {
+    display: none;
+}
+
+/* Cover white border on mobile nav when it's opening */
+.nav-mobile--blackbox {
+    min-height: 5.9vh;
+    background: #000;
+    z-index: 9;
+}
+
+.nav-mobile--icon {
+    color: #fff;
+    z-index: 10;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-bottom: 1%;
+    width: 10%;
+    border: 0;
+    padding: 0;
+}
+
+.nav-mobile--icon span {
+    font-size: 2rem;
+}
+
+.nav-mobile--style {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 6vh;
+    border-top: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+.nav-mobile--style a {
+    padding: 0.75rem 0;
+}
+
+#NavMobileToggler {
+    background: #000;
+    z-index: 8;
+}
+
+/* =========
+>Desktop Nav
+========= */
+
+.nav-desktop--style {
+    background: #000;
+}
+
+.nav-desktop--style ul {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* ================================================
+
+>>FOOTER
+========
+
+================================================= */
+
+/* ===========
+>Mobile Footer
+=========== */
+
+.footer-mobile--wrapper {
+    background: #fff;
+    display: flex;
+}
+
+.footer-mobile--spacer {
+    height: 5.9vh;
+    display: flex;
+}
+
+.footer-text--mobile {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #000;
+}
+
+.footer-ipad--spacer {
+    height: 5.9vh;
+    display: none;
+}
+
+/* ============
+>Desktop Footer
+============ */
+
+.footer-desktop--wrapper {
+    height: 8vh;
+    padding-top: 0.75rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: #ffffff;
+}
+
+.footer-show--md {
+    display: none;
+}
+
+.footer-text--desktop {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.footer-text--desktop h6 {
+    font-weight: 500;
+}
+
+.footer-text--desktop p {
+    font-size: 0.9rem;
+}
+
+#footer-contact--align {
+    transform: translateY(1rem);
+}
+
+/* ================================================
+
+>>HOME PAGE
+===========
+
+================================================= */
+
+.home-container--wrapper {
+    height: 95vh;
+    padding: 0;
+    background: url(../images/hexagonsbg2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.home-content--wrapper {
+    height: 72vh;
+    padding: 27% 15% 0;
+}
+
+.home-text--style {
+    text-align: center;
+}
+
+.home-text--style h1 {
+    color: #fff;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.home-text--style h3 {
+    color: #fff;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.home-text--style h6 {
+    color: #bebebe;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.button--center {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button-signup--style {
+    color: #fff;
+    background: #a5460b;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.social-links--wrapper {
+    text-align: center;
+}
+
+.social-links--style {
+    color: rgba(255,255,255, 1);
+    font-size: 3rem;
+}
+
+/* ================================================
+
+>>PRODUCTS PAGE
+===============
+
+================================================= */
+
+.product-container--wrapper {
+    background: #000000;
+    padding: 0;
+}
+
+.product-content--wrapper {
+    padding: 5% 10% 0;
+}
+
+.product-deck {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.product-deck > .card {
+    border: 1px solid rgba(165, 70, 11, 0.75);
+    border-radius: 0;
+    flex-wrap: wrap;
+    flex: initial;
+}
+
+.product-card--layout {
+    padding: 0.25rem 0 0 0;
+}
+
+.product-deck .card-header {
+    margin: 0;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid rgba(165, 70, 11, 1);
+    border-radius: 0;
+}
+
+.product-card--layout .card-img {
+    float: left;
+    padding-bottom: 0.25rem;
+    padding-left: 0.1rem;
+    border-radius: 0;
+}
+
+.product-list {
+    padding-left: 1.5rem;
+    margin: 0 0 0.25rem 0;
+}
+
+.product-card--layout button {
+    padding: 0.25rem;
+}
+
+.product-deck {
+    color: #fafafa;
+}
+
+.product-deck .card-header {
+    background: #003d53;
+}
+
+.product-deck .card-body {
+    background: #000000;
+}
+
+.product-deck h5 {
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.product-deck h6 {
+    font-family: "Rubik", sans-serif;
+    font-size: 0.85rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0.25rem;
+}
+
+.product-deck li {
+    font-family: "Rubik", sans-serif;
+}
+
+.product-deck a {
+    font-family: "Rubik", sans-serif;
+}
+
+.product-card--layout button {
+    color: #fafafa;
+    background: #003d53;
+}
+
+/* ================================================
+
+>>ABOUT PAGE
+============
+
+================================================= */
+
+.about-container--wrapper {
+    background: #000000;
+    padding: 0;
+}
+
+.about-content--wrapper {
+    padding: 5% 10% 0;
+}
+
+.about-card--style {
+    background: #003d53;
+    border: 1px solid rgba(165, 70, 11, 0.75);
+    border-radius: 0;
+}
+
+.about-card--style > .card-header {
+    padding: 0.25rem 0 0 0;
+    border-bottom: 1px solid rgba(165, 70, 11, 1);
+}
+
+.about-card--style > .card-body {
+    padding: 0.5rem;
+}
+
+.about-deck {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.about-deck > .card {
+    flex-wrap: wrap;
+    flex: initial;
+}
+
+.about-card--style {
+    font-family: "Rubik", sans-serif;
+    color: #fafafa;
+}
+
+.about-card--style > .card-header {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.about-card--style > .card-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* ================================================
+
+>>CONTACT PAGE
+==============
+
+================================================= */
+
+.contact-container--wrapper {
+    background: #000000;
+    padding: 0;
+}
+
+.contact-content--wrapper {
+    height: 82vh;
+}
+
+.contact-form--middle {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contactText {
+    text-align: center;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin: 0 0 0.5rem 0;
+}
+                
+.contact--form {
+    justify-content: center;
+}
+
+.contact--form form {
+    width: 90%;
+}
+
+.contact-form--input {
+    margin-bottom: 0.25rem;
+}
+
+.contact--form .btn {
+    display: flex;
+    flex: inherit;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.75rem;
+}
+
+#contactText {
+    color: #fafafa;
+}
+
+.contact--form small {
+    color: #fafafa;
+    font-style: italic;
+    padding: 0 1.5rem;
+}
+
+.contact--form button {
+    color: #fafafa;
+    background: #003d53;
+}
+
+/* ================================================
+
+>>MODALS
+========
+
+================================================= */
+
+/* ===========
+>Sign Up Modal
+=========== */
+
+.modal-signup .modal-header {
+    padding: 0.25rem 1rem;
+}
+
+.modal-signup .modal-body {
+    padding: 0.5rem 1rem;
+}
+
+.modal-signup .btn {
+    float: right;
+}
+
+.modal-signup select {
+    margin-top: 0.25rem;
+}
+
+.modal-signup .modal-footer {
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.modal-signup small {
+    margin: 0;
+    display: inline-block;
+    font-style: italic;
+}
+
+.signup-modal--submit {
+    color: #fafafa;
+    background: #003d53;
+}
+
+/* ================================================
+
+>>MEDIA QUERIES
+===============
+
+================================================= */
+
+/* positioning for long phones eg; pixel 2 */
+@media only screen and (min-height: 668px) {
+    .nav-mobile--icon {
+        margin-bottom: 2.5%;
+    }
+    .social-links--wrapper {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .contact-content--wrapper {
+        height: 67vh;
+    }
+}
+
+/* ==============
+>Mobile Landscape
+============== */
+/* == Nav/Footer/Home == */
+
+@media only screen and (orientation: landscape) {
+    .logo {
+        height: 15vh;
+    }
+    .nav-mobile--icon {
+        margin-bottom: 0.1rem;
+    }
+    .nav-mobile--wrapper {
+        min-height: 10vh;
+    }
+    .nav-mobile--blackbox {
+        min-height: 9.9vh;
+    }
+    .nav-mobile--style {
+        margin-bottom: 10vh;
+    }
+    .footer-mobile--spacer {
+        height: 9.9vh;
+    }
+    .home-container--wrapper {
+        height: 77vh;
+    }
+    .home-content--wrapper {
+        height: 53vh;
+        padding: 7% 15% 0;
+    }
+    .home-text--style h1 {
+        font-size: 1.35rem;
+        margin: 0 0 0.25rem 0;
+    }
+    .home-text--style h3 {
+        font-size: 1.15rem;
+    }
+    .button--center {
+        margin: 0.5rem 0;
+    }
+    .social-links--wrapper {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* To target long phones in landscape */
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .footer-mobile--wrapper, .footer-mobile--spacer {
+        display: flex;
+    }
+    .footer-show--md {
+        display: none;
+    }
+    .nav-mobile--icon {
+        margin-bottom: 0.25rem;
+    }
+    .home-text--style h1 {
+        font-size: 1.8rem;
+    }
+    .home-text--style h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* == Products == */
+
+@media only screen and (orientation: landscape) {
+    .product-content--wrapper {
+        padding-top: 3%;
+    }
+    .product-deck {
+        max-width: 65vw;
+    }
+    .product-card--layout .card-img {
+        max-height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .product-content--wrapper {
+        padding: 3% 5% 0;
+    }
+    .product-deck {
+        max-width: 90vw;
+    }
+    .product-deck > .card {
+        width: 40%;
+    }
+}
+
+/* == About == */
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .about-deck > .card {
+        width: 43%;
+    }
+    #ourServiceCard {
+        width: 60%;
+    }
+}
+
+/* == Contact == */
+
+@media only screen and (orientation: landscape) {
+    .contact-content--wrapper {
+        height: auto;
+    }
+    .contact-form--middle {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .contact-content--wrapper {
+        height: auto;
+    }
+}
+
+/* ========
+>768+ width
+======== */
+
+/* == Nav/Footer/Home == */
+
+/* Hide mobile footer */
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .footer-mobile--wrapper, .footer-mobile--spacer {
+        display: none;
+    }
+}
+
+/* Show tablet/desktop footer */
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .footer-show--md {
+        display: flex;
+    }
+}
+
+/* min-height to exclude long phones in landscape eg; pixel 2 */
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .logo {
+        height: 10vh;
+    }
+    .nav-mobile--icon {
+        margin-bottom: 2%;
+    }
+    .footer-text--spacer {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    .footer-text--desktop a {
+        font-size: 1rem;
+    }
+    .footer-text--link a:link, a:visited, a:active {
+        text-decoration: none;
+        color: #5f5f5f;
+    }
+    .footer-text--link a:hover {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+    .footer-text--copyright {
+        font-size: 0.8rem;
+        color: #5f5f5f;
+    }
+    .footer-desktop--wrapper {
+        margin: 0 12.5vw;
+        padding-top: 0.5rem;
+    }
+    .home-container--wrapper {
+        height: 90vh;
+    }
+    .home-content--wrapper {
+        padding: 16% 8% 0;
+        height: 69vh;
+    }
+    .home-text--style h1 {
+        font-size: 3.5rem;
+    }
+    .home-text--style h3 {
+        font-size: 2.5rem;
+    }
+    .home-text--style h6 {
+        font-size: 1rem;
+    }
+    .button-signup--style {
+        font-size: 2rem;
+    }
+    .social-links--wrapper {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* == Products == */
+
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .product-content--wrapper {
+        padding: 5% 5% 0;
+    }
+    .product-deck {
+        max-width: 90vw;
+    }
+    .product-deck > .card {
+        width: auto;
+        max-width: 45%;
+    }
+    .footer-ipad--spacer {
+        display: flex;
+    }
+}
+
+/* == About == */
+
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .about-content--wrapper {
+        padding: 11% 18% 0;
+        height: 75vh;
+    }
+}
+
+/* == Contact == */
+
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .contact-content--wrapper {
+        height: 69vh;
+        padding: 0 10% 0;
+    }
+}
+
+/* ========
+>992+ width
+======== */
+
+/* == Nav/Footer/Home == */
+
+/* hide mobile nav */
+@media only screen and (min-width: 992px) {
+    .nav-mobile--wrapper {
+        display: none;
+    }
+}
+
+    /* show desktop nav */
+@media only screen and (min-width: 992px) {
+    .nav-desktop--hide {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .home-container--wrapper {
+        height: 90vh;
+    }
+    .home-content--wrapper {
+        padding: 9% 8% 0;
+        height: 73.5vh;
+    }
+    .home-text--style h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    .home-text--style h3 {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .home-text--style h6 {
+        font-size: 0.75rem;
+    }
+    .button--center {
+        margin: 1rem 0;
+    }
+    .button-signup--style {
+        font-size: 2rem;
+    }
+    .social-links--wrapper {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* == Products == */
+
+@media only screen and (min-width: 992px) {
+    .product-container--wrapper {
+        height: 90vh;
+    }
+    .product-content--wrapper {
+        padding: 4% 2% 0;
+        height: 80.2vh;
+    }
+    .product-deck {
+        max-width: 95vw;
+    }
+    .product-deck > .card {
+        max-width: 30%;
+    }
+    .product-card--layout .card-img {
+        max-height: 242px;
+    }
+    .footer-ipad--spacer {
+        display: none;
+    }
+}
+
+/* == About == */
+
+@media only screen and (min-width: 992px) {
+    .about-container--wrapper {
+        height: 90vh;
+    }
+    .about-content--wrapper {
+        height: 80.2vh;
+    }
+}
+
+/* == Contact == */
+
+@media only screen and (min-width: 992px) {
+    .contact-container--wrapper {
+        height: 90vh;
+    }
+    .contact-content--wrapper {
+        padding: 0 18% 0;
+        height: 73.5vh;
+    }
+    .contact-form--middle {
+        height: 75vh;
+    }
+}
+
+/* =========
+>1500+ width
+========= */
+
+@media only screen and (min-width: 1500px) {
+    .product-deck > .card {
+        max-width: 25%;
+    }
+    .footer-desktop--wrapper {
+        margin: 0 17.5vw;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .contact-content--wrapper {
+        padding: 0 24% 0;
+    }
+}
+
+/* =============
+>Special Queries
+============= */
+
+/* iPad landscape */
+@media only screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+    .social-links--wrapper {
+    margin: 0;
+    }
+    .footer-desktop--wrapper {
+    padding-top: 0.2rem;
+    }
+}
+
+/* iPad pro specific -- Portrait */
+/* https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106 */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+    .product-deck {
+        max-width: 65vh;
+    }
+    .product-deck > .card {
+        max-width: 40%;
+    }
+}
