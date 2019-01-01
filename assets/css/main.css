@@ -1,4 +1,4 @@
-/* I have decided to organise my css by the following system.
+/* ============ CSS organised by the following system ============
 
     - Where possible, following the DOM structure
     - Exception to above rule: footer following navigation
@@ -35,9 +35,9 @@
                         >Special Queries */
 
 
-/* ========================
->>IMPORTS AND GLOBAL STYLES
-======================== */
+/* ==========================
+>>IMPORTS AND GLOBAL SETTINGS
+========================== */
 
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500,700');
 
@@ -80,9 +80,9 @@ button {
 ======== */
 
 .nav-mobile--wrapper {
-    background: #000;
-    min-height: 6vh;
     display: flex;
+    min-height: 6vh;
+    background: #000000;
 }
 
 .nav-desktop--hide {
@@ -92,19 +92,19 @@ button {
 /* Cover white border on mobile nav when it's opening */
 .nav-mobile--blackbox {
     min-height: 5.9vh;
-    background: #000;
     z-index: 9;
+    background: #000000;
 }
 
 .nav-mobile--icon {
-    color: #fff;
     z-index: 10;
     margin-left: 45%;
     margin-right: 45%;
     margin-bottom: 1%;
-    width: 10%;
     border: 0;
     padding: 0;
+    width: 10%;
+    color: #ffffff;
 }
 
 .nav-mobile--icon span {
@@ -112,15 +112,15 @@ button {
 }
 
 .nav-mobile--style {
+    margin-bottom: 6vh;
+    border-top: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid rgba(255,255,255,.5);
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: .8rem;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.1;
-    margin-bottom: 6vh;
-    border-top: 1px solid rgba(255,255,255,.5);
-    border-bottom: 1px solid rgba(255,255,255,.5);
 }
 
 .nav-mobile--style a {
@@ -128,7 +128,7 @@ button {
 }
 
 #NavMobileToggler {
-    background: #000;
+    background: #000000;
     z-index: 8;
 }
 
@@ -137,7 +137,7 @@ button {
 ========= */
 
 .nav-desktop--style {
-    background: #000;
+    background: #000000;
 }
 
 .nav-desktop--style ul {
@@ -159,8 +159,8 @@ button {
 =========== */
 
 .footer-mobile--wrapper {
-    background: #fff;
     display: flex;
+    background: #fff;
 }
 
 .footer-mobile--spacer {
@@ -169,11 +169,11 @@ button {
 }
 
 .footer-text--mobile {
-    text-align: center;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 0.7rem;
-    color: #000;
+    text-align: center;
+    color: #000000;
 }
 
 .footer-ipad--spacer {
@@ -187,9 +187,9 @@ button {
 
 .footer-desktop--wrapper {
     height: 8vh;
-    padding-top: 0.75rem;
     margin-left: 5%;
     margin-right: 5%;
+    padding-top: 0.75rem;
     background: #ffffff;
 }
 
@@ -198,10 +198,10 @@ button {
 }
 
 .footer-text--desktop {
-    text-align: center;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .footer-text--desktop h6 {
@@ -244,16 +244,16 @@ button {
 }
 
 .home-text--style h1 {
-    color: #fff;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
     font-family: "Orbitron", sans-serif;
     font-weight: 700;
     font-size: 1rem;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
 }
 
 .home-text--style h3 {
-    color: #fff;
+    color: #ffffff;
     font-family: "Orbitron", sans-serif;
     font-weight: 500;
     font-size: 1rem;
@@ -261,7 +261,7 @@ button {
 }
 
 .home-text--style h6 {
-    color: #bebebe;
+    color: #ffffff;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 0.7rem;
@@ -275,7 +275,7 @@ button {
 }
 
 .button-signup--style {
-    color: #fff;
+    color: #ffffff;
     background: #a5460b;
     font-family: 'Orbitron', sans-serif;
     font-size: 1rem;
@@ -313,6 +313,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    color: #fafafa;
 }
 
 .product-deck > .card {
@@ -322,38 +323,11 @@ button {
     flex: initial;
 }
 
-.product-card--layout {
-    padding: 0.25rem 0 0 0;
-}
-
 .product-deck .card-header {
     margin: 0;
     padding: 0.25rem 0;
     border-bottom: 1px solid rgba(165, 70, 11, 1);
     border-radius: 0;
-}
-
-.product-card--layout .card-img {
-    float: left;
-    padding-bottom: 0.25rem;
-    padding-left: 0.1rem;
-    border-radius: 0;
-}
-
-.product-list {
-    padding-left: 1.5rem;
-    margin: 0 0 0.25rem 0;
-}
-
-.product-card--layout button {
-    padding: 0.25rem;
-}
-
-.product-deck {
-    color: #fafafa;
-}
-
-.product-deck .card-header {
     background: #003d53;
 }
 
@@ -369,11 +343,11 @@ button {
 }
 
 .product-deck h6 {
+    margin-top: 0.25rem;
     font-family: "Rubik", sans-serif;
     font-size: 0.85rem;
     text-align: center;
     font-weight: 400;
-    margin-top: 0.25rem;
 }
 
 .product-deck li {
@@ -384,9 +358,26 @@ button {
     font-family: "Rubik", sans-serif;
 }
 
+.product-card--layout {
+    padding: 0.25rem 0 0 0;
+}
+
+.product-card--layout .card-img {
+    float: left;
+    padding-bottom: 0.25rem;
+    padding-left: 0.1rem;
+    border-radius: 0;
+}
+
 .product-card--layout button {
+    padding: 0.25rem;
     color: #fafafa;
     background: #003d53;
+}
+
+.product-list {
+    padding-left: 1.5rem;
+    margin: 0 0 0.25rem 0;
 }
 
 /* ================================================
@@ -405,21 +396,6 @@ button {
     padding: 5% 10% 0;
 }
 
-.about-card--style {
-    background: #003d53;
-    border: 1px solid rgba(165, 70, 11, 0.75);
-    border-radius: 0;
-}
-
-.about-card--style > .card-header {
-    padding: 0.25rem 0 0 0;
-    border-bottom: 1px solid rgba(165, 70, 11, 1);
-}
-
-.about-card--style > .card-body {
-    padding: 0.5rem;
-}
-
 .about-deck {
     margin-left: auto;
     margin-right: auto;
@@ -432,16 +408,22 @@ button {
 }
 
 .about-card--style {
+    background: #003d53;
+    border: 1px solid rgba(165, 70, 11, 0.75);
+    border-radius: 0;
     font-family: "Rubik", sans-serif;
     color: #fafafa;
 }
 
 .about-card--style > .card-header {
+    padding: 0.25rem 0 0 0;
+    border-bottom: 1px solid rgba(165, 70, 11, 1);
     font-size: 1.25rem;
     font-weight: 500;
 }
 
 .about-card--style > .card-body {
+    padding: 0.5rem;
     font-size: 0.9rem;
     font-weight: 400;
 }
@@ -469,22 +451,12 @@ button {
     justify-content: center;
 }
 
-#contactText {
-    text-align: center;
-    padding: 0.5rem 0.5rem 0 0.5rem;
-    margin: 0 0 0.5rem 0;
-}
-                
 .contact--form {
     justify-content: center;
 }
 
 .contact--form form {
     width: 90%;
-}
-
-.contact-form--input {
-    margin-bottom: 0.25rem;
 }
 
 .contact--form .btn {
@@ -494,10 +466,8 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.75rem;
-}
-
-#contactText {
     color: #fafafa;
+    background: #003d53;
 }
 
 .contact--form small {
@@ -506,10 +476,18 @@ button {
     padding: 0 1.5rem;
 }
 
-.contact--form button {
-    color: #fafafa;
-    background: #003d53;
+.contact-form--input {
+    margin-bottom: 0.25rem;
 }
+
+#contactText {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+    color: #fafafa;
+}
+
+
 
 /* ================================================
 
