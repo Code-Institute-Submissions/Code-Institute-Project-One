@@ -142,6 +142,7 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 - Double check footer positioning is same on all pages and sizes
 - change all hex to 6 digit, change white text to off white hex or rgba for nav links
 - don't forget modal styling
+- remove m-0 class from headers
 
 <!-- Text styling -->
 Font spacing, family, size, weight.. check all
