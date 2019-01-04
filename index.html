@@ -113,7 +113,7 @@
       <div class="row footer-desktop--wrapper footer-show--md">
           <div class="col-4 footer-text--desktop footer-text--link">
               <span class="footer-text--spacer"><a href="#" data-toggle="modal" data-target="#modalPrivacy">Privacy Policy</a></span>
-              <p class="footer-text--copyright">Copyright 2018</p>
+              <p class="footer-text--not-link">Copyright 2018</p>
           </div>
           <div class="col-4 footer-text--desktop footer-text--link pl-4">
               <span class="footer-text--spacer">
@@ -126,7 +126,7 @@
           </div>
           <div class="col-4 footer-text--desktop footer-text--link">
             <span class="footer-text--spacer"><a href="contact.html">Contact Us</a></span> 
-              <span class="footer-text--spacer"><p>555-123-4567</p></span>
+              <span class="footer-text--spacer"><p class="footer-text--not-link">555-123-4567</p></span>
           </div>
       </div>
     </section>
@@ -142,32 +142,43 @@
           </div>
           <div class="modal-body">
             <form action="" method="get">
-            <div class="contact-form--input">
+            <div class="modal-signup--input">
                 <input class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
             </div>
-            <div class="contact-form--input">
+            <div class="modal-signup--input">
                 <input class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
             </div>
-            <div class="contact-form--input">
+            <div class="modal-signup--input">
                 <input class="form-control" id="email" type="email" name="email" placeholder="Email" required>
             </div>
-            <select id="productSelect name="productSelect" required>
-                <option value="">Desired Enhancement</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="Undecided">Undecided</option>
-            </select>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="row">
+              <div class="col-8">
+                <select id="productSelect name="productSelect" required>
+                    <option value="">Desired Enhancement</option>
+                    <option value="1">Nexus Vision</option>
+                    <option value="2">Matrix</option>
+                    <option value="3">Neuroptimal</option>
+                    <option value="4">Aegis</option>
+                    <option value="5">Core</option>
+                    <option value="Undecided">Undecided</option>
+                </select>
+              </div>
+              <div class="col-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+              <div class="col-2">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
             </form>
+            <div class="row signup-modal--footer">
+                <small class="form-text">We'll never share your personal information with anyone else.</small>
+            </div>
           </div>
-          <div class="modal-footer">
-              <small class="form-text text-muted">We'll never share your personal<br> information with anyone else.</small>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+          <!-- <div class="modal-footer"> -->
+              <!-- <small class="form-text text-muted">We'll never share your personal information with anyone else.</small> -->
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <!-- </div> -->
         </div>
       </div>
     </div>
