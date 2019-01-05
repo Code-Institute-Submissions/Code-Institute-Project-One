@@ -143,6 +143,10 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 - change all hex to 6 digit, change white text to off white hex or rgba for nav links
 - don't forget modal styling
 - remove m-0 class from headers
+- fix desktop footer with margins
+    - can maybe do this with mobile footer and not need spacer
+
+- cleanup rows and columns -maybe extra rows somewhere
 
 <!-- Text styling -->
 Font spacing, family, size, weight.. check all

@@ -348,11 +348,11 @@ button {
 }
 
 .product--links img {
-    max-height: 100px;
+    max-height: 33vh;
     width: auto;
     margin: auto;
     position: relative;
-    border-radius: calc(5.25rem - 1px);
+    border-radius: calc(0.5rem - 1px);
 }
 
 .product--links h3 {
@@ -385,10 +385,6 @@ button {
     margin-top: 0.25rem;
     line-height: 1.15;
     border-bottom: 1px solid rgba(165, 70, 11, 0.75);
-    
-    /* border-radius: 5px; */
-    /* border-left: 1px solid rgba(165, 70, 11, 0.75);
-    border-right: 1px solid rgba(165, 70, 11, 0.75); */
 }
 
 /* ================================================
@@ -404,8 +400,25 @@ button {
 }
 
 .about-content--wrapper {
+    height: 74.2vh;
     padding: 5% 10% 0;
 }
+
+.about--center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about--img {
+    max-width: 200px;
+    display: flex;
+    margin: auto;
+}
+
+
+
+/*  */
 
 .about-deck {
     margin-left: auto;
@@ -526,6 +539,67 @@ button {
 }
 
 .modal-signup .modal-body {
+    padding: 0.5rem 1rem 0;
+    border-top: 0;
+}
+
+.modal-signup .btn {
+    float: right;
+}
+
+.modal-signup select {
+    margin-top: 0.25rem;
+    width: 105%;
+    height: 80%;
+}
+
+.modal-signup .modal-footer {
+    padding: 0.5rem 1rem;
+    display: block;
+    border-top: 0;
+}
+
+.modal-signup small {
+    margin: 0;
+    display: inline-block;
+    font-style: italic;
+}
+
+.modal-signup--input {
+    padding-bottom: 0.5rem;
+}
+
+.signup-modal--submit {
+    color: #ffffff;
+    background: grey;
+}
+
+.signup-modal-btn--close {
+    margin-top: 0.5rem;
+}
+
+.signup-modal--footer {
+    color: #ffffff;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/*
+.modal-signup {
+    background: #003d53;
+    color: #ffffff;
+}
+
+.modal-signup .modal-header {
+    padding: 0.25rem 1rem;
+    border-bottom: 0;
+}
+
+.modal-signup .close {
+    color: #ffffff;
+}
+
+.modal-signup .modal-body {
     padding: 0.5rem 1rem;
     border-top: 0;
 }
@@ -566,43 +640,7 @@ button {
     color: #ffffff;
 }
 
-/* ===========
->Products Modal
-=========== */
-
-.modal-dialog-centered {
-    justify-content: center;
-}
-.product-modal--style {
-    border-bottom:  1px solid #003d53;
-    border-bottom-left-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    width: 90vw;
-    background: #003d53;
-}
-
-.product-modal--style .modal-header {
-    background: #ffffff;
-    border-bottom: 1px solid #a5460b;
-    padding: 0.25rem 0.5rem ;
-}
-
-.product-modal--style .modal-body {
-    background: #003d53;
-    color: #ffffff;
-    border-top: 0;
-    padding: 0.25rem 0.5rem;
-}
-
-.product-modal--style .modal-title {
-    text-transform: uppercase;
-}
-
-.product-modal--style .modal-footer {
-    background: #003d53;
-    border-top: 0;
-    padding: 0.5rem 1rem;
-}
+*/
 
 /* ================================================
 
@@ -903,11 +941,11 @@ button {
 
 @media only screen and (min-width: 992px) {
     .product-container--wrapper {
-        height: 90vh;
+        min-height: 90vh;
     }
     .product-content--wrapper {
         padding: 4% 2% 0;
-        height: 80.2vh;
+        min-height: 84vh;
     }
     .product-deck {
         max-width: 95vw;
