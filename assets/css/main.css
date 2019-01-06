@@ -242,7 +242,7 @@ button {
 .home-container--wrapper {
     height: 95vh;
     padding: 0;
-    background: url(../images/hexagonsbg2.jpg) no-repeat center center;
+    background: url(../images/bg_home.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -319,8 +319,14 @@ button {
 ================================================= */
 
 .product-container--wrapper {
-    background: #000000;
+    /* background: #000000; */
     padding: 0;
+    background: url(../images/bg_product.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
 .product-content--wrapper {
@@ -385,8 +391,14 @@ button {
 ================================================= */
 
 .about-container--wrapper {
-    background: #000000;
+    /* background: #000000; */
     padding: 0;
+    background: url(../images/bg_about.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
 .about-content--wrapper {
@@ -424,8 +436,14 @@ button {
 ================================================= */
 
 .contact-container--wrapper {
-    background: #000000;
+    /* background: #000000; */
     padding: 0;
+    background: url(../images/bg_contact.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
 .contact-content--wrapper {
