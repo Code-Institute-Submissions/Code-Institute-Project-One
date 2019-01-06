@@ -234,8 +234,8 @@ button {
 }
 .footer-text--link a:hover {
     text-decoration: none;
-    color: #000;
-    font-weight: 500;
+    color: #ffffff;
+    /* font-weight: 500; */
 }
 
 /* ================================================
@@ -330,16 +330,13 @@ button {
 }
 
 .product-content--wrapper {
-    padding: 12% 10% 0;
+    padding: 10% 10% 0;
 }
 
 .product-card--wrapper {
-    margin: 0 0 1rem;
+    margin: 0 0 1.5rem;
+    font-family: "Rubik", sans-serif;
 }
-
-/* .product-card--wrapper a:hover {
-    text-decoration: none;
-} */
 
 .product--links .card {
     background: none;
@@ -370,9 +367,8 @@ button {
 }
 
 .product-header {
-    color: #fafafa;
+    color: #ffffff;
     position: relative;
-    font-family: 'Rubik', sans-serif;
     font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: 2px;
@@ -383,8 +379,9 @@ button {
     color: #ffffff;
     padding: 0.25rem 1rem;
     margin-top: 0.25rem;
-    line-height: 1.15;
     border-bottom: 1px solid rgba(165, 70, 11, 0.75);
+    font-size: 0.9rem;
+    line-height: 1.15;
 }
 
 /* ================================================
@@ -400,20 +397,30 @@ button {
 }
 
 .about-content--wrapper {
-    height: 74.2vh;
+    min-height: 74.2vh;
     padding: 5% 10% 0;
 }
 
-.about--center {
+.about-align--middle {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 60vh;
 }
 
 .about--img {
     max-width: 200px;
     display: flex;
-    margin: auto;
+    margin: 0 auto 0.5rem;
+}
+
+.about--text {
+    margin-bottom: 0.75rem;
+    color: #ffffff;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    line-height: 1.15;
+    text-align: center;
 }
 
 
@@ -436,7 +443,7 @@ button {
     border: 1px solid rgba(165, 70, 11, 0.75);
     border-radius: 0;
     font-family: "Rubik", sans-serif;
-    color: #fafafa;
+    color: #ffffff;
 }
 
 .about-card--style > .card-header {
@@ -466,17 +473,29 @@ button {
 
 .contact-content--wrapper {
     height: 82vh;
+    padding: 2% 5% 0;
 }
 
-.contact-form--middle {
+.contact-form-align--middle {
     min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+#contactText {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
 .contact--form {
     justify-content: center;
+    font-family: "Rubik", sans-serif;
 }
 
 .contact--form form {
@@ -490,28 +509,19 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.75rem;
-    color: #fafafa;
+    color: #ffffff;
     background: #003d53;
 }
 
 .contact--form small {
-    color: #fafafa;
-    font-style: italic;
     padding: 0 1.5rem;
+    color: #e7e7e7;
+    font-style: italic;
 }
 
 .contact-form--input {
     margin-bottom: 0.25rem;
 }
-
-#contactText {
-    padding: 0.5rem 0.5rem 0 0.5rem;
-    margin: 0 0 0.5rem 0;
-    text-align: center;
-    color: #fafafa;
-}
-
-
 
 /* ================================================
 
@@ -527,6 +537,7 @@ button {
 .modal-signup {
     background: #003d53;
     color: #ffffff;
+    font-family: "Rubik", sans-serif;
 }
 
 .modal-signup .modal-header {
@@ -569,9 +580,13 @@ button {
     padding-bottom: 0.5rem;
 }
 
-.signup-modal--submit {
+#productSelect {
+    font-size: 0.9rem;
+}
+
+.signup-modal-btn--submit {
     color: #ffffff;
-    background: grey;
+    background: #a5460b;
 }
 
 .signup-modal-btn--close {
@@ -582,65 +597,14 @@ button {
     color: #ffffff;
     padding: 0 1rem;
     text-align: center;
-}
-
-/*
-.modal-signup {
-    background: #003d53;
-    color: #ffffff;
-}
-
-.modal-signup .modal-header {
-    padding: 0.25rem 1rem;
-    border-bottom: 0;
-}
-
-.modal-signup .close {
-    color: #ffffff;
-}
-
-.modal-signup .modal-body {
-    padding: 0.5rem 1rem;
-    border-top: 0;
-}
-
-.modal-signup .modal-signup--input {
-    padding-bottom: 0.5rem;
-}
-
-.modal-signup .btn {
-    float: right;
-}
-
-.modal-signup select {
-    margin-top: 0.25rem;
-    width: 90%;
-    height: 80%;
-}
-
-.modal-signup .modal-footer {
-    padding: 0.5rem 1rem;
-    display: block;
-    border-top: 0;
-}
-
-.modal-signup small {
-    margin: 0;
-    display: inline-block;
-    font-style: italic;
-}
-
-.signup-modal--submit {
-    color: #fafafa;
-    background: grey;
-}
-
-.signup-modal--footer {
     justify-content: center;
-    color: #ffffff;
 }
 
-*/
+
+#modalPrivacy {
+    font-family: "Rubik", sans-serif;
+}
+
 
 /* ================================================
 
@@ -848,13 +812,19 @@ button {
         margin-top: 0;
         margin-bottom: 1rem;
     }
+    .modal-signup select {
+        width: 95%
+    }
+    .signup-modal-btn--close {
+        margin-top: 0;
+    }
 }
 
 /* == Products == */
 
 @media only screen and (min-width: 768px) and (min-height: 420px) {
     .product-content--wrapper {
-        padding: 5% 5% 0;
+        padding: 8% 5% 0;
     }
     .product-deck {
         max-width: 90vw;
@@ -872,8 +842,14 @@ button {
 
 @media only screen and (min-width: 768px) and (min-height: 420px) {
     .about-content--wrapper {
-        padding: 11% 18% 0;
+        padding: 11% 20% 0;
         height: 75vh;
+    }
+    .about-align--middle {
+        height: 40vh;
+    }
+    .about--text {
+        padding: 0 3rem 0;
     }
 }
 
@@ -944,8 +920,15 @@ button {
         min-height: 90vh;
     }
     .product-content--wrapper {
-        padding: 4% 2% 0;
-        min-height: 84vh;
+        padding: 10% 2% 0;
+        min-height: 80.2vh;
+    }
+    .product--links img {
+        max-height: 22vh;
+    }
+    #ProductSecondRow {
+        justify-content: center;
+        margin-top: 2rem;
     }
     .product-deck {
         max-width: 95vw;
@@ -957,7 +940,8 @@ button {
         max-height: 242px;
     }
     .footer-ipad--spacer {
-        display: none;
+        /* display: none; */
+        height: 1.12rem;
     }
 }
 
@@ -968,7 +952,11 @@ button {
         height: 90vh;
     }
     .about-content--wrapper {
-        height: 80.2vh;
+        height: 80.1vh;
+        padding: 11% 26% 0;
+    }
+    .about-align--middle {
+        height: 35vh;
     }
 }
 
@@ -997,6 +985,15 @@ button {
     }
     .footer-desktop--wrapper {
         margin: 0 17.5vw;
+    }
+    .product--links img {
+        max-height: 30vh;
+    }
+    .about--text {
+        padding: 0 6rem 0;
+    }
+    .about-align--middle {
+        height: 25vh;
     }
 }
 

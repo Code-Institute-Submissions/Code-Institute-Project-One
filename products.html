@@ -68,7 +68,7 @@
         <!-- Products -->
         <div class="row">
           <!-- Nexus Vision -->
-          <div class="col-12 col-xl-4 product-card--wrapper">
+          <div class="col-12 col-lg-4 product-card--wrapper">
             <a class="product--links" href="" data-toggle="collapse" data-target="#cardProductNexus">
               <div class="card">
                   <img src="assets/images/product_nexusvision1.jpg" alt="">
@@ -79,12 +79,14 @@
             </a>
             <div class="collapse" id="cardProductNexus">
               <div class="product--body">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde omnis est eum aut deserunt dignissimos nam porro? Laborum, a rem.
+                Projectile motion tracking in real time. Predict with pinpoint accuracy the trajectory, speed, resistance and many more parameters. Calculate angles required for throwing an object to building structures.
+                Record, track and update custom settings in the app provided.<br>
+                Great for sportpersons and engineers.
               </div>
             </div>
           </div>
           <!-- Matrix -->
-          <div class="col-12 col-xl-4 product-card--wrapper">
+          <div class="col-12 col-lg-4 product-card--wrapper">
             <a class="product--links" href="" data-toggle="collapse" data-target="#cardProductMatrix">
               <div class="card">
                   <img src="assets/images/product_matrix2.jpg" alt="">
@@ -94,13 +96,13 @@
               </div>
             </a>
             <div class="collapse" id="cardProductMatrix">
-              <div class="product--body">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde omnis est eum aut deserunt dignissimos nam porro? Laborum, a rem.
+              <div class="product--body">Have you ever wanted to write programs for your mind? Then Matrix is designed for you. At will summon an interface in your mind to write applications that allow you to do all manner of things, from tweak your brain chemistry to an auto-pilot workout.<br>
+              Recommended for advanced users.
               </div>
             </div>
           </div>
           <!-- Aegis -->
-          <div class="col-12 col-xl-4 product-card--wrapper">
+          <div class="col-12 col-lg-4 product-card--wrapper">
               <a class="product--links" href="" data-toggle="collapse" data-target="#cardProductAegis">
                 <div class="card">
                     <img src="assets/images/product_aegis2.jpg" alt="">
@@ -111,15 +113,15 @@
               </a>
               <div class="collapse" id="cardProductAegis">
                 <div class="product--body">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde omnis est eum aut deserunt dignissimos nam porro? Laborum, a rem.
+                  The main focus of Aegis is security and privacy. We live in a world in which surveillance is becoming the norm and it is hard to escape the public eye. Features of Aegis include but are not limited to: facial recognition blocking, voice-scrambling, and location jamming. Settings can be accessed in-mind or with our app.
                 </div>
               </div>
             </div>
         </div>
-        <div class="row">
-          <div class="col-lg-2"></div>
+        <div class="row" id="ProductSecondRow">
+          <!-- <div class="col-lg-2"></div> -->
           <!-- Neuroptimal -->
-          <div class="col-12 col-xl-4 product-card--wrapper">
+          <div class="col-12 col-lg-4 product-card--wrapper">
               <a class="product--links" href="" data-toggle="collapse" data-target="#cardProductNeuroptimal">
                 <div class="card">
                     <img src="assets/images/product_neuroptimal2.png" alt="">
@@ -130,12 +132,12 @@
               </a>
               <div class="collapse" id="cardProductNeuroptimal">
                 <div class="product--body">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde omnis est eum aut deserunt dignissimos nam porro? Laborum, a rem.
+                  The definitive neurochemical enhancement. Neuroptimal ensures that your brain is always running at peak performance, no matter what external factors are impacting your life. With a wide range of customisation available from our app, you can keep it simple with the 'Balance' option or create a custom program for your needs.
                 </div>
               </div>
             </div>
           <!-- Core -->
-          <div class="col-12 col-xl-4 product-card--wrapper">
+          <div class="col-12 col-lg-4 product-card--wrapper">
             <a class="product--links" href="" data-toggle="collapse" data-target="#cardProductCore">
               <div class="card">
                   <img src="assets/images/product_core3.png" alt="">
@@ -146,11 +148,11 @@
             </a>
             <div class="collapse" id="cardProductCore">
               <div class="product--body">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde omnis est eum aut deserunt dignissimos nam porro? Laborum, a rem.
+                Core is for people who use their body a lot. From the workplace to the mountain tops, whether professional or enthusiast, this augment has something for you. Increase energy, reflexes, strength, speed and much more with this full-body enhancement. Featuring on-the-go voice control, as well as control with our app.
               </div>
             </div>
           </div>
-          <div class="col-lg-2"></div>
+          <!-- <div class="col-lg-2"></div> -->
         </div>
       </div>
       <!-- Mobile footer -->
@@ -212,22 +214,29 @@
             <div class="modal-signup--input">
                 <input class="form-control" id="email" type="email" name="email" placeholder="Email" required>
             </div>
-            <select id="productSelect name="productSelect" required>
-                <option value="">Desired Enhancement</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="Undecided">Undecided</option>
-            </select>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="row">
+              <div class="col-8">
+                <select id="productSelect" name="productSelect" required>
+                    <option value="">Desired Enhancement</option>
+                    <option value="1">Nexus Vision</option>
+                    <option value="2">Matrix</option>
+                    <option value="3">Neuroptimal</option>
+                    <option value="4">Aegis</option>
+                    <option value="5">Core</option>
+                    <option value="Undecided">Undecided</option>
+                </select>
+              </div>
+              <div class="col-4 col-md-2">
+                  <button type="submit" class="btn signup-modal-btn--submit">Submit</button>
+              </div>
+              <div class="col-12 col-md-2">
+                  <button type="button" class="btn signup-modal-btn--close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
             </form>
           </div>
-          <div class="modal-footer">
-              <small class="form-text text-muted">We'll never share your personal<br> information with anyone else.</small>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <div class="row signup-modal--footer">
+              <small class="form-text">We'll never share your personal information with anyone else</small>
           </div>
         </div>
       </div>
