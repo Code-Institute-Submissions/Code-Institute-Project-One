@@ -50,12 +50,11 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-/* Remove outline from button when clicked. Used on all buttons because I didn't like the effect */
-/* https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked */
+/* Remove outline from button when clicked. Used on all buttons because I didn't like the effect - https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked*/
 button {
     outline: none !important;
-                                box-shadow: none !important;
-                            }
+    box-shadow: none !important;
+}
 
 /* ================================================
 
@@ -184,7 +183,7 @@ button {
     text-decoration: none;
 }
 
-.footer-ipad--spacer {
+.footer-desktop--spacer {
     height: 5.9vh;
     display: none;
 }
@@ -220,22 +219,17 @@ button {
     font-size: 0.9rem;
 }
 
-#footer-contact--align {
-    transform: translateY(1rem);
-}
-
 .footer-text--not-link {
     color: #c2c2c2;
 }
 
-.footer-text--link a:link, a:visited, a:active {
+.footer-text--desktop a:link, a:visited, a:active {
     text-decoration: none;
     color: #ffffff;
 }
-.footer-text--link a:hover {
+.footer-text--desktop a:hover {
     text-decoration: none;
-    color: #ffffff;
-    /* font-weight: 500; */
+    color: #000000;
 }
 
 /* ================================================
@@ -358,7 +352,7 @@ button {
     margin-bottom: 0rem;
 }
 
-.product--links .card-img--text {
+.product-img--text {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -368,7 +362,6 @@ button {
 
 .product-header {
     color: #ffffff;
-    position: relative;
     font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: 2px;
@@ -408,7 +401,7 @@ button {
     height: 60vh;
 }
 
-.about--img {
+.about--img-about {
     max-width: 200px;
     display: flex;
     margin: 0 auto 0.5rem;
@@ -421,42 +414,6 @@ button {
     font-size: 1rem;
     line-height: 1.15;
     text-align: center;
-}
-
-
-
-/*  */
-
-.about-deck {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-}
-
-.about-deck > .card {
-    flex-wrap: wrap;
-    flex: initial;
-}
-
-.about-card--style {
-    background: #003d53;
-    border: 1px solid rgba(165, 70, 11, 0.75);
-    border-radius: 0;
-    font-family: "Rubik", sans-serif;
-    color: #ffffff;
-}
-
-.about-card--style > .card-header {
-    padding: 0.25rem 0 0 0;
-    border-bottom: 1px solid rgba(165, 70, 11, 1);
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-.about-card--style > .card-body {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 400;
 }
 
 /* ================================================
@@ -584,27 +541,29 @@ button {
     font-size: 0.9rem;
 }
 
-.signup-modal-btn--submit {
+.modal-signup-btn--submit {
     color: #ffffff;
     background: #a5460b;
 }
 
-.signup-modal-btn--close {
+.modal-signup-btn--close {
     margin-top: 0.5rem;
 }
 
-.signup-modal--footer {
+.modal-signup--footer {
     color: #ffffff;
     padding: 0 1rem;
     text-align: center;
     justify-content: center;
 }
 
+/* ==================
+>Privacy Policy Modal
+================== */
 
 #modalPrivacy {
     font-family: "Rubik", sans-serif;
 }
-
 
 /* ================================================
 
@@ -699,34 +658,11 @@ button {
     .product-content--wrapper {
         padding-top: 3%;
     }
-    .product-deck {
-        max-width: 65vw;
-    }
-    .product-card--layout .card-img {
-        max-height: 60vh;
-    }
 }
 
 @media only screen and (min-width: 768px) and (orientation: landscape) {
     .product-content--wrapper {
         padding: 3% 5% 0;
-    }
-    .product-deck {
-        max-width: 90vw;
-    }
-    .product-deck > .card {
-        width: 40%;
-    }
-}
-
-/* == About == */
-
-@media only screen and (min-width: 768px) and (orientation: landscape) {
-    .about-deck > .card {
-        width: 43%;
-    }
-    #ourServiceCard {
-        width: 60%;
     }
 }
 
@@ -815,7 +751,7 @@ button {
     .modal-signup select {
         width: 95%
     }
-    .signup-modal-btn--close {
+    .modal-signup-btn--close {
         margin-top: 0;
     }
 }
@@ -826,14 +762,7 @@ button {
     .product-content--wrapper {
         padding: 8% 5% 0;
     }
-    .product-deck {
-        max-width: 90vw;
-    }
-    .product-deck > .card {
-        width: auto;
-        max-width: 45%;
-    }
-    .footer-ipad--spacer {
+    .footer-desktop--spacer {
         display: flex;
     }
 }
@@ -930,17 +859,7 @@ button {
         justify-content: center;
         margin-top: 2rem;
     }
-    .product-deck {
-        max-width: 95vw;
-    }
-    .product-deck > .card {
-        max-width: 30%;
-    }
-    .product-card--layout .card-img {
-        max-height: 242px;
-    }
-    .footer-ipad--spacer {
-        /* display: none; */
+    .footer-desktop--spacer {
         height: 1.12rem;
     }
 }
@@ -980,9 +899,6 @@ button {
 ========= */
 
 @media only screen and (min-width: 1500px) {
-    .product-deck > .card {
-        max-width: 25%;
-    }
     .footer-desktop--wrapper {
         margin: 0 17.5vw;
     }
@@ -995,9 +911,6 @@ button {
     .about-align--middle {
         height: 25vh;
     }
-}
-
-@media only screen and (min-width: 1500px) {
     .contact-content--wrapper {
         padding: 0 24% 0;
     }

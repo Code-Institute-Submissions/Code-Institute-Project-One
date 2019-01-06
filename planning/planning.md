@@ -135,6 +135,10 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
     scan css and html for all old code
     rename some classes
 
+copy desktop footers to all pages
+
+bg image for other pages
+
 - Decide on background for other pages and then figure out footer layout
 - Double check footer positioning is same on all pages and sizes
     - can maybe do this with mobile footer and not need spacer
