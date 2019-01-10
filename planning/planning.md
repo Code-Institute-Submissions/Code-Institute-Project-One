@@ -135,24 +135,20 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
     scan css and html for all old code
     rename some classes
 
-copy desktop footers to all pages
 
-bg image for other pages
-
-- Decide on background for other pages and then figure out footer layout
-- Double check footer positioning is same on all pages and sizes
     - can maybe do this with mobile footer and not need spacer
+            remove footer mobile spacer
+            desktop needs to stay on product page - ask mentor
 
 - cleanup rows and columns -maybe extra rows somewhere
 - footer a:hover ipad styling - remove sticky hovers
+- close nav bar on click / on click outside
 
 <!-- Text styling -->
 Font spacing, family, size, weight.. check all
+check all links
 
-<!-- extra stuff -->
-- add tapering borders to mobile nav
+check over all code thoroughly
 
+write readme
 
-footer-text--mobile > footer-mobile--text
-remove font weights that aren't in use
-ensure footer content, links, etc same on all pages

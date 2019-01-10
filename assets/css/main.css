@@ -3,12 +3,12 @@
     - Where possible, following the DOM structure
     - Exception to above rule: footer following navigation
     - Mobile preceeding desktop
-    - In order of pages on navigation - home, products, about, contact
+    - In order of pages on navigation - home, products, about, FAQ, contact
     - Within the declarations, layout/structure properties preceeding styling properties
     - Modals after page content
     - Media queries at the bottom, ordered from smallest to largest except special cases, which are at the very bottom
 
-    - CSS classes are named by following my understanding of BEM as best as I could. I also read a lot on various other systems but a lot of it uses sass and is outside the scope of my knowledge at this stage
+    - CSS classes are named by following my understanding of BEM as best as I could. I also read a lot on various other systems but a lot of it uses SASS and is outside the scope of my knowledge at this stage
 */
 
                     /* ==================
@@ -24,6 +24,7 @@
                 /*  >>HOME PAGE  */
                 /*  >>PRODUCTS PAGE  */
                 /*  >>ABOUT PAGE */
+                /*  >>FAQ PAGE */
                 /*  >>CONTACT PAGE */
                 /*  >>MODALS
                         >Sign Up Modal */
@@ -39,7 +40,7 @@
 >>IMPORTS AND GLOBAL SETTINGS
 ========================== */
 
-@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500');
 
 body {
     background: #000000;
@@ -160,14 +161,10 @@ button {
 .footer-mobile--wrapper {
     display: flex;
     background: #003d53;
+    margin-bottom: 5.9vh;
 }
 
-.footer-mobile--spacer {
-    height: 5.9vh;
-    display: flex;
-}
-
-.footer-text--mobile {
+.footer-mobile--text {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 0.7rem;
@@ -175,11 +172,11 @@ button {
     color: #ffffff;
 }
 
-.footer-text--mobile a {
+.footer-mobile--text a {
     color: #ffffff;
 }
 
-.footer-text--mobile a:hover {
+.footer-mobile--text a:hover {
     text-decoration: none;
 }
 
@@ -252,7 +249,7 @@ button {
 
 .home-content--wrapper {
     height: 72vh;
-    padding: 27% 7% 0;
+    padding: 18% 7% 0;
 }
 
 .home-text--style {
@@ -260,7 +257,7 @@ button {
 }
 
 .home-text--style h1 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
     color: #ffffff;
     font-family: "Orbitron", sans-serif;
     font-weight: 700;
@@ -278,17 +275,29 @@ button {
     text-transform: uppercase;
 }
 
+.home-text--style h5 {
+    margin: 1.75rem 0 0.25rem;
+    padding: 0 2rem;
+    color: #cccccc;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    /* letter-spacing: 1px; */
+    /* text-transform: uppercase; */
+}
+
 .home-text--style h6 {
-    color: #ffffff;
+    color: #acacac;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 0.7rem;
+    font-style: italic;
 }
 
 .button--center {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
 
@@ -402,7 +411,7 @@ button {
 }
 
 .about-content--wrapper {
-    min-height: 74.2vh;
+    min-height: 78vh;
     padding: 5% 10% 0;
 }
 
@@ -426,6 +435,84 @@ button {
     font-size: 1rem;
     line-height: 1.15;
     text-align: center;
+}
+
+.about--text-footer {
+    margin: 1rem 0;
+}
+
+/* ================================================
+
+>>FAQ PAGE
+==========
+
+================================================= */
+
+.faq-container--wrapper {
+    /* background: #000000; */
+    padding: 0;
+    background: url(../images/bg_faq.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.faq-content--wrapper {
+    padding: 5% 10% 0;
+    min-height: 80.1vh;
+}
+
+.faq--header {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.faq--header h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.faq--questions {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+}
+
+.faq--divider {
+    width: 6rem;
+    height: 0px;
+    background-color: #a5460b;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.faq--divider-lg {
+    width: 16rem;
+    height: 0px;
+    background-color: #a5460b;
+    margin-top: 0.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.faq--sub-questions {
+    margin-bottom: 0.75rem;
+}
+
+.faq--sub-questions h5 {
+    padding-bottom: 0.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.faq--sub-questions p {
+    line-height: 1.15;
+    font-size: 0.85rem;
 }
 
 /* ================================================
@@ -458,14 +545,26 @@ button {
     justify-content: center;
 }
 
-#contactText {
-    padding: 0.5rem 0.5rem 0 0.5rem;
-    margin: 0 0 0.5rem 0;
+.contact--header {
+    padding: 0.5rem 0.5rem 0;
+    margin: 0 0 1rem;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /* font-size: 1.2rem; */
+}
+
+.contact--subtext {
+    /* padding: 0.5rem 0.5rem 0; */
+    margin: 0 0 0.75rem;
     text-align: center;
     color: #ffffff;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 
 .contact--form {
@@ -486,6 +585,7 @@ button {
     margin-top: 0.75rem;
     color: #ffffff;
     background: #003d53;
+    font-size: 1.25rem;
 }
 
 .contact--form small {
@@ -625,8 +725,8 @@ button {
     .nav-mobile--style {
         margin-bottom: 10vh;
     }
-    .footer-mobile--spacer {
-        height: 9.9vh;
+    .footer-mobile--wrapper {
+        margin-bottom: 9.9vh;
     }
     .home-container--wrapper {
         height: 77vh;
@@ -653,7 +753,7 @@ button {
 
 /* To target long phones in landscape */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
-    .footer-mobile--wrapper, .footer-mobile--spacer {
+    .footer-mobile--wrapper {
         display: flex;
     }
     .footer-show--md {
@@ -709,7 +809,7 @@ button {
 
 /* Hide mobile footer */
 @media only screen and (min-width: 768px) and (min-height: 420px) {
-    .footer-mobile--wrapper, .footer-mobile--spacer {
+    .footer-mobile--wrapper {
         display: none;
     }
 }
@@ -755,6 +855,9 @@ button {
     }
     .home-text--style h3 {
         font-size: 2.5rem;
+    }
+    .home-text--style h5 {
+        font-size: 1.5rem;
     }
     .home-text--style h6 {
         font-size: 1rem;
@@ -835,7 +938,7 @@ button {
     }
     .home-content--wrapper {
         padding: 9% 8% 0;
-        height: 73.5vh;
+        height: 73.4vh;
     }
     .home-text--style h1 {
         font-size: 4rem;
@@ -845,8 +948,11 @@ button {
         font-weight: 700;
         font-size: 3rem;
     }
+    .home-text--style h5 {
+        font-size: 1.5rem;
+    }
     .home-text--style h6 {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
     .button--center {
         margin: 1rem 0;
@@ -904,8 +1010,8 @@ button {
         height: 90vh;
     }
     .contact-content--wrapper {
-        padding: 0 18% 0;
-        height: 73.5vh;
+        padding: 0 24% 0;
+        height: 73.4vh;
     }
     .contact-form--middle {
         height: 75vh;
@@ -930,7 +1036,7 @@ button {
         height: 25vh;
     }
     .contact-content--wrapper {
-        padding: 0 24% 0;
+        padding: 0 29% 0;
     }
 }
 
