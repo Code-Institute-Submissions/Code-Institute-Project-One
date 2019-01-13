@@ -4,9 +4,9 @@ Build a frontend only website to demonstrate understanding of the User Centric F
 
 # Design Planning
 
-I have a separate planning document which goes into the different planes of UX and how I used them to design this website. I came across the concept of agile development and I liked it, so I have also documented changes to the initial design that came about through different iterations. This can be found [here.](#)
+I have a separate planning document which goes into the different planes of UX and how I used them to design this website. I came across the concept of agile development and I liked it, so I have also documented changes to the initial design that came about through different iterations. This can be found [here.](planning/planning.md)
 
-I used the program Pencil to design wireframes for both mobile and desktop, which can be found [here.](#)
+I used the program Pencil to design wireframes for both mobile and desktop, which can be found [here.](planning/wireframes)
 
 ### To summarize
 
@@ -57,12 +57,17 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * [https://hackerthemes.com/bootstrap-cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet)
 * [https://stackoverflow.com](https://stackoverflow.com)
 * [https://www.quora.com](https://www.quora.com)
+* [https://whatwebcando.today](https://whatwebcando.today)
+* [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
 * A lot of google!
 
 # Testing
 
 * The website was constantly tested during development using Chrome dev tools. I used this to resize the browser to check new code was working, breakpoints, and different mobile/tablet screen sizes. I also used it for live editing to build the site.
 * I tested the website on all of my personal devices (Desktop computer, Macbook Pro, iPad, LG G6 phone, Oukitel 10000 phone.) I checked in both portrait and landscape and tested the responsive design, navigation, links, modals and form submission.
+* Tested load times on my mobile device using mobile data.
+* Tested sign up and contact form with and without inputs in all fields.
+* Tested all links on all pages
 
 # Deployment
 

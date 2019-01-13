@@ -27,7 +27,8 @@
                 /*  >>FAQ PAGE */
                 /*  >>CONTACT PAGE */
                 /*  >>MODALS
-                        >Sign Up Modal */
+                        >Sign Up Modal
+                        >Privacy/Credits Modal */
                 /*  >>MEDIA QUERIES
                         >Mobile Landscape
                         >768+ width
@@ -98,9 +99,7 @@ button {
 
 .nav-mobile--icon {
     z-index: 10;
-    margin-left: 45%;
-    margin-right: 45%;
-    margin-bottom: 1%;
+    margin: 0 auto 1%;
     border: 0;
     padding: 0;
     width: 10%;
@@ -221,9 +220,12 @@ button {
     text-decoration: none;
     color: #ffffff;
 }
-.footer-text--desktop a:hover {
-    text-decoration: none;
-    color: #000000;
+
+@media (hover) {
+    .footer-text--desktop a:hover {
+        text-decoration: none;
+        color: #000000;
+    }
 }
 
 /* ================================================
@@ -279,8 +281,6 @@ button {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 0.8rem;
-    /* letter-spacing: 1px; */
-    /* text-transform: uppercase; */
 }
 
 .home-text--style h6 {
@@ -325,7 +325,6 @@ button {
 ================================================= */
 
 .product-container--wrapper {
-    /* background: #000000; */
     padding: 0;
     background: url(../images/bg_product.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -397,7 +396,6 @@ button {
 ================================================= */
 
 .about-container--wrapper {
-    /* background: #000000; */
     padding: 0;
     background: url(../images/bg_about.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -446,7 +444,6 @@ button {
 ================================================= */
 
 .faq-container--wrapper {
-    /* background: #000000; */
     padding: 0;
     background: url(../images/bg_faq.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -520,7 +517,6 @@ button {
 ================================================= */
 
 .contact-container--wrapper {
-    /* background: #000000; */
     padding: 0;
     background: url(../images/bg_contact.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -551,17 +547,14 @@ button {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    /* font-size: 1.2rem; */
 }
 
 .contact--subtext {
-    /* padding: 0.5rem 0.5rem 0; */
     margin: 0 0 0.75rem;
     text-align: center;
     color: #ffffff;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    /* font-size: 1.2rem; */
 }
 
 .contact--form {
@@ -847,7 +840,7 @@ button {
     }
     .footer-desktop--wrapper {
         margin: 0 12.5vw;
-        padding-top: 0.25rem;
+        padding-top: 0.5rem;
     }
     .home-container--wrapper {
         height: 90vh;
@@ -899,7 +892,7 @@ button {
 @media only screen and (min-width: 768px) and (min-height: 420px) {
     .about-content--wrapper {
         padding: 11% 20% 0;
-        height: 75vh;
+        min-height: 75vh;
     }
     .about-align--middle {
         height: 40vh;
@@ -1065,13 +1058,10 @@ button {
     }
 }
 
-/* iPad pro specific -- Portrait */
-/* https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106 */
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px) {
-    .product-deck {
-        max-width: 65vh;
-    }
-    .product-deck > .card {
-        max-width: 40%;
+/* iPad Pro */
+@media only screen and (min-width: 1024px) and (min-height: 1366px) and (max-width: 1024px) and (max-height: 1366px) {
+    .footer-desktop--wrapper {
+    padding-top: 1rem;
     }
 }
+/* ??????????? */
