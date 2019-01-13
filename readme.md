@@ -67,7 +67,8 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * I tested the website on all of my personal devices (Desktop computer, Macbook Pro, iPad, LG G6 phone, Oukitel 10000 phone.) I checked in both portrait and landscape and tested the responsive design, navigation, links, modals and form submission.
 * Tested load times on my mobile device using mobile data.
 * Tested sign up and contact form with and without inputs in all fields.
-* Tested all links on all pages
+* Tested all links on all pages.
+*
 
 # Deployment
 
