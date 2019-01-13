@@ -1,9 +1,89 @@
-### Resources
+# Zenith Technologies | Code Institute Milestone Project One
+
+Build a frontend only website to demonstrate understanding of the User Centric Frontend Development module of the Code Institute course. I have chosen to build my own idea for a fictional company in the future that provides cybernetic implants for humans.
+
+# Design Planning
+
+I have a separate planning document which goes into the different planes of UX and how I used them to design this website. I came across the concept of agile development and I liked it, so I have also documented changes to the initial design that came about through different iterations. This can be found [here.](#)
+
+I used the program Pencil to design wireframes for both mobile and desktop, which can be found [here.](#)
+
+### To summarize
+
+* This is a website for people to sign up for the business' service providing cybernetic implants.
+* The business wants a functional website that is easy to use to allow for sign up's and providing necessary information.
+* The user wants to be able to sign up with minimal time spent, learn more about the products and the business, and be able to contact someone with any questions.
+
+### User Stories
+
+* As a customer, I would like to be able to sign up easily so that I can save time browsing.
+* As a customer, I would like to be able to view all available products in a concise format so that I can save time browsing.
+* As a customer, I would like detailed information about the products so that I can make an informed decision.
+* As a customer, I would like to be able to contact someone with any questions I have about the product so that I have all the information I require.
+
+### Website Layout
+
+* Five content pages and a sign up modal
+* Different navigation for mobile and desktop
+
+### Website Styling
+
+* I decided to use a dark/black main theme as I liked this for the nature of the content. I designed a logo which has some nice colours that stand out on the black. I chose a particular blue from this logo as the primary colour and used an opposite colour tool to choose a dark but vibrant orange and the secondary colour.
+* Product and background images are mostly dark/grey, with a nice contrast between the background and the content.
+* I chose two fonts. The main font used on all navbars and larger text areas is simple to read and in white or light grey. The second font is used only for the home page headers and sign up button and has matches the type of product the business is dealing in.
+
+# Features
+
+* Sign up button - allows users to register for the business' service by having them fill out a sign up form.
+* Exapdning product information - allows users to view both a simple product overview and more detailed product information by clicking on the product.
+* Contact form - allows users to contact the business by having them fill out a contact form.
+
+# Technologies Used
+
+* [Bootstrap Framework v4.1.](https://getbootstrap.com)
+    * used for ease of creation of functional components and website layout.
+* [Google Fonts](https://fonts.google.com)
+    * a good selection of fonts.
+* [Font Awesome icons](https://fontawesome.com/)
+    * used for social media icons.
+* [JQuery](https://jquery.com)
+    * required for Bootstrap 4 functionality
+* [Popper.JS](https://popper.js.org/)
+    * required for Bootstrap 4 functionality
+
+## Resources
 
 * [https://getbootstrap.com](https://getbootstrap.com)
 * [https://hackerthemes.com/bootstrap-cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet)
 * [https://stackoverflow.com](https://stackoverflow.com)
 * [https://www.quora.com](https://www.quora.com)
-* [https://pixabay.com](https://pixabay.com)
-* []()
 * A lot of google!
+
+# Testing
+
+* The website was constantly tested during development using Chrome dev tools. I used this to resize the browser to check new code was working, breakpoints, and different mobile/tablet screen sizes. I also used it for live editing to build the site.
+* I tested the website on all of my personal devices (Desktop computer, Macbook Pro, iPad, LG G6 phone, Oukitel 10000 phone.) I checked in both portrait and landscape and tested the responsive design, navigation, links, modals and form submission.
+
+# Deployment
+
+
+
+# Credits
+
+## Image sources
+
+* Logo image - by Geralt on pixabay
+* Home and product background - [https://wallimpex.com/](https://wallimpex.com/)
+* About background - [https://invardin.com/robot-1650649_1920/](https://invardin.com/robot-1650649_1920/)
+* FAQ background - by Kate Rowe on Unsplash
+* Contact background - by Tony Webster on Unsplash
+* Products
+    * Nexus - [https://www.flickr.com/photos/sanjayaprime/4924462993](https://www.flickr.com/photos/sanjayaprime/4924462993)
+    * Matrix - by Geralt on pixabay
+    * Aegis - [https://commons.wikimedia.org/wiki/File:Cybersecurity.png](https://commons.wikimedia.org/wiki/File:Cybersecurity.png)
+    * Neuroptimal - [https://www.flickr.com/photos/alansimpsonme/34752491090](https://www.flickr.com/photos/alansimpsonme/34752491090)
+    * Core - [https://www.kisspng.com/png-top500-computer-science-electronic-circuit-king-ab-1144035/](https://www.kisspng.com/png-top500-computer-science-electronic-circuit-king-ab-1144035/)
+
+## Acknowledgements
+
+Landing page inspired by Code Institute 'Whiskey Drop' lesson

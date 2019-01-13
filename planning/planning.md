@@ -43,7 +43,7 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 **home/index**
 
 * nav bar
-* bg image, header/welcome message type thing (inspired by whiskey drop module)
+* bg image, header/welcome message
 * footer
 
 **products**
@@ -123,26 +123,28 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 * Large background image on home page with phrase and CTA
 * Consistent background/foreground theme across site. Not sure if same image on every page or similar color but different.
 
-
-
 --------------------------
+
+## Updates
+
+* Decided to remove separate product information page and have collapsable information containers for this purpose.
+* Added a FAQ page and kept the about us page for only company information.
+
+
 
 <!-- To do -->
 
 - reorganise css
     classes > element targetting (instead of new classes)
-    remove all old product deck
     scan css and html for all old code
     rename some classes
 
-
-    - can maybe do this with mobile footer and not need spacer
-            remove footer mobile spacer
-            desktop needs to stay on product page - ask mentor
+- desktop spacer needs to stay on product page - ask mentor
+- add src to images
+- images by media queries
 
 - cleanup rows and columns -maybe extra rows somewhere
 - footer a:hover ipad styling - remove sticky hovers
-- close nav bar on click / on click outside
 
 <!-- Text styling -->
 Font spacing, family, size, weight.. check all
@@ -151,4 +153,7 @@ check all links
 check over all code thoroughly
 
 write readme
+
+
+
 

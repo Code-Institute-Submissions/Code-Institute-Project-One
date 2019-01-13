@@ -209,15 +209,12 @@ button {
 }
 
 .footer-text--desktop h6 {
-    font-weight: 500;
-}
-
-.footer-text--desktop p {
-    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .footer-text--not-link {
     color: #c2c2c2;
+    font-size: 1rem;
 }
 
 .footer-text--desktop a:link, a:visited, a:active {
@@ -402,7 +399,7 @@ button {
 .about-container--wrapper {
     /* background: #000000; */
     padding: 0;
-    background: url(../images/bg_about.png) no-repeat center center;
+    background: url(../images/bg_about.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -675,12 +672,21 @@ button {
     justify-content: center;
 }
 
-/* ==================
->Privacy Policy Modal
-================== */
+/* ===================
+>Privacy/Credits Modal
+=================== */
 
 #modalPrivacy {
     font-family: "Rubik", sans-serif;
+}
+
+#modalCredits {
+    font-family: "Rubik", sans-serif;
+    color: #000000;
+}
+
+#modalCredits a {
+    color: #007bff;
 }
 
 /* ================================================
@@ -834,14 +840,14 @@ button {
         margin-bottom: 0.5rem;
     }
     .footer-text--desktop a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .footer-text--not-link {
         font-size: 0.8rem;
     }
     .footer-desktop--wrapper {
         margin: 0 12.5vw;
-        padding-top: 0.5rem;
+        padding-top: 0.25rem;
     }
     .home-container--wrapper {
         height: 90vh;
@@ -973,7 +979,7 @@ button {
         min-height: 90vh;
     }
     .product-content--wrapper {
-        padding: 10% 2% 0;
+        padding: 6% 2% 0;
         min-height: 80.2vh;
     }
     .product--links img {
@@ -986,6 +992,11 @@ button {
     .footer-desktop--spacer {
         height: 1.12rem;
     }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .product--links img {
+    max-height: 27vh;
 }
 
 /* == About == */
@@ -1027,7 +1038,7 @@ button {
         margin: 0 17.5vw;
     }
     .product--links img {
-        max-height: 30vh;
+        max-height: 27vh;
     }
     .about--text {
         padding: 0 6rem 0;
