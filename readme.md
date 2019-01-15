@@ -35,8 +35,9 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 # Features
 
 * Sign up button - allows users to register for the business' service by having them fill out a sign up form.
-* Exapdning product information - allows users to view both a simple product overview and more detailed product information by clicking on the product.
+* Expanding product information - allows users to view both a simple product overview and more detailed product information by clicking on the product.
 * Contact form - allows users to contact the business by having them fill out a contact form.
+* Different navigation for mobile and desktop to allow easier use depending on the platform.
 
 # Technologies Used
 
@@ -59,20 +60,32 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * [https://www.quora.com](https://www.quora.com)
 * [https://whatwebcando.today](https://whatwebcando.today)
 * [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
+* [https://tinypng.com/](https://tinypng.com/)
 * A lot of google!
 
 # Testing
 
 * The website was constantly tested during development using Chrome dev tools. I used this to resize the browser to check new code was working, breakpoints, and different mobile/tablet screen sizes. I also used it for live editing to build the site.
-* I tested the website on all of my personal devices (Desktop computer, Macbook Pro, iPad, LG G6 phone, Oukitel 10000 phone.) I checked in both portrait and landscape and tested the responsive design, navigation, links, modals and form submission.
 * Tested load times on my mobile device using mobile data.
 * Tested sign up and contact form with and without inputs in all fields.
 * Tested all links on all pages.
-*
 
 # Deployment
 
+* Deployed using Github Pages - [https://asdfractal.github.io/Code-Institute-Project-One/](https://asdfractal.github.io/Code-Institute-Project-One/)
+* Tested everything again once deployed.
+* I tested the website on all of my personal devices (Desktop computer, Macbook Pro, iPad, LG G6 phone, Oukitel 10000 phone.) I checked in both portrait and landscape and tested the responsive design, navigation, links, modals and form submission.
+* Additionally tested using -
+    * [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) and received a mobile friendly result for all pages.
+    * [https://www.webpagetest.org/](https://www.webpagetest.org/) - [(result)](https://www.webpagetest.org/result/190113_X7_beb233f33919742b9638bd8b0adebdd5/) and received a satisfactory result.
 
+## Issues encountered
+
+* Upon testing on webpagetest I discovered a 404 error on favicon so I googled what this is and implemented an icon.
+* It was suggested I use gzip compression but after doing some research on this I believe it is beyond the scope of this project for me to implement.
+* Received a low grade on caching, again did research on this and I believe it is also beyond the scope of this project.
+
+* Testing on my iPad in landscape I encountered an issue with size due to the address bar showing, which I didn't anticipate since devtools doesn't show it.
 
 # Credits
 

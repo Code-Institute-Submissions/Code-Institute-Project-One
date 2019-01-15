@@ -189,7 +189,7 @@ button {
 ============ */
 
 .footer-desktop--wrapper {
-    height: 8vh;
+    height: 10vh;
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 0.75rem;
@@ -213,7 +213,7 @@ button {
 
 .footer-text--not-link {
     color: #c2c2c2;
-    font-size: 1rem;
+    font-size: 0.6rem;
 }
 
 .footer-text--desktop a:link, a:visited, a:active {
@@ -936,7 +936,7 @@ button {
         height: 90vh;
     }
     .home-content--wrapper {
-        padding: 9% 8% 0;
+        padding: 7% 8% 0;
         height: 73.4vh;
     }
     .home-text--style h1 {
@@ -990,6 +990,7 @@ button {
 @media only screen and (min-width: 992px) and (orientation: landscape) {
     .product--links img {
     max-height: 27vh;
+    }
 }
 
 /* == About == */
@@ -1054,7 +1055,7 @@ button {
     margin: 0;
     }
     .footer-desktop--wrapper {
-    padding-top: 0.2rem;
+    padding-top: 0;
     }
 }
 
