@@ -44,8 +44,7 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500');
 
 body {
-    /* background: #000000; */
-    background: red;
+    background: #000000;
 }
 
 /* remove bootstrap default margins */
@@ -839,7 +838,7 @@ button {
     }
     .footer-desktop--wrapper {
         margin: 0 12.5vw;
-        padding-top: 0.5rem;
+        padding-top: 0.4rem;
     }
     .home-container--wrapper {
         height: 90vh;
@@ -1065,7 +1064,7 @@ button {
     /* margin: 0; */
     }
     .footer-desktop--wrapper {
-    padding-top: 0.3rem;
+    padding-top: 0.2rem;
     }
 }
 
