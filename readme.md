@@ -2,7 +2,9 @@
 
 Build a frontend only website to demonstrate understanding of the User Centric Frontend Development module of the Code Institute course. I have chosen to build my own idea for a fictional company in the future that provides cybernetic implants for humans.
 
-# Design Planning
+--------------------
+
+## Design Planning
 
 I have a separate planning document which goes into the different planes of UX and how I used them to design this website. I came across the concept of agile development and I liked it, so I have also documented changes to the initial design that came about through different iterations. This can be found [here.](planning/planning.md)
 
@@ -32,14 +34,18 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * Product and background images are mostly dark/grey, with a nice contrast between the background and the content.
 * I chose two fonts. The main font used on all navbars and larger text areas is simple to read and in white or light grey. The second font is used only for the home page headers and sign up button and has matches the type of product the business is dealing in.
 
-# Features
+--------------------
+
+## Features
 
 * Sign up button - allows users to register for the business' service by having them fill out a sign up form.
 * Expanding product information - allows users to view both a simple product overview and more detailed product information by clicking on the product.
 * Contact form - allows users to contact the business by having them fill out a contact form.
 * Different navigation for mobile and desktop to allow easier use depending on the platform.
 
-# Technologies Used
+--------------------
+
+## Technologies Used
 
 * [Bootstrap Framework v4.1.](https://getbootstrap.com)
     * used for ease of creation of functional components and website layout.
@@ -63,17 +69,21 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * [https://tinypng.com/](https://tinypng.com/)
 * A lot of google!
 
-# Testing
+--------------------
+
+## Testing
 
 * The website was constantly tested during development using Chrome dev tools. I used this to resize the browser to check new code was working, breakpoints, and different mobile/tablet screen sizes. I also used it for live editing to build the site.
 * Tested load times on my mobile device using mobile data.
 * Tested sign up and contact form with and without inputs in all fields.
 * Tested all links on all pages.
 
-# Deployment
+--------------------
+
+## Deployment
 
 * Deployed using Github Pages - [https://asdfractal.github.io/Code-Institute-Project-One/](https://asdfractal.github.io/Code-Institute-Project-One/)
-* Tested everything again once deployed.
+* Tested everything listed above again once deployed.
 * I tested the website on all of my personal devices (Desktop computer, Macbook Pro, iPad, LG G6 phone, Oukitel 10000 phone.) I checked in both portrait and landscape and tested the responsive design, navigation, links, modals and form submission.
 * Additionally tested using -
     * [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) and received a mobile friendly result for all pages.
@@ -86,10 +96,13 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * Received a low grade on caching, again did research on this and I believe it is also beyond the scope of this project.
 
 * Testing on my iPad in landscape I encountered an issue with size due to the address bar showing, which I didn't anticipate since devtools doesn't show it.
+* Testing on my Macbook Pro I realised that the resolution height is quite a bit smaller than my desktop and some elements were not looking correct.
 
-# Credits
+--------------------
 
-## Image sources
+## Credits
+
+### Image sources
 
 * Logo image - by Geralt on pixabay
 * Home and product background - [https://wallimpex.com/](https://wallimpex.com/)
@@ -103,6 +116,10 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
     * Neuroptimal - [https://www.flickr.com/photos/alansimpsonme/34752491090](https://www.flickr.com/photos/alansimpsonme/34752491090)
     * Core - [https://www.kisspng.com/png-top500-computer-science-electronic-circuit-king-ab-1144035/](https://www.kisspng.com/png-top500-computer-science-electronic-circuit-king-ab-1144035/)
 
-## Acknowledgements
+### Acknowledgements
 
 Landing page inspired by Code Institute 'Whiskey Drop' lesson
+
+--------------------
+
+*Website for educational purposes only*

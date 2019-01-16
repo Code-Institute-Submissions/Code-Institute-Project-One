@@ -44,7 +44,8 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Rubik:400,500');
 
 body {
-    background: #000000;
+    /* background: #000000; */
+    background: red;
 }
 
 /* remove bootstrap default margins */
@@ -180,7 +181,7 @@ button {
 }
 
 .footer-desktop--spacer {
-    height: 5.9vh;
+    height: 7vh;
     display: none;
 }
 
@@ -189,7 +190,7 @@ button {
 ============ */
 
 .footer-desktop--wrapper {
-    height: 10vh;
+    height: 7vh;
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 0.75rem;
@@ -236,7 +237,7 @@ button {
 ================================================= */
 
 .home-container--wrapper {
-    height: 95vh;
+    min-height: 90vh;
     padding: 0;
     background: url(../images/bg_home.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -455,7 +456,7 @@ button {
 
 .faq-content--wrapper {
     padding: 5% 10% 0;
-    min-height: 80.1vh;
+    min-height: 81vh;
 }
 
 .faq--header {
@@ -727,9 +728,6 @@ button {
     .footer-mobile--wrapper {
         margin-bottom: 9.9vh;
     }
-    .home-container--wrapper {
-        height: 77vh;
-    }
     .home-content--wrapper {
         height: auto;
         min-height: 58vh;
@@ -747,6 +745,7 @@ button {
     }
     .social-links--wrapper {
         margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
     }
 }
 
@@ -866,7 +865,10 @@ button {
     }
     .social-links--wrapper {
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 1vh;
+    }
+    .social-links--style {
+        font-size: 6vh;
     }
     .modal-signup select {
         width: 95%
@@ -937,7 +939,7 @@ button {
     }
     .home-content--wrapper {
         padding: 7% 8% 0;
-        height: 73.4vh;
+        height: 71vh;
     }
     .home-text--style h1 {
         font-size: 4rem;
@@ -961,7 +963,9 @@ button {
     }
     .social-links--wrapper {
         margin-top: 0;
-        margin-bottom: 1rem;
+    }
+    .footer-desktop--wrapper {
+        height: 10vh;
     }
 }
 
@@ -973,7 +977,7 @@ button {
     }
     .product-content--wrapper {
         padding: 6% 2% 0;
-        min-height: 80.2vh;
+        min-height: 78.1vh;
     }
     .product--links img {
         max-height: 22vh;
@@ -983,7 +987,7 @@ button {
         margin-top: 2rem;
     }
     .footer-desktop--spacer {
-        height: 1.12rem;
+        height: 2vh;
     }
 }
 
@@ -1000,12 +1004,18 @@ button {
         height: 90vh;
     }
     .about-content--wrapper {
-        height: 80.1vh;
+        height: 78vh;
         padding: 11% 26% 0;
     }
     .about-align--middle {
         height: 35vh;
     }
+}
+
+/* FAQ */
+
+.faq-content--wrapper {
+    min-height: 78vh;
 }
 
 /* == Contact == */
@@ -1016,7 +1026,7 @@ button {
     }
     .contact-content--wrapper {
         padding: 0 24% 0;
-        height: 73.4vh;
+        height: 71vh;
     }
     .contact-form--middle {
         height: 75vh;
@@ -1052,17 +1062,42 @@ button {
 /* iPad landscape */
 @media only screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
     .social-links--wrapper {
-    margin: 0;
+    /* margin: 0; */
     }
     .footer-desktop--wrapper {
-    padding-top: 0;
+    padding-top: 0.3rem;
     }
 }
 
 /* iPad Pro */
-@media only screen and (min-width: 1024px) and (min-height: 1366px) and (max-width: 1024px) and (max-height: 1366px) {
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .home-content--wrapper {
+        height: 74vh;
+    }
     .footer-desktop--wrapper {
+    height: 7vh;
     padding-top: 1rem;
     }
+    .product-content--wrapper {
+        padding: 15% 2% 0;
+        min-height: 81vh;
+    }
+    .contact-content--wrapper {
+        height: 74vh;
+    }
 }
-/* ??????????? */
+
+/* Large desktop height */
+@media only screen and (min-width: 1200px) and (min-height: 880px) and (orientation: landscape) {
+    .footer-desktop--wrapper {
+        height: 8vh;
+    }
+}
+
+/* Very small phone in landscape */
+
+@media only screen and (max-height: 340px) and (orientation: landscape) {
+    .about-align--middle {
+        height: 92vh;
+    }
+}
