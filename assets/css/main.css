@@ -289,13 +289,27 @@ button {
 
 .product-container--wrapper {
     min-height: 210vh;
-    padding: 10% 10% 0;
+    padding: 7% 10% 0;
     background: url(../images/bg_product.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+}
+
+.product-title .col-12 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.product-title h3 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
 .product-card--wrapper {
@@ -817,6 +831,9 @@ button {
         padding: 5vh 5vw 0;
         min-height: 200vh
     }
+    .product-title h3 {
+        font-size: 2.5rem;
+    }
     .product-card-mobile-spacing {
         margin-bottom: 15vh;
     }
@@ -908,9 +925,8 @@ button {
     .product-container--wrapper {
         min-height: 90vh;
     }
-    .product-content--wrapper {
-        padding: 6% 2% 0;
-        min-height: 78.1vh;
+    .product-title .col-12 {
+        margin-bottom: 3rem;
     }
     .product-card--wrapper {
         margin: 0;
