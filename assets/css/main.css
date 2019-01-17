@@ -83,7 +83,7 @@ button {
 .nav-mobile--wrapper {
     display: flex;
     flex-direction: row-reverse;
-    min-height: 7vh;
+    height: 7vh;
     background: #000000;
 }
 
@@ -111,7 +111,7 @@ button {
 }
 
 .nav-mobile--icon span {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #ffffff;
 }
 
@@ -163,16 +163,17 @@ button {
 =========== */
 
 .footer-mobile--wrapper {
-    display: flex;
-    background: #003d53;
-    margin-bottom: 5.9vh;
-    margin-top: 1vh;
+    background: rgba(0, 61, 83, 0.5);
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 7vh;
 }
 
 .footer-mobile--text {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: center;
     color: #ffffff;
 }
@@ -219,7 +220,7 @@ button {
 
 .footer-text--not-link {
     color: #c2c2c2;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 
 .footer-text--desktop a:link, a:visited, a:active {
