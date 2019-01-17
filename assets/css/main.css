@@ -18,9 +18,7 @@
                 /*  >>HEADER/NAVIGATION
                         >Mobile Nav
                         >Desktop Nav */
-                /*  >>FOOTER
-                        >Mobile Footer
-                        >Desktop Footer */
+                /*  >>FOOTER */
                 /*  >>HOME PAGE  */
                 /*  >>PRODUCTS PAGE  */
                 /*  >>ABOUT PAGE */
@@ -158,11 +156,7 @@ button {
 
 ================================================= */
 
-/* ===========
->Mobile Footer
-=========== */
-
-.footer-mobile--wrapper {
+.footer-wrapper {
     background: rgba(0, 61, 83, 0.5);
     position: fixed;
     right: 0;
@@ -170,7 +164,7 @@ button {
     bottom: 7vh;
 }
 
-.footer-mobile--text {
+.footer-text {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 0.8rem;
@@ -178,61 +172,24 @@ button {
     color: #ffffff;
 }
 
-.footer-mobile--text a {
+.footer-text a {
     color: #ffffff;
 }
 
-.footer-mobile--text a:hover {
-    text-decoration: none;
-}
-
-.footer-desktop--spacer {
-    height: 7vh;
-    display: none;
-}
-
-/* ============
->Desktop Footer
-============ */
-
-.footer-desktop--wrapper {
-    height: 7vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 0.75rem;
-    background: #003d53;
-}
-
-.footer-show--md {
-    display: none;
-}
-
-.footer-text--desktop {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-.footer-text--desktop h6 {
-    font-weight: 400;
-}
-
-.footer-text--not-link {
-    color: #c2c2c2;
-    font-size: 0.7rem;
-}
-
-.footer-text--desktop a:link, a:visited, a:active {
+.footer-text a:link, a:visited, a:active {
     text-decoration: none;
     color: #ffffff;
 }
 
 @media (hover) {
-    .footer-text--desktop a:hover {
+    .footer-text a:hover {
         text-decoration: none;
-        color: #000000;
+        color: #a5460b
     }
+}
+
+.footer-text-not-link {
+    color: #c2c2c2;
 }
 
 /* ================================================
@@ -732,7 +689,7 @@ button {
     .nav-mobile--style {
         margin-bottom: 12vh;
     }
-    .footer-mobile--wrapper {
+    .footer-wrapper {
         margin-bottom: 9.9vh;
     }
     .home-content--wrapper {
@@ -758,7 +715,7 @@ button {
 
 /* To target long phones in landscape */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
-    /* .footer-mobile--wrapper {
+    /* .footer-wrapper {
         display: flex;
     } */
     .footer-show--md {
@@ -814,7 +771,7 @@ button {
 
 /* Hide mobile footer */
 /* @media only screen and (min-width: 768px) and (min-height: 420px) {
-    .footer-mobile--wrapper {
+    .footer-wrapper {
         display: none;
     }
 } */
@@ -844,7 +801,7 @@ button {
     .footer-text--desktop a {
         font-size: 0.8rem;
     }
-    .footer-text--not-link {
+    .footer-text-not-link {
         font-size: 0.8rem;
     }
     .footer-desktop--wrapper {
