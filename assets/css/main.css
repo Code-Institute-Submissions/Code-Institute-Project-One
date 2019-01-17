@@ -723,13 +723,13 @@ button {
         margin-bottom: 0.1rem;
     }
     .nav-mobile--wrapper {
-        min-height: 10vh;
+        min-height: 12vh;
     }
     .nav-mobile--blackbox {
-        min-height: 9.9vh;
+        min-height: 12vh;
     }
     .nav-mobile--style {
-        margin-bottom: 10vh;
+        margin-bottom: 12vh;
     }
     .footer-mobile--wrapper {
         margin-bottom: 9.9vh;
@@ -832,6 +832,9 @@ button {
     }
     .nav-mobile--icon {
         margin-bottom: 2%;
+    }
+    .nav-mobile--icon span {
+    font-size: 3rem;
     }
     .footer-text--spacer {
         display: block;
