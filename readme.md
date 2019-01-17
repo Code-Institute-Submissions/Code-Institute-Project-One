@@ -25,12 +25,12 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 
 ### Website Layout
 
-* Five content pages and a sign up modal
-* Different navigation for mobile and desktop
+* Five content pages and a sign up modal.
+* Different navigation for mobile and desktop.
 
 ### Website Styling
 
-* I decided to use a dark/black main theme as I liked this for the nature of the content. I designed a logo which has some nice colours that stand out on the black. I chose a particular blue from this logo as the primary colour and used an opposite colour tool to choose a dark but vibrant orange and the secondary colour.
+* I decided to use a dark/black main theme as I liked this for the nature of the content. I designed a logo which has some nice colours that stand out on the black. I chose a particular blue from this logo as the primary colour and used an opposite colour tool to choose a dark but vibrant orange as the secondary colour.
 * Product and background images are mostly dark/grey, with a nice contrast between the background and the content.
 * I chose two fonts. The main font used on all navbars and larger text areas is simple to read and in white or light grey. The second font is used only for the home page headers and sign up button and has matches the type of product the business is dealing in.
 
@@ -47,21 +47,21 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 
 ## Technologies Used
 
-* [Bootstrap Framework v4.1.](https://getbootstrap.com)
+* [Bootstrap](https://getbootstrap.com)
     * used for ease of creation of functional components and website layout.
 * [Google Fonts](https://fonts.google.com)
     * a good selection of fonts.
 * [Font Awesome icons](https://fontawesome.com/)
     * used for social media icons.
 * [JQuery](https://jquery.com)
-    * required for Bootstrap 4 functionality
+    * required for Bootstrap functionality.
 * [Popper.JS](https://popper.js.org/)
-    * required for Bootstrap 4 functionality
+    * required for Bootstrap functionality.
 
 ## Resources
 
-* [https://getbootstrap.com](https://getbootstrap.com)
 * [https://hackerthemes.com/bootstrap-cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet)
+    * Speeds up development
 * [https://stackoverflow.com](https://stackoverflow.com)
 * [https://www.quora.com](https://www.quora.com)
 * [https://whatwebcando.today](https://whatwebcando.today)
@@ -84,7 +84,7 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 
 * Deployed using Github Pages - [https://asdfractal.github.io/Code-Institute-Project-One/](https://asdfractal.github.io/Code-Institute-Project-One/)
 * Tested everything listed above again once deployed.
-* I tested the website on all of my personal devices (Desktop computer, Macbook Pro, iPad, LG G6 phone, Oukitel 10000 phone.) I checked in both portrait and landscape and tested the responsive design, navigation, links, modals and form submission.
+* I tested the website on all my personal devices (Desktop computer, Macbook Pro, iPad, LG G6 phone, Oukitel 10000 phone.) I checked in both portrait and landscape and tested the responsive design, navigation, links, modals and form submission.
 * Additionally tested using -
     * [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) and received a mobile friendly result for all pages.
     * [https://www.webpagetest.org/](https://www.webpagetest.org/) - [(result)](https://www.webpagetest.org/result/190113_X7_beb233f33919742b9638bd8b0adebdd5/) and received a satisfactory result.
@@ -98,20 +98,26 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * Testing on my iPad in landscape I encountered an issue with size due to the address bar showing, which I didn't anticipate since devtools doesn't show it.
 * Testing on my Macbook Pro I realised that the resolution height is quite a bit smaller than my desktop and some elements were not looking correct.
 
+#### Steps taken to resolve issues
+
+* Made some minor adjustments to padding for tablet media query.
+* Researched common desktop screen size and added a media query for screen height to separate them.
+
+
 --------------------
 
 ## Credits
 
 ### Image sources
 
-* Logo image - by Geralt on pixabay
+* Logo image by Geralt on pixabay
 * Home and product background - [https://wallimpex.com/](https://wallimpex.com/)
 * About background - [https://invardin.com/robot-1650649_1920/](https://invardin.com/robot-1650649_1920/)
-* FAQ background - by Kate Rowe on Unsplash
-* Contact background - by Tony Webster on Unsplash
+* FAQ background by Kate Rowe on Unsplash
+* Contact background by Tony Webster on Unsplash
 * Products
     * Nexus - [https://www.flickr.com/photos/sanjayaprime/4924462993](https://www.flickr.com/photos/sanjayaprime/4924462993)
-    * Matrix - by Geralt on pixabay
+    * Matrix by Geralt on pixabay
     * Aegis - [https://commons.wikimedia.org/wiki/File:Cybersecurity.png](https://commons.wikimedia.org/wiki/File:Cybersecurity.png)
     * Neuroptimal - [https://www.flickr.com/photos/alansimpsonme/34752491090](https://www.flickr.com/photos/alansimpsonme/34752491090)
     * Core - [https://www.kisspng.com/png-top500-computer-science-electronic-circuit-king-ab-1144035/](https://www.kisspng.com/png-top500-computer-science-electronic-circuit-king-ab-1144035/)

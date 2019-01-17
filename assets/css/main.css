@@ -82,7 +82,8 @@ button {
 
 .nav-mobile--wrapper {
     display: flex;
-    min-height: 6vh;
+    flex-direction: row-reverse;
+    min-height: 7vh;
     background: #000000;
 }
 
@@ -92,26 +93,29 @@ button {
 
 /* Cover white border on mobile nav when it's opening */
 .nav-mobile--blackbox {
-    min-height: 5.9vh;
+    min-height: 6.9vh;
     z-index: 9;
     background: #000000;
 }
 
 .nav-mobile--icon {
     z-index: 10;
-    margin: 0 auto 1%;
+    margin: 0 1% 1% 0;
     border: 0;
     padding: 0;
-    width: 10%;
+    /* width: 10%; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
     color: #ffffff;
 }
 
 .nav-mobile--icon span {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .nav-mobile--style {
-    margin-bottom: 6vh;
+    margin-bottom: 7vh;
     border-top: 1px solid rgba(255,255,255,.5);
     border-bottom: 1px solid rgba(255,255,255,.5);
     font-family: "rubik", sans-serif;
@@ -161,6 +165,7 @@ button {
     display: flex;
     background: #003d53;
     margin-bottom: 5.9vh;
+    margin-top: 1vh;
 }
 
 .footer-mobile--text {
@@ -237,7 +242,7 @@ button {
 
 .home-container--wrapper {
     min-height: 90vh;
-    padding: 0;
+    padding: 18% 7% 0;
     background: url(../images/bg_home.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -246,10 +251,10 @@ button {
     position: relative;
 }
 
-.home-content--wrapper {
+/* .home-content--wrapper {
     height: 72vh;
     padding: 18% 7% 0;
-}
+} */
 
 .home-text--style {
     text-align: center;
@@ -310,11 +315,12 @@ button {
 
 .social-links--wrapper {
     text-align: center;
+    margin-top: 13vh;
 }
 
 .social-links--style {
     color: #003d53;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 /* ================================================

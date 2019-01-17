@@ -14,20 +14,19 @@
     <!-- Mobile Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark nav-mobile--wrapper fixed-bottom p-0">
       <div class="col-12 nav-mobile--blackbox fixed-bottom"></div>
-      <button class="navbar-toggler nav-mobile--icon fixed-bottom" type="button" data-toggle="collapse" data-target="#NavMobileToggler" aria-controls="NavMobileToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-bars">
-        </span>
+      <button class="navbar-toggler nav-mobile--icon" type="button" data-toggle="collapse" data-target="#NavMobileToggler" aria-controls="NavMobileToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
       </button>
       <div class="collapse navbar-collapse flex-row-reverse" id="NavMobileToggler">
-        <ul class="navbar-nav nav-mobile--style">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+        <ul class="navbar-nav nav-mobile--style" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="products.html">Products</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="about.html">About us<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="faq.html">faq</a>
@@ -46,7 +45,7 @@
       <a class="navbar-brand logo" href="index.html">
         <img src="assets/images/logo.png" class="logo" alt="Logo">
       </a>
-      <div class="navbar-collapse flex-row-reverse nav-desktop--hide pr-2" id="NavMobileToggler">
+      <div class="navbar-collapse flex-row-reverse nav-desktop--hide pr-2">
         <ul class="navbar-nav nav-desktop--style">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
