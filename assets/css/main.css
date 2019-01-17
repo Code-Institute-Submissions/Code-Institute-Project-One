@@ -224,7 +224,7 @@ button {
     color: #ffffff;
     font-family: "Orbitron", sans-serif;
     font-weight: 700;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -233,7 +233,7 @@ button {
     color: #ffffff;
     font-family: "Orbitron", sans-serif;
     font-weight: 500;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -244,14 +244,14 @@ button {
     color: #cccccc;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .home-text--style h6 {
     color: #acacac;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-style: italic;
 }
 
@@ -274,7 +274,10 @@ button {
 
 .social-links--wrapper {
     text-align: center;
-    margin-top: 13vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 18vh;
 }
 
 .social-links--style {
