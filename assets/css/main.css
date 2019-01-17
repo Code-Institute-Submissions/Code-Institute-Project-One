@@ -374,8 +374,8 @@ button {
 ================================================= */
 
 .about-container--wrapper {
-    height: 90vh;
-    padding: 5% 10% 0;
+    min-height: 90vh;
+    padding: 7% 10% 0;
     background: url(../images/bg_about.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -391,19 +391,27 @@ button {
     height: 60vh;
 }
 
-.about--img-about {
-    max-width: 200px;
-    display: flex;
-    margin: 0 auto 0.5rem;
+.about-header .col-12 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-header h3 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
 .about--text {
-    margin-bottom: 0.75rem;
     color: #ffffff;
     font-family: "Rubik", sans-serif;
     font-size: 1rem;
     line-height: 1.15;
     text-align: center;
+    padding-bottom: 21vh;
 }
 
 .about--text-footer {
@@ -750,6 +758,20 @@ button {
     }
 }
 
+/* == About == */
+
+@media only screen and (orientation: landscape) {
+    .about-container--wrapper {
+        padding-top: 3%;
+    }
+    .about-header .col-12 {
+        margin-bottom: 1rem;
+    }
+    .about--text {
+        padding-bottom: 35vh;
+    }
+}
+
 /* == Contact == */
 
 @media only screen and (orientation: landscape) {
@@ -838,12 +860,8 @@ button {
 /* == About == */
 
 @media only screen and (min-width: 768px) and (min-height: 420px) {
-    .about-content--wrapper {
-        padding: 11% 20% 0;
-        min-height: 75vh;
-    }
-    .about-align--middle {
-        height: 40vh;
+    .about-container--wrapper {
+        padding: 15vh 10vw 0;
     }
     .about--text {
         padding: 0 3rem 0;
@@ -954,12 +972,11 @@ button {
     .about-container--wrapper {
         height: 90vh;
     }
-    .about-content--wrapper {
-        height: 78vh;
-        padding: 11% 26% 0;
+    .about-header .col-12 {
+        margin-bottom: 2rem;
     }
-    .about-align--middle {
-        height: 35vh;
+    .about--text {
+        padding: 0 10rem 0;
     }
 }
 
@@ -993,10 +1010,7 @@ button {
         max-height: 27vh;
     }
     .about--text {
-        padding: 0 6rem 0;
-    }
-    .about-align--middle {
-        height: 25vh;
+        padding: 0 15rem 0;
     }
     .contact-content--wrapper {
         padding: 0 29% 0;
@@ -1037,7 +1051,7 @@ button {
 
 /* Very small phone in landscape */
 
-@media only screen and (max-height: 340px) and (orientation: landscape) {
+@media only screen and (max-height: 360px) and (orientation: landscape) {
     .about-align--middle {
         height: 92vh;
     }
