@@ -298,12 +298,12 @@ button {
     position: relative;
 }
 
-.product-title .col-12 {
+.product-header-main .col-12 {
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.product-title h3 {
+.product-header-main h3 {
     font-family: "Orbitron", sans-serif;
     font-weight: 700;
     font-size: 2rem;
@@ -374,18 +374,14 @@ button {
 ================================================= */
 
 .about-container--wrapper {
-    padding: 0;
+    height: 90vh;
+    padding: 5% 10% 0;
     background: url(../images/bg_about.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-}
-
-.about-content--wrapper {
-    min-height: 78vh;
-    padding: 5% 10% 0;
 }
 
 .about-align--middle {
@@ -831,7 +827,7 @@ button {
         padding: 5vh 5vw 0;
         min-height: 200vh
     }
-    .product-title h3 {
+    .product-header-main h3 {
         font-size: 2.5rem;
     }
     .product-card-mobile-spacing {
@@ -925,7 +921,7 @@ button {
     .product-container--wrapper {
         min-height: 90vh;
     }
-    .product-title .col-12 {
+    .product-header-main .col-12 {
         margin-bottom: 3rem;
     }
     .product-card--wrapper {

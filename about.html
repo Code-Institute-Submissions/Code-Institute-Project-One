@@ -70,11 +70,10 @@
     </nav>
     <!-- About main content -->
     <section class="container-fluid about-container--wrapper">
-      <div class="container-fluid about-content--wrapper">
         <div class="about-align--middle">
-        <div class="row">
-          <div class="col-12 mb-2">
-            <img class="about--img-about" src="assets/images/aboutus.png" alt="About Us">
+        <div class="row about">
+          <div class="col-12">
+            <h3>about us</h3>
           </div>
         </div>
         <div class="row about--text">
@@ -86,46 +85,30 @@
           </div>
         </div>
       </div>
-      </div>
-      <!-- Mobile footer -->
-      <div class="row footer-mobile--wrapper mr-1 ml-1">
-          <div class="col-6 footer-mobile--text p-1">
-            <a href="#" data-toggle="modal" data-target="#modalPrivacy"><p>Privacy Policy</p></a>
-            <p class="footer-text--not-link">Copyright 2035</p>
-            <a href="#" data-toggle="modal" data-target="#modalCredits"><p>Image Credits</p></a>
-          </div>
-          <div class="col-6 footer-mobile--text p-1">
-            <a href="https://www.google.com/maps/place/Svalbard" target="_blank">
-              <p>Zenith Technologies</p>
-              <p>123 Polar Vei</p>
-              <p>Svalbard, Norway</p>
-            </a>
-          </div>
-        </div>
-        <!-- Tablet/Desktop footer -->
-          <div class="row footer-desktop--wrapper footer-show--md">
-            <div class="col-4 footer-text--desktop">
-                <p><a href="#" data-toggle="modal" data-target="#modalCredits">Image Credits</a></p>
-                <p class="footer-text--not-link">Copyright 2035</p>
-                <p class="footer-text--not-link">For educational purposes</p>
+      <!-- Footer -->
+      <footer class="container-fluid footer-wrapper">
+          <div class="row">
+            <div class="col-xl-2 d-none d-xl-block"></div>
+            <div class="col-6 col-md-4 col-xl-2 footer-text p-1">
+              <p><a href="#" data-toggle="modal" data-target="#modalCredits">Image Credits</a></p>
+              <p class="footer-text-not-link">Copyright 2035</p>
+              <p><a href="#" data-toggle="modal" data-target="#modalPrivacy">Privacy Policy</a></p>
             </div>
-            <div class="col-4 footer-text--desktop pl-4">
-                <span class="footer-text--spacer">
-                  <a href="https://www.google.com/maps/place/Svalbard" target="_blank">
-                    <p>Zenith Technologies</p>
-                    <p>123 Polar Vei</p>
-                    <p>Svalbard, Norway</p>
-                  </a>
-                </span>
+            <div class="col-6 col-md-4 col-xl-4 footer-text p-1">
+              <a href="https://www.google.com/maps/place/Svalbard" target="_blank">
+                <span>Zenith Technologies</span><br>
+                <span>123 Polar Vei</span><br>
+                <span>Svalbard, Norway</span>
+              </a>
             </div>
-            <div class="col-4 footer-text--desktop">
+            <div class="col-md-4 col-xl-2 d-none d-md-block footer-text p-1">
               <p><a href="contact.html">Contact Us</a></p>
-                <p class="footer-text--not-link">555-123-4567</p>
-                <p><a href="#" data-toggle="modal" data-target="#modalPrivacy">Privacy Policy</a></p>
+              <p class="footer-text-not-link">555-123-4567</p>
+              <p class="footer-text-not-link">For educational purposes</p>
             </div>
-            </div>
-        </div>
-        <div class="row footer-desktop--spacer m-0"></div>
+            <div class="col-xl-2 d-none d-xl-block"></div>
+          </div>
+        </footer>
     </section>
     <!-- Sign Up Modal -->
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-hidden="true">
