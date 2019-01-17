@@ -210,11 +210,6 @@ button {
     position: relative;
 }
 
-/* .home-content--wrapper {
-    height: 72vh;
-    padding: 18% 7% 0;
-} */
-
 .home-text--style {
     text-align: center;
 }
@@ -293,7 +288,8 @@ button {
 ================================================= */
 
 .product-container--wrapper {
-    padding: 0;
+    min-height: 210vh;
+    padding: 10% 10% 0;
     background: url(../images/bg_product.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -302,13 +298,13 @@ button {
     position: relative;
 }
 
-.product-content--wrapper {
-    padding: 10% 10% 0;
+.product-card--wrapper {
+    margin: 0 0 2.5rem;
+    font-family: "Rubik", sans-serif;
 }
 
-.product-card--wrapper {
-    margin: 0 0 1.5rem;
-    font-family: "Rubik", sans-serif;
+.product-card-bottom-spacing {
+    margin-bottom: 25vh;
 }
 
 .product--links .card {
@@ -352,7 +348,7 @@ button {
     padding: 0.25rem 1rem;
     margin-top: 0.25rem;
     border-bottom: 1px solid rgba(165, 70, 11, 0.75);
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.15;
 }
 
