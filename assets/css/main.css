@@ -158,7 +158,7 @@ button {
 
 .footer-wrapper {
     background: rgba(0, 61, 83, 0.5);
-    position: fixed;
+    position: absolute;
     right: 0;
     left: 0;
     bottom: 7vh;
@@ -663,8 +663,7 @@ button {
         margin-bottom: 2.5%;
     }
     .social-links--wrapper {
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
+        bottom: 16vh;
     }
     .contact-content--wrapper {
         height: 67vh;
@@ -676,7 +675,7 @@ button {
 ============== */
 /* == Nav/Footer/Home == */
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 900px) and (orientation: landscape) {
     .logo {
         height: 15vh;
     }
@@ -695,24 +694,26 @@ button {
     .footer-wrapper {
         bottom: 12vh;
     }
-    .home-content--wrapper {
+    .home-container--wrapper {
         height: auto;
-        min-height: 58vh;
-        padding: 4% 15% 0;
+        min-height: 115vh;
+        padding: 3% 7% 0;
     }
     .home-text--style h1 {
         font-size: 1.35rem;
-        margin: 0 0 0.25rem 0;
+        margin: 0 0 0.5rem 0;
     }
     .home-text--style h3 {
         font-size: 1.15rem;
+    }
+    .home-text--style h5 {
+        margin-top: 1.5rem;
     }
     .button--center {
         margin: 0.5rem 0;
     }
     .social-links--wrapper {
-        margin-bottom: 0.5rem;
-        margin-top: 0.5rem;
+        bottom: 32vh;
     }
 }
 
@@ -720,6 +721,9 @@ button {
 @media only screen and (min-width: 768px) and (orientation: landscape) {
     .nav-mobile--icon {
         margin-bottom: 0.25rem;
+    }
+    .home-container--wrapper {
+        padding: 5% 7% 0;
     }
     .home-text--style h1 {
         font-size: 1.8rem;
@@ -778,14 +782,11 @@ button {
     font-size: 3rem;
     }
     .home-container--wrapper {
-        height: 90vh;
-    }
-    .home-content--wrapper {
-        padding: 16% 8% 0;
-        height: 69vh;
+        padding: 15% 7% 0;
     }
     .home-text--style h1 {
         font-size: 3.5rem;
+        margin-bottom: 1.75rem;
     }
     .home-text--style h3 {
         font-size: 2.5rem;
@@ -796,12 +797,14 @@ button {
     .home-text--style h6 {
         font-size: 1rem;
     }
+    .button--center {
+        margin-top: 1rem;
+    }
     .button-signup--style {
         font-size: 2rem;
     }
     .social-links--wrapper {
-        margin-top: 0;
-        margin-bottom: 1vh;
+        bottom: 14.5vh;
     }
     .social-links--style {
         font-size: 6vh;
@@ -869,20 +872,18 @@ button {
 @media only screen and (min-width: 992px) {
     .home-container--wrapper {
         height: 90vh;
-    }
-    .home-content--wrapper {
-        padding: 7% 8% 0;
-        height: 71vh;
+        padding: 10vh 2vw 0;
     }
     .home-text--style h1 {
-        font-size: 4rem;
-        margin-bottom: 1rem;
+        font-size: 3.8rem;
+        margin-bottom: 2rem;
     }
     .home-text--style h3 {
         font-weight: 700;
         font-size: 3rem;
     }
     .home-text--style h5 {
+        margin-bottom: 1.25rem;
         font-size: 1.5rem;
     }
     .home-text--style h6 {
@@ -895,7 +896,7 @@ button {
         font-size: 2rem;
     }
     .social-links--wrapper {
-        margin-top: 0;
+        bottom: 11vh;
     }
     .footer-wrapper {
         bottom: 0;
@@ -1007,6 +1008,13 @@ button {
     .contact-content--wrapper {
         height: 74vh;
     }
+}
+
+@media only screen and (min-width: 1200px) and (min-height: 880px) and (orientation: landscape) {
+.social-links--wrapper {
+    bottom: 10vh;
+}
+
 }
 
 /* Very small phone in landscape */
