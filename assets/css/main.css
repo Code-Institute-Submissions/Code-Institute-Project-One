@@ -758,9 +758,9 @@ button {
 
 /* To target long phones in landscape */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
-    .footer-mobile--wrapper {
+    /* .footer-mobile--wrapper {
         display: flex;
-    }
+    } */
     .footer-show--md {
         display: none;
     }
@@ -813,11 +813,11 @@ button {
 /* == Nav/Footer/Home == */
 
 /* Hide mobile footer */
-@media only screen and (min-width: 768px) and (min-height: 420px) {
+/* @media only screen and (min-width: 768px) and (min-height: 420px) {
     .footer-mobile--wrapper {
         display: none;
     }
-}
+} */
 
 /* Show tablet/desktop footer */
 @media only screen and (min-width: 768px) and (min-height: 420px) {
