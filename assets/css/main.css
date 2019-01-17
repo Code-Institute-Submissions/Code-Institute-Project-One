@@ -690,7 +690,7 @@ button {
         margin-bottom: 12vh;
     }
     .footer-wrapper {
-        margin-bottom: 9.9vh;
+        bottom: 12vh;
     }
     .home-content--wrapper {
         height: auto;
@@ -715,12 +715,6 @@ button {
 
 /* To target long phones in landscape */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
-    /* .footer-wrapper {
-        display: flex;
-    } */
-    .footer-show--md {
-        display: none;
-    }
     .nav-mobile--icon {
         margin-bottom: 0.25rem;
     }
@@ -769,20 +763,6 @@ button {
 
 /* == Nav/Footer/Home == */
 
-/* Hide mobile footer */
-/* @media only screen and (min-width: 768px) and (min-height: 420px) {
-    .footer-wrapper {
-        display: none;
-    }
-} */
-
-/* Show tablet/desktop footer */
-@media only screen and (min-width: 768px) and (min-height: 420px) {
-    .footer-show--md {
-        display: flex;
-    }
-}
-
 /* min-height to exclude long phones in landscape eg; pixel 2 */
 @media only screen and (min-width: 768px) and (min-height: 420px) {
     .logo {
@@ -793,20 +773,6 @@ button {
     }
     .nav-mobile--icon span {
     font-size: 3rem;
-    }
-    .footer-text--spacer {
-        display: block;
-        margin-bottom: 0.5rem;
-    }
-    .footer-text--desktop a {
-        font-size: 0.8rem;
-    }
-    .footer-text-not-link {
-        font-size: 0.8rem;
-    }
-    .footer-desktop--wrapper {
-        margin: 0 12.5vw;
-        padding-top: 0.2rem;
     }
     .home-container--wrapper {
         height: 90vh;
@@ -850,9 +816,6 @@ button {
 @media only screen and (min-width: 768px) and (min-height: 420px) {
     .product-content--wrapper {
         padding: 8% 5% 0;
-    }
-    .footer-desktop--spacer {
-        display: flex;
     }
 }
 
@@ -931,9 +894,10 @@ button {
     .social-links--wrapper {
         margin-top: 0;
     }
-    .footer-desktop--wrapper {
-        height: 10vh;
+    .footer-wrapper {
+        bottom: 0;
         padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 }
 
@@ -953,9 +917,6 @@ button {
     #ProductSecondRow {
         justify-content: center;
         margin-top: 2rem;
-    }
-    .footer-desktop--spacer {
-        height: 2vh;
     }
 }
 
@@ -1006,9 +967,6 @@ button {
 ========= */
 
 @media only screen and (min-width: 1500px) {
-    .footer-desktop--wrapper {
-        margin: 0 17.5vw;
-    }
     .product--links img {
         max-height: 27vh;
     }
@@ -1032,9 +990,6 @@ button {
     .social-links--wrapper {
     /* margin: 0; */
     }
-    .footer-desktop--wrapper {
-    padding-top: 0.2rem;
-    }
 }
 
 /* iPad Pro */
@@ -1042,24 +997,12 @@ button {
     .home-content--wrapper {
         height: 74vh;
     }
-    .footer-desktop--wrapper {
-    height: 7vh;
-    padding-top: 1rem;
-    }
     .product-content--wrapper {
         padding: 15% 2% 0;
         min-height: 81vh;
     }
     .contact-content--wrapper {
         height: 74vh;
-    }
-}
-
-/* Large desktop height */
-@media only screen and (min-width: 1200px) and (min-height: 880px) and (orientation: landscape) {
-    .footer-desktop--wrapper {
-        height: 8vh;
-        padding-top: 0.4rem;
     }
 }
 
