@@ -427,17 +427,13 @@ button {
 
 .faq-container--wrapper {
     padding: 0;
+    padding: 7% 10% 0;
     background: url(../images/bg_faq.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-}
-
-.faq-content--wrapper {
-    padding: 5% 10% 0;
-    min-height: 81vh;
 }
 
 .faq--header {
@@ -449,9 +445,9 @@ button {
 .faq--header h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: "Rubik", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .faq--questions {
@@ -481,14 +477,19 @@ button {
 }
 
 .faq--sub-questions h5 {
-    padding-bottom: 0.4rem;
+    padding-bottom: 1rem;
     font-weight: 400;
     line-height: 1;
 }
 
 .faq--sub-questions p {
-    line-height: 1.15;
-    font-size: 0.85rem;
+    line-height: 1.25;
+    font-size: 1rem;
+}
+
+.faq-bottom-spacing {
+    padding-bottom: 20vh;
+    margin-bottom: 0;
 }
 
 /* ================================================
@@ -772,6 +773,17 @@ button {
     }
 }
 
+/* == FAQ == */
+
+@media only screen and (orientation: landscape) {
+    .faq-container--wrapper {
+        padding-top: 3%;
+    }
+    .faq-bottom-spacing {
+        padding-bottom: 35vh;
+    }
+}
+
 /* == Contact == */
 
 @media only screen and (orientation: landscape) {
@@ -865,6 +877,20 @@ button {
     }
     .about--text {
         padding: 0 3rem 0;
+    }
+}
+
+/* == FAQ == */
+
+@media only screen and (min-width: 768px) and (min-height: 420px) {
+    .faq-container--wrapper {
+        padding: 5vh 5vw 0;
+    }
+    .faq-bottom-spacing {
+        padding-bottom: 20vw;
+    }
+    .faq--sub-questions h5 {
+        font-size: 1.5rem;
     }
 }
 
@@ -982,8 +1008,22 @@ button {
 
 /* FAQ */
 
-.faq-content--wrapper {
-    min-height: 78vh;
+@media only screen and (min-width: 992px) {
+    .faq-container--wrapper {
+        min-height: 90vh;
+    }
+    .faq--header {
+        margin-bottom: 1.5rem;
+    }
+    .faq--sub-questions {
+        margin-bottom: 1rem;
+    }
+    .faq--divider {
+        margin-bottom: 1.5rem;
+    }
+    .faq-bottom-spacing {
+        padding-bottom: 13vh;
+    }
 }
 
 /* == Contact == */
@@ -1010,7 +1050,7 @@ button {
         max-height: 27vh;
     }
     .about--text {
-        padding: 0 15rem 0;
+        padding: 0 15 0;
     }
     .contact-content--wrapper {
         padding: 0 29% 0;

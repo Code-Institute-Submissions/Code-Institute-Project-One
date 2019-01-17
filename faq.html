@@ -70,7 +70,6 @@
     </nav>
     <!-- About main content -->
     <section class="container-fluid faq-container--wrapper">
-      <div class="container-fluid faq-content--wrapper">
         <div class="row">
           <div class="col-12 faq--header">
               <h3>Frequently asked questions</h3>
@@ -100,7 +99,7 @@
                 <p>All of our products can be removed safely with another operation. We also have an option of completely disabling the implant so you can see how it feels before you make a decision.</p>
             </div>
         </div>
-        <div class="col-lg-6 faq-column2 mb-3">
+        <div class="col-lg-6 faq-column2">
             <hr class="faq--divider d-lg-none">
             <div class="col-12 faq--sub-questions">
                 <h5>Do you support upgrades?</h5>
@@ -122,52 +121,36 @@
                 <p>We suggest taking at least two to three days to physically recover and mentally adjust to the change.</p>
             </div>
             <hr class="faq--divider">
-            <div class="col-12 faq--sub-questions">
+            <div class="col-12 faq--sub-questions faq-bottom-spacing">
                 <h5>Will this be socially acceptable?</h5>
                 <p>We don't foresee any problems with this technology in a social sense. We believe it is a natural progression of our evolution.</p>
             </div>
         </div>
         </div>
-      </div>
-      <!-- Mobile footer -->
-      <div class="row footer-mobile--wrapper mr-1 ml-1">
-          <div class="col-6 footer-mobile--text p-1">
-            <a href="#" data-toggle="modal" data-target="#modalPrivacy"><p>Privacy Policy</p></a>
-            <p class="footer-text--not-link">Copyright 2035</p>
-            <a href="#" data-toggle="modal" data-target="#modalCredits"><p>Image Credits</p></a>
-          </div>
-          <div class="col-6 footer-mobile--text p-1">
-            <a href="https://www.google.com/maps/place/Svalbard" target="_blank">
-              <p>Zenith Technologies</p>
-              <p>123 Polar Vei</p>
-              <p>Svalbard, Norway</p>
-            </a>
-          </div>
-        </div>
-        <!-- Tablet/Desktop footer -->
-          <div class="row footer-desktop--wrapper footer-show--md">
-            <div class="col-4 footer-text--desktop">
-                <p><a href="#" data-toggle="modal" data-target="#modalCredits">Image Credits</a></p>
-                <p class="footer-text--not-link">Copyright 2035</p>
-                <p class="footer-text--not-link">For educational purposes</p>
+      <!-- Footer -->
+      <footer class="container-fluid footer-wrapper">
+          <div class="row">
+            <div class="col-xl-2 d-none d-xl-block"></div>
+            <div class="col-6 col-md-4 col-xl-2 footer-text p-1">
+              <p><a href="#" data-toggle="modal" data-target="#modalCredits">Image Credits</a></p>
+              <p class="footer-text-not-link">Copyright 2035</p>
+              <p><a href="#" data-toggle="modal" data-target="#modalPrivacy">Privacy Policy</a></p>
             </div>
-            <div class="col-4 footer-text--desktop pl-4">
-                <span class="footer-text--spacer">
-                  <a href="https://www.google.com/maps/place/Svalbard" target="_blank">
-                    <p>Zenith Technologies</p>
-                    <p>123 Polar Vei</p>
-                    <p>Svalbard, Norway</p>
-                  </a>
-                </span>
+            <div class="col-6 col-md-4 col-xl-4 footer-text p-1">
+              <a href="https://www.google.com/maps/place/Svalbard" target="_blank">
+                <span>Zenith Technologies</span><br>
+                <span>123 Polar Vei</span><br>
+                <span>Svalbard, Norway</span>
+              </a>
             </div>
-            <div class="col-4 footer-text--desktop">
+            <div class="col-md-4 col-xl-2 d-none d-md-block footer-text p-1">
               <p><a href="contact.html">Contact Us</a></p>
-                <p class="footer-text--not-link">555-123-4567</p>
-                <p><a href="#" data-toggle="modal" data-target="#modalPrivacy">Privacy Policy</a></p>
+              <p class="footer-text-not-link">555-123-4567</p>
+              <p class="footer-text-not-link">For educational purposes</p>
             </div>
-            </div>
-        </div>
-        <div class="row footer-desktop--spacer m-0"></div>
+            <div class="col-xl-2 d-none d-xl-block"></div>
+          </div>
+        </footer>
     </section>
     <!-- Sign Up Modal -->
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-hidden="true">
