@@ -133,7 +133,7 @@
     <!-- Sign Up Modal -->
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content modal-signup">
+        <div class="modal-content modal-styles modal-signup">
           <div class="modal-header">
             <h5 class="modal-title">Sign up</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -141,7 +141,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="" method="get">
+            <form action="" method="post">
             <div class="modal-signup--input">
                 <input class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
             </div>
@@ -181,7 +181,7 @@
     <!-- Privacy Policy Modal -->
     <div class="modal" id="modalPrivacy" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <div class="modal-content modal-styles">
           <div class="modal-header">
             <h5 class="modal-title">Zenith Technologies</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -304,7 +304,7 @@
     <!-- Image Credits Modal -->
     <div class="modal" id="modalCredits" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <div class="modal-content modal-styles">
           <div class="modal-header">
             <h5 class="modal-title">Image Credits</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -345,6 +345,11 @@
         $('.navbar-collapse').collapse('hide');
       });
     });
+    </script>
+    <script>
+    function alert() {
+      alert("Thank you!");
+    }
     </script>
   </body>
 </html>

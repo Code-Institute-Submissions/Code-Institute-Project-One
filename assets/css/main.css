@@ -568,28 +568,37 @@ button {
 ================================================= */
 
 /* ===========
->Sign Up Modal
+>Modal Styling
 =========== */
 
-.modal-signup {
+.modal-styles {
     background: #003d53;
     color: #ffffff;
     font-family: "Rubik", sans-serif;
 }
 
-.modal-signup .modal-header {
+.modal-styles a {
+    color: #a5460b;
+    text-decoration: none;
+}
+
+.modal-styles .modal-header {
     padding: 0.25rem 1rem;
     border-bottom: 0;
 }
 
-.modal-signup .close {
+.modal-styles .close {
     color: #ffffff;
 }
 
-.modal-signup .modal-body {
+.modal-styles .modal-body {
     padding: 0.5rem 1rem 0;
     border-top: 0;
 }
+
+/* ===========
+>Sign Up Modal
+=========== */
 
 .modal-signup .btn {
     float: right;
@@ -641,17 +650,22 @@ button {
 >Privacy/Credits Modal
 =================== */
 
-#modalPrivacy {
-    font-family: "Rubik", sans-serif;
+#modalPrivacy .modal-header {
+    border-bottom: 1px solid #a5460b;
 }
 
-#modalCredits {
-    font-family: "Rubik", sans-serif;
-    color: #000000;
+#modalPrivacy .modal-footer {
+    border-top: 1px solid #a5460b;
+    padding: 0.25rem;
 }
 
-#modalCredits a {
-    color: #007bff;
+#modalCredits .modal-header {
+    border-bottom: 1px solid #a5460b;
+}
+
+#modalCredits .modal-footer {
+    border-top: 1px solid #a5460b;
+    padding: 0.25rem;
 }
 
 /* ================================================
