@@ -188,7 +188,7 @@ button {
 @media (hover) {
     .footer-text a:hover {
         text-decoration: none;
-        color: #a5460b
+        color: #a5460b;
     }
 }
 
@@ -282,6 +282,16 @@ button {
 .social-links--style {
     color: #003d53;
     font-size: 4rem;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.social-links--style:hover {
+    color: #a5460b;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 /* ================================================
