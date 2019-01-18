@@ -298,12 +298,9 @@ button {
     position: relative;
 }
 
-.product-header-main .col-12 {
+.product-header-main {
     margin-bottom: 2rem;
     text-align: center;
-}
-
-.product-header-main h3 {
     font-family: "Orbitron", sans-serif;
     font-weight: 700;
     font-size: 2rem;
@@ -391,12 +388,9 @@ button {
     height: 60vh;
 }
 
-.about-header .col-12 {
+.about-header {
     margin-bottom: 2rem;
     text-align: center;
-}
-
-.about-header h3 {
     font-family: "Orbitron", sans-serif;
     font-weight: 700;
     font-size: 2rem;
