@@ -500,7 +500,8 @@ button {
 ================================================= */
 
 .contact-container--wrapper {
-    padding: 0;
+    min-height: 90vh;
+    padding: 7% 5% 0;
     background: url(../images/bg_contact.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -509,26 +510,15 @@ button {
     position: relative;
 }
 
-.contact-content--wrapper {
-    height: 82vh;
-    padding: 2% 5% 0;
-}
-
-.contact-form-align--middle {
-    min-height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .contact--header {
     padding: 0.5rem 0.5rem 0;
     margin: 0 0 1rem;
     text-align: center;
     color: #ffffff;
-    font-family: "Rubik", sans-serif;
+    font-family: "Orbitron", sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 
@@ -543,6 +533,7 @@ button {
 .contact--form {
     justify-content: center;
     font-family: "Rubik", sans-serif;
+    padding-bottom: 35vh;
 }
 
 .contact--form form {
@@ -568,7 +559,7 @@ button {
 }
 
 .contact-form--input {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 /* ================================================
@@ -787,11 +778,11 @@ button {
 /* == Contact == */
 
 @media only screen and (orientation: landscape) {
-    .contact-content--wrapper {
-        height: auto;
+    .contact-container--wrapper {
+        padding-top: 3%;
     }
-    .contact-form--middle {
-        height: auto;
+    .contact--form {
+        padding-bottom: 55vh;
     }
 }
 
@@ -897,9 +888,11 @@ button {
 /* == Contact == */
 
 @media only screen and (min-width: 768px) and (min-height: 420px) {
-    .contact-content--wrapper {
-        height: 69vh;
-        padding: 0 10% 0;
+    .contact-container--wrapper{
+        padding: 15vh 12vw 0;
+    }
+    .contact--form {
+        padding-bottom: 0;
     }
 }
 
@@ -1030,12 +1023,9 @@ button {
 
 @media only screen and (min-width: 992px) {
     .contact-container--wrapper {
-        height: 90vh;
+        padding: 15vh 17vw 0;
     }
-    .contact-content--wrapper {
-        padding: 0 24% 0;
-        height: 71vh;
-    }
+    
     .contact-form--middle {
         height: 75vh;
     }
