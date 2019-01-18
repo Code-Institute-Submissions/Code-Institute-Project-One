@@ -149,6 +149,10 @@ button {
     text-transform: uppercase;
 }
 
+.nav-signup-cursor {
+    cursor: pointer;
+}
+
 /* ================================================
 
 >>FOOTER
