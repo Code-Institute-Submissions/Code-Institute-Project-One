@@ -303,7 +303,7 @@ button {
 .product-container-wrapper {
     min-height: 210vh;
     padding: 4vh 10vw 0;
-    background: url(../images/bg_product.jpg) no-repeat center center;
+    background: url(../images/bg_product_mobile.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -950,6 +950,7 @@ button {
 @media only screen and (min-width: 992px) {
     .product-container-wrapper {
         min-height: 90vh;
+        background: url(../images/bg_product.jpg) no-repeat center center;
     }
     .product-header-main .col-12 {
         margin-bottom: 3rem;
