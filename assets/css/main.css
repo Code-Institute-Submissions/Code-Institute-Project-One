@@ -102,7 +102,6 @@ button {
     margin: 0 1% 1% 0;
     border: 0;
     padding: 0;
-    /* width: 10%; */
     position: absolute;
     bottom: 0;
     right: 0;
@@ -393,13 +392,6 @@ button {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-}
-
-.about-align--middle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 60vh;
 }
 
 .about-header {
@@ -693,9 +685,6 @@ button {
     .social-links--wrapper {
         bottom: 16vh;
     }
-    .contact-content--wrapper {
-        height: 67vh;
-    }
 }
 
 /* ==============
@@ -793,12 +782,6 @@ button {
 @media only screen and (orientation: landscape) {
     .contact--form {
         padding-bottom: 55vh;
-    }
-}
-
-@media only screen and (min-width: 768px) and (orientation: landscape) {
-    .contact-content--wrapper {
-        height: auto;
     }
 }
 
@@ -1052,47 +1035,15 @@ button {
     .about--text {
         padding: 0 15 0;
     }
-    .contact-content--wrapper {
-        padding: 0 29% 0;
-    }
 }
 
 /* =============
 >Special Queries
 ============= */
 
-/* iPad landscape */
-@media only screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
-    .social-links--wrapper {
-    /* margin: 0; */
-    }
-}
-
-/* iPad Pro */
-@media only screen and (min-width: 1024px) and (orientation: portrait) {
-    .home-content--wrapper {
-        height: 74vh;
-    }
-    .product-content--wrapper {
-        padding: 15% 2% 0;
-        min-height: 81vh;
-    }
-    .contact-content--wrapper {
-        height: 74vh;
-    }
-}
-
+/* Desktop Height Breakpoint */
 @media only screen and (min-width: 1200px) and (min-height: 880px) and (orientation: landscape) {
-.social-links--wrapper {
+    .social-links--wrapper {
     bottom: 10vh;
-}
-
-}
-
-/* Very small phone in landscape */
-
-@media only screen and (max-height: 360px) and (orientation: landscape) {
-    .about-align--middle {
-        height: 92vh;
     }
 }
