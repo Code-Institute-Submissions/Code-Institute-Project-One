@@ -15,9 +15,7 @@
                     Contents (searchable)
                     ===================*/
                 /*  >>IMPORTS AND GLOBAL STYLES  */
-                /*  >>HEADER/NAVIGATION
-                        >Mobile Nav
-                        >Desktop Nav */
+                /*  >>HEADER/NAVIGATION */
                 /*  >>FOOTER */
                 /*  >>HOME PAGE  */
                 /*  >>PRODUCTS PAGE  */
@@ -80,7 +78,7 @@ button {
 
 .nav-menu-icon {
     z-index: 10;
-    margin: 0 1rem 0;
+    margin: 0 1rem 0 0;
     border: 0;
     padding: 0;
 }
@@ -126,7 +124,7 @@ button {
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 7vh;
+    bottom: 0;
 }
 
 .footer-text {
@@ -166,6 +164,7 @@ button {
 
 .home-container-wrapper {
     min-height: 90vh;
+    margin-top: 10vh;
     padding: 10vh 7vw 0;
     background: url(../images/bg_home.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -237,7 +236,7 @@ button {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 18vh;
+    bottom: 12vh;
 }
 
 .social-links-style {
@@ -641,14 +640,11 @@ button {
 
 /* positioning for long phones eg; pixel 2 */
 @media only screen and (min-height: 668px) {
-    .nav-mobile-menu-text {
-        padding-top: 0.2rem;
-    }
     .nav-menu-icon {
         margin-bottom: 2.5%;
     }
     .social-links-wrapper {
-        bottom: 16vh;
+        bottom: 10vh;
     }
 }
 
@@ -662,23 +658,12 @@ button {
         height: 15vh;
     }
     .nav-menu-icon {
-        margin-bottom: 0.1rem;
-    }
-    .nav-mobile-wrapper {
-        min-height: 12vh;
-    }
-    .nav-mobile-blackbox {
-        min-height: 12vh;
-    }
-    .nav-text-style {
-        margin-bottom: 12vh;
-    }
-    .footer-wrapper {
-        bottom: 12vh;
+        margin-right: 0.75rem;
     }
     .home-container-wrapper {
         height: auto;
-        min-height: 115vh;
+        min-height: 100vh;
+        margin-top: 15vh;
         padding: 5vh 7vw 0;
     }
     .home-text-style h1 {
@@ -695,19 +680,12 @@ button {
         margin: 0.5rem 0;
     }
     .social-links-wrapper {
-        bottom: 32vh;
+        bottom: 20vh;
     }
 }
 
 /* To target long phones in landscape */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
-    .nav-mobile-menu-text {
-        margin-right: 2.8rem;
-        padding-top: 0.4rem;
-    }
-    .nav-menu-icon {
-        margin-bottom: 0.25rem;
-    }
     .home-container-wrapper {
         padding: 7vh 7vw 0;
     }
@@ -765,15 +743,14 @@ button {
     .logo {
         height: 10vh;
     }
-    .nav-mobile-menu-text {
-        margin-right: 3.5rem;
-        padding-top: 0;
-    }
     .nav-menu-icon {
         margin-bottom: 2%;
     }
     .nav-menu-icon span {
     font-size: 3rem;
+    }
+    .nav-text-style {
+        font-size: 1rem;
     }
     .home-container-wrapper {
         padding: 11vh 7vw 0;
@@ -798,7 +775,7 @@ button {
         font-size: 2rem;
     }
     .social-links-wrapper {
-        bottom: 14.5vh;
+        bottom: 7.5vh;
     }
     .social-links-style {
         font-size: 6vh;
@@ -868,21 +845,10 @@ button {
 
 /* == Nav/Footer/Home == */
 
-/* hide mobile nav */
 @media only screen and (min-width: 992px) {
-    .nav-mobile-wrapper {
-        display: none;
+    .nav-text-style {
+        border: none;
     }
-}
-
-    /* show desktop nav */
-@media only screen and (min-width: 992px) {
-    .nav-desktop-hide {
-        display: flex;
-    }
-}
-
-@media only screen and (min-width: 992px) {
     .home-container-wrapper {
         height: 90vh;
         padding: 10vh 2vw 0;
