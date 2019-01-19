@@ -63,6 +63,10 @@ button {
 
 ================================================= */
 
+.nav-wrapper {
+    background: #000000;
+}
+
 .logo {
     margin: 0;
     padding: 0;
@@ -74,56 +78,25 @@ button {
     -o-background-size: contain;
 }
 
-/* ========
->Mobile Nav
-======== */
-
-.nav-mobile-wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 7vh;
-    background: #000000;
-}
-
-.nav-desktop-hide {
-    display: none;
-}
-
-/* Cover white border on mobile nav when it's opening */
-.nav-mobile-blackbox {
-    height: 7vh;
-    width: 100vw;
-    z-index: 9;
-    background: #000000;
-}
-
-.nav-mobile-menu-text {
-    margin-right: 2.6rem;
-    color: white;
+.nav-menu-icon {
     z-index: 10;
-    font-family: rubik;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-}
-
-.nav-mobile-icon {
-    z-index: 10;
-    margin: 0 1% 1% 0;
+    margin: 0 1rem 0;
     border: 0;
     padding: 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }
 
-.nav-mobile-icon span {
-    font-size: 2.3rem;
+.nav-menu-icon span {
+    font-size: 2.5rem;
     color: #ffffff;
 }
 
-.nav-mobile-style {
-    margin-bottom: 7vh;
-    border-top: 1px solid rgba(255,255,255,.5);
+#NavMobileToggler {
+    padding-top: 0.5rem;
+    background: #000000;
+    z-index: 8;
+}
+
+.nav-text-style {
     border-bottom: 1px solid rgba(255,255,255,.5);
     font-family: "rubik", sans-serif;
     font-weight: 400;
@@ -133,28 +106,8 @@ button {
     line-height: 1.1;
 }
 
-.nav-mobile-style a {
+.nav-text-style a {
     padding: 0.75rem 0;
-}
-
-#NavMobileToggler {
-    background: #000000;
-    z-index: 8;
-}
-
-/* =========
->Desktop Nav
-========= */
-
-.nav-desktop-style {
-    background: #000000;
-}
-
-.nav-desktop-style ul {
-    font-family: "rubik", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    text-transform: uppercase;
 }
 
 .nav-signup-cursor {
@@ -691,7 +644,7 @@ button {
     .nav-mobile-menu-text {
         padding-top: 0.2rem;
     }
-    .nav-mobile-icon {
+    .nav-menu-icon {
         margin-bottom: 2.5%;
     }
     .social-links-wrapper {
@@ -708,7 +661,7 @@ button {
     .logo {
         height: 15vh;
     }
-    .nav-mobile-icon {
+    .nav-menu-icon {
         margin-bottom: 0.1rem;
     }
     .nav-mobile-wrapper {
@@ -717,7 +670,7 @@ button {
     .nav-mobile-blackbox {
         min-height: 12vh;
     }
-    .nav-mobile-style {
+    .nav-text-style {
         margin-bottom: 12vh;
     }
     .footer-wrapper {
@@ -752,7 +705,7 @@ button {
         margin-right: 2.8rem;
         padding-top: 0.4rem;
     }
-    .nav-mobile-icon {
+    .nav-menu-icon {
         margin-bottom: 0.25rem;
     }
     .home-container-wrapper {
@@ -816,10 +769,10 @@ button {
         margin-right: 3.5rem;
         padding-top: 0;
     }
-    .nav-mobile-icon {
+    .nav-menu-icon {
         margin-bottom: 2%;
     }
-    .nav-mobile-icon span {
+    .nav-menu-icon span {
     font-size: 3rem;
     }
     .home-container-wrapper {
