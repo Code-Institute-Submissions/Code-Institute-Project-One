@@ -708,7 +708,7 @@ button {
 
 /* == About == */
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 900px) and (orientation: landscape) {
     .about-header .col-12 {
         margin-bottom: 1rem;
     }
@@ -719,7 +719,7 @@ button {
 
 /* == FAQ == */
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 900px) and (orientation: landscape) {
     .faq-bottom-spacing {
         padding-bottom: 35vh;
     }
@@ -727,7 +727,7 @@ button {
 
 /* == Contact == */
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 900px) and (orientation: landscape) {
     .contact-form {
         padding-bottom: 55vh;
     }
@@ -754,6 +754,7 @@ button {
         font-size: 1rem;
     }
     .home-container-wrapper {
+        margin-top: 10vh;
         padding: 11vh 7vw 0;
     }
     .home-text-style h1 {
