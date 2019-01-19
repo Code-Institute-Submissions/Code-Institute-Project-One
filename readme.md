@@ -93,9 +93,9 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * Upon testing on webpagetest I discovered a 404 error on favicon so I googled what this is and implemented an icon.
 * It was suggested I use gzip compression but after doing some research on this I believe it is beyond the scope of this project for me to implement.
 * Received a low grade on caching, again did research on this and I believe it is also beyond the scope of this project.
-
 * Testing on my iPad in landscape I encountered an issue with size due to the address bar showing, which I didn't anticipate since devtools doesn't show it.
 * Testing on my Macbook Pro I realised that the resolution height is quite a bit smaller than my desktop and some elements were not looking correct.
+* Testing on Dev Tools audits I realised the contact form didn't have aria labels and that I had a duplicate id on the contact form and modal signup form.
 
 #### Steps taken to resolve issues
 
