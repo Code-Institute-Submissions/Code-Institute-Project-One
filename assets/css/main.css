@@ -205,7 +205,7 @@ button {
 
 .home-container--wrapper {
     min-height: 90vh;
-    padding: 18% 7% 0;
+    padding: 10vh 7vw 0;
     background: url(../images/bg_home.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -303,7 +303,7 @@ button {
 
 .product-container--wrapper {
     min-height: 210vh;
-    padding: 7% 10% 0;
+    padding: 4vh 10vw 0;
     background: url(../images/bg_product.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -386,7 +386,7 @@ button {
 
 .about-container--wrapper {
     min-height: 90vh;
-    padding: 7% 10% 0;
+    padding: 4vh 10vw 0;
     background: url(../images/bg_about.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -435,7 +435,7 @@ button {
 
 .faq-container--wrapper {
     padding: 0;
-    padding: 7% 10% 0;
+    padding: 4vh 10vw 0;
     background: url(../images/bg_faq.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -509,7 +509,7 @@ button {
 
 .contact-container--wrapper {
     min-height: 90vh;
-    padding: 7% 5% 0;
+    padding: 4vh 7vw 0;
     background: url(../images/bg_contact.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -725,7 +725,7 @@ button {
     .home-container--wrapper {
         height: auto;
         min-height: 115vh;
-        padding: 3% 7% 0;
+        padding: 5vh 7vw 0;
     }
     .home-text--style h1 {
         font-size: 1.35rem;
@@ -751,7 +751,7 @@ button {
         margin-bottom: 0.25rem;
     }
     .home-container--wrapper {
-        padding: 5% 7% 0;
+        padding: 7vh 7vw 0;
     }
     .home-text--style h1 {
         font-size: 1.8rem;
@@ -764,9 +764,6 @@ button {
 /* == Products == */
 
 @media only screen and (orientation: landscape) {
-    .product-container--wrapper {
-        padding-top: 3%;
-    }
     .product-card-mobile-spacing {
         margin-bottom: 35vh;
     }
@@ -775,9 +772,6 @@ button {
 /* == About == */
 
 @media only screen and (orientation: landscape) {
-    .about-container--wrapper {
-        padding-top: 3%;
-    }
     .about-header .col-12 {
         margin-bottom: 1rem;
     }
@@ -789,9 +783,6 @@ button {
 /* == FAQ == */
 
 @media only screen and (orientation: landscape) {
-    .faq-container--wrapper {
-        padding-top: 3%;
-    }
     .faq-bottom-spacing {
         padding-bottom: 35vh;
     }
@@ -800,9 +791,6 @@ button {
 /* == Contact == */
 
 @media only screen and (orientation: landscape) {
-    .contact-container--wrapper {
-        padding-top: 3%;
-    }
     .contact--form {
         padding-bottom: 55vh;
     }
@@ -832,7 +820,7 @@ button {
     font-size: 3rem;
     }
     .home-container--wrapper {
-        padding: 15% 7% 0;
+        padding: 11vh 7vw 0;
     }
     .home-text--style h1 {
         font-size: 3.5rem;
