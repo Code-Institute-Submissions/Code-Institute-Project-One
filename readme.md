@@ -64,7 +64,6 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
     * Speeds up development
 * [https://stackoverflow.com](https://stackoverflow.com)
 * [https://www.quora.com](https://www.quora.com)
-* [https://whatwebcando.today](https://whatwebcando.today)
 * [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
 * [https://tinypng.com/](https://tinypng.com/)
 * A lot of google!
@@ -87,7 +86,7 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * I tested the website on all my personal devices (Desktop computer, Macbook Pro, iPad, LG G6 phone, Oukitel 10000 phone.) I checked in both portrait and landscape and tested the responsive design, navigation, links, modals and form submission.
 * Additionally tested using -
     * [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) and received a mobile friendly result for all pages.
-    * [https://www.webpagetest.org/](https://www.webpagetest.org/) - [(result)](https://www.webpagetest.org/result/190113_X7_beb233f33919742b9638bd8b0adebdd5/) and received a satisfactory result.
+    * [Webpagetest](https://www.webpagetest.org/) - [(result)](https://www.webpagetest.org/result/190113_X7_beb233f33919742b9638bd8b0adebdd5/) and received a satisfactory result.
 
 ## Issues encountered
 
@@ -111,16 +110,16 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 ### Image sources
 
 * Logo image by Geralt on pixabay
-* Home and product background - [https://wallimpex.com/](https://wallimpex.com/)
-* About background - [https://invardin.com/robot-1650649_1920/](https://invardin.com/robot-1650649_1920/)
+* [Home and product background](https://wallimpex.com/)
+* [About background](https://invardin.com/robot-1650649_1920/)
 * FAQ background by Kate Rowe on Unsplash
 * Contact background by Tony Webster on Unsplash
 * Products
-    * Nexus - [https://www.flickr.com/photos/sanjayaprime/4924462993](https://www.flickr.com/photos/sanjayaprime/4924462993)
+    * [Nexus](https://www.flickr.com/photos/sanjayaprime/4924462993)
     * Matrix by Geralt on pixabay
-    * Aegis - [https://commons.wikimedia.org/wiki/File:Cybersecurity.png](https://commons.wikimedia.org/wiki/File:Cybersecurity.png)
-    * Neuroptimal - [https://www.flickr.com/photos/alansimpsonme/34752491090](https://www.flickr.com/photos/alansimpsonme/34752491090)
-    * Core - [https://www.kisspng.com/png-top500-computer-science-electronic-circuit-king-ab-1144035/](https://www.kisspng.com/png-top500-computer-science-electronic-circuit-king-ab-1144035/)
+    * [Aegis](https://commons.wikimedia.org/wiki/File:Cybersecurity.png)
+    * [Neuroptimal](https://www.flickr.com/photos/alansimpsonme/34752491090)
+    * [Core](https://www.kisspng.com/png-top500-computer-science-electronic-circuit-king-ab-1144035/)
 
 ### Acknowledgements
 
