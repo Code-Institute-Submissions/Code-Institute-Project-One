@@ -263,6 +263,7 @@ button {
 
 .product-container-wrapper {
     min-height: 210vh;
+    margin-top: 10vh;
     padding: 4vh 10vw 0;
     background: url(../images/bg_product_mobile.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -289,7 +290,7 @@ button {
 }
 
 .product-card-mobile-spacing {
-    margin-bottom: 25vh;
+    margin-bottom: 20vh;
 }
 
 .product-links .card {
@@ -640,9 +641,6 @@ button {
 
 /* positioning for long phones eg; pixel 2 */
 @media only screen and (min-height: 668px) {
-    .nav-menu-icon {
-        margin-bottom: 2.5%;
-    }
     .social-links-wrapper {
         bottom: 10vh;
     }
@@ -699,9 +697,12 @@ button {
 
 /* == Products == */
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .product-container-wrapper {
+        margin-top: 15vh;
+    }
     .product-card-mobile-spacing {
-        margin-bottom: 35vh;
+        margin-bottom: 30vh;
     }
 }
 
@@ -793,7 +794,8 @@ button {
 @media only screen and (min-width: 768px) and (min-height: 420px) {
     .product-container-wrapper {
         padding: 5vh 5vw 0;
-        min-height: 200vh
+        min-height: 200vh;
+        margin-top: 10vh;
     }
     .product-header-main h3 {
         font-size: 2.5rem;
