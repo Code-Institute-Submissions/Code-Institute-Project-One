@@ -87,6 +87,7 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * Additionally tested using -
     * [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) and received a mobile friendly result for all pages.
     * [Webpagetest](https://www.webpagetest.org/) - [(result)](https://www.webpagetest.org/result/190113_X7_beb233f33919742b9638bd8b0adebdd5/) and received a satisfactory result.
+    * Dev tools audit and after resolving the issues listed below received a result between 98-100 on all categories.
 
 ## Issues encountered
 
@@ -95,12 +96,13 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * Received a low grade on caching, again did research on this and I believe it is also beyond the scope of this project.
 * Testing on my iPad in landscape I encountered an issue with size due to the address bar showing, which I didn't anticipate since devtools doesn't show it.
 * Testing on my Macbook Pro I realised that the resolution height is quite a bit smaller than my desktop and some elements were not looking correct.
-* Testing on Dev Tools audits I realised the contact form didn't have aria labels and that I had a duplicate id on the contact form and modal signup form.
+* Testing on Dev Tools audit I realised the contact form didn't have aria labels and that I had a duplicate id on the contact form and modal signup form.
 
 #### Steps taken to resolve issues
 
 * Made some minor adjustments to padding for tablet media query.
 * Researched common desktop screen size and added a media query for screen height to separate them.
+* Added aria labels to contact form and fixed duplicate id name.
 
 
 --------------------
