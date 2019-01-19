@@ -13,17 +13,18 @@
 </head>
 
 <body>
-	<!-- Mobile Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark nav-mobile-wrapper fixed-bottom p-0">
-		<div class="col-12 nav-mobile-blackbox fixed-bottom"></div>
-		<div class="nav-mobile-menu-text">menu</div>
-		<button class="navbar-toggler nav-mobile-icon" type="button" data-toggle="collapse" data-target="#NavMobileToggler" aria-controls="NavMobileToggler" aria-expanded="false" aria-label="Toggle navigation">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark nav-wrapper fixed-top p-0">
+		<a class="navbar-brand p-0 m-0" href="index.html">
+			<img src="assets/images/logo.png" class="logo" alt="Logo">
+		</a>
+		<button class="navbar-toggler nav-menu-icon" type="button" data-toggle="collapse" data-target="#NavMobileToggler" aria-controls="NavMobileToggler" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="fa fa-bars"></span>
 		</button>
-		<div class="collapse navbar-collapse flex-row-reverse fixed-bottom" id="NavMobileToggler">
-			<ul class="navbar-nav nav-mobile-style" data-toggle="collapse" data-target=".navbar-collapse.show">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
+		<div class="collapse navbar-collapse flex-row-reverse" id="NavMobileToggler">
+			<ul class="navbar-nav nav-text-style" data-toggle="collapse" data-target=".navbar-collapse.show">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="products.html">Products</a>
@@ -34,36 +35,8 @@
 				<li class="nav-item">
 					<a class="nav-link" href="faq.html">faq</a>
 				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="contact.html"><span class="sr-only">(current)</span>Contact</a>
-				</li>
 				<li class="nav-item">
-					<a class="nav-link" data-toggle="modal" data-target="#modalSignUp">Sign Up</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<!-- Desktop Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark nav-desktop-style nav-bg-transparent p-0">
-		<a class="navbar-brand logo" href="index.html">
-			<img src="assets/images/logo.png" class="logo" alt="Logo">
-		</a>
-		<div class="navbar-collapse flex-row-reverse nav-desktop-hide pr-2">
-			<ul class="navbar-nav nav-desktop-style">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="products.html">Products</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">About us</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="faq.html">faq</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="contact.html">Contact</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link nav-signup-cursor" data-toggle="modal" data-target="#modalSignUp">Sign Up</a>
