@@ -97,12 +97,14 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * Testing on my iPad in landscape I encountered an issue with size due to the address bar showing, which I didn't anticipate since devtools doesn't show it.
 * Testing on my Macbook Pro I realised that the resolution height is quite a bit smaller than my desktop and some elements were not looking correct.
 * Testing on Dev Tools audit I realised the contact form didn't have aria labels and that I had a duplicate id on the contact form and modal signup form.
+* I showed the website to one colleague at work and when I saw him look at it he didn't seem to notice the mobile navmenu at the bottom of the page. Upon showing another friend and having my mentor session I got similar feedback.
 
 #### Steps taken to resolve issues
 
 * Made some minor adjustments to padding for tablet media query.
 * Researched common desktop screen size and added a media query for screen height to separate them.
 * Added aria labels to contact form and fixed duplicate id name.
+* I did some more research on mobile navigation and found that my original information about nav at the bottom was primarily about apps with a bottom navbar and not the burger menu on websites. Decided to change the mobile nav to be on the top right of the page to be more consistant with current web standards.
 
 
 --------------------
