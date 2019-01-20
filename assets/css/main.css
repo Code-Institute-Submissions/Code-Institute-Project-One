@@ -62,7 +62,7 @@ button {
 ================================================= */
 
 .nav-wrapper {
-    background: rgba(0, 0, 0, 0.2)
+    background: #000000;
 }
 
 .logo {
@@ -164,8 +164,8 @@ button {
 
 .home-container-wrapper {
     min-height: 90vh;
-    margin-top: 10vh;
-    padding: 10vh 7vw 0;
+    /* margin-top: 10vh; */
+    padding: 20vh 7vw 0;
     background: url(../images/bg_home.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
