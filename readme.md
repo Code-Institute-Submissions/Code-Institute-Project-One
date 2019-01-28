@@ -32,7 +32,7 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 
 * I decided to use a dark/black main theme as I liked this for the nature of the content. I designed a logo which has some nice colours that stand out on the black. I chose a particular blue from this logo as the primary colour and used an opposite colour tool to choose a dark but vibrant orange as the secondary colour.
 * Product and background images are mostly dark/grey, with a nice contrast between the background and the content.
-* I chose two fonts. The main font used on all navbars and larger text areas is simple to read and in white or light grey. The second font is used only for the home page headers and sign up button and has matches the type of product the business is dealing in.
+* I chose two fonts. The main font used on all navbars and larger text areas is simple to read and in white or light grey. The second font is used only for the page headers and sign up button and the style matches the type of product the business is dealing in.
 
 --------------------
 
@@ -65,6 +65,7 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * [https://stackoverflow.com](https://stackoverflow.com)
 * [https://www.quora.com](https://www.quora.com)
 * [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
+* [https://www.w3schools.com/](https://www.w3schools.com/)
 * [https://tinypng.com/](https://tinypng.com/)
 * A lot of google!
 
@@ -88,8 +89,9 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
     * [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) and received a mobile friendly result for all pages.
     * [Webpagetest](https://www.webpagetest.org/) - [(result)](https://www.webpagetest.org/result/190113_X7_beb233f33919742b9638bd8b0adebdd5/) and received a satisfactory result.
     * Dev tools audit and after resolving the issues listed below received a result between 98-100 on all categories.
+    * Validated both HTML and CSS with [w3schools](https://www.w3schools.com/) validation service.
 
-## Issues encountered
+### Issues encountered
 
 * Upon testing on webpagetest I discovered a 404 error on favicon so I googled what this is and implemented an icon.
 * It was suggested I use gzip compression but after doing some research on this I believe it is beyond the scope of this project for me to implement.
@@ -98,13 +100,15 @@ I used the program Pencil to design wireframes for both mobile and desktop, whic
 * Testing on my Macbook Pro I realised that the resolution height is quite a bit smaller than my desktop and some elements were not looking correct.
 * Testing on Dev Tools audit I realised the contact form didn't have aria labels and that I had a duplicate id on the contact form and modal signup form.
 * I showed the website to one colleague at work and when I saw him look at it he didn't seem to notice the mobile navmenu at the bottom of the page. Upon showing another friend and having my mentor session I got similar feedback.
+* 405 error on form submit.
 
-#### Steps taken to resolve issues
+### Steps taken to resolve issues
 
 * Made some minor adjustments to padding for tablet media query.
 * Researched common desktop screen size and added a media query for screen height to separate them.
 * Added aria labels to contact form and fixed duplicate id name.
 * I did some more research on mobile navigation and found that my original information about nav at the bottom was primarily about apps with a bottom navbar and not the burger menu on websites. Decided to change the mobile nav to be on the top right of the page to be more consistant with current web standards.
+* Changed form method from POST to GET to resolve 405 error.
 
 
 --------------------
