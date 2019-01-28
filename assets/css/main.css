@@ -925,7 +925,7 @@ button {
         margin-top: 1rem;
     }
     .product-card-lg-spacing, .product-card-mobile-spacing {
-        margin-bottom: 12vh;
+        margin-bottom: 15vh;
     }
 }
 
@@ -1002,4 +1002,6 @@ button {
     .social-links-wrapper {
     bottom: 10vh;
     }
+    .product-card-lg-spacing, .product-card-mobile-spacing {
+    margin-bottom: 12vh;
 }
