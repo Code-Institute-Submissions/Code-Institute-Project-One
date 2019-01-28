@@ -129,3 +129,4 @@ An operational website. Ease of use, it should be intuitive and easy to navigate
 
 * Decided to remove separate product information page and have collapsable information containers for this purpose.
 * Added a FAQ page and kept the about us page for only company information.
+* Redesigned mobile navigation to be at the top right of the page with a burger menu.
